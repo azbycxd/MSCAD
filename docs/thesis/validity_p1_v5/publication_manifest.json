@@ -1,0 +1,243 @@
+{
+  "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+  "status": "VALIDITY_P1_INCOMPLETE",
+  "publication_base_commit": "5c0c8c7178b8cd0e0e17ace469a084e05fdb7a8d",
+  "authorization": "User requested automatic commit after audit; no push authorized in this turn",
+  "created_at_utc": "2026-11-17T10:25:18.391245+00:00",
+  "files": [
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\archive_difference_hai.json",
+      "published_path": "docs/thesis/validity_p1_v5/archive_difference_hai.json",
+      "sha256": "71c82885b1fa6431bc20ed8ee1f9f40cc3a32d5aed5b950db56f10ee97d8f24c",
+      "bytes": 7508
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\archive_difference_swat.json",
+      "published_path": "docs/thesis/validity_p1_v5/archive_difference_swat.json",
+      "sha256": "04a60a0bf264c63ad9b078c43994ef1d060bc2336731777ba71dad2125925780",
+      "bytes": 7255
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\archive_difference_top10_hai.csv",
+      "published_path": "docs/thesis/validity_p1_v5/archive_difference_top10_hai.csv",
+      "sha256": "3c6e7570224d848f5bc81172c19c43bc4d9c1453dba4d097dd9320ec13b681b6",
+      "bytes": 2734
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\archive_difference_top10_swat.csv",
+      "published_path": "docs/thesis/validity_p1_v5/archive_difference_top10_swat.csv",
+      "sha256": "455d76293832897e889e2001bc022a29f6cc056fb4cfeadf46ac6eb8c0504154",
+      "bytes": 2485
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\artifact_validation.json",
+      "published_path": "docs/thesis/validity_p1_v5/artifact_validation.json",
+      "sha256": "1f8a00435abab18d5e2ec1fe75dc88190cf3e6eb2249e3297506fd6a2b672e23",
+      "bytes": 1971
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\controlled_stop_diagnostic.json",
+      "published_path": "docs/thesis/validity_p1_v5/controlled_stop_diagnostic.json",
+      "sha256": "e604fd1f6e5890d65ef6d7bf8938d8cc732a5c71d5f7dfa0216ea0207a62dff7",
+      "bytes": 1204
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\controlled_swat.csv",
+      "published_path": "docs/thesis/validity_p1_v5/controlled_swat.csv",
+      "sha256": "c17a0af23c83aab8d6afd10510f63ad5bd8f2a2ecfa29ec83b79d70c6254159e",
+      "bytes": 1661
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\decision.json",
+      "published_path": "docs/thesis/validity_p1_v5/decision.json",
+      "sha256": "9ad25426e7da09894945a3f5e988c459387e8da9bae8d9ad0142098f18179e3b",
+      "bytes": 2033
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\donor_manifest_audit.json",
+      "published_path": "docs/thesis/validity_p1_v5/donor_manifest_audit.json",
+      "sha256": "9aa86ec0cfba70bb17e95411fb11287078d7ece71fb41e27372877397bf3eaac",
+      "bytes": 3967
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\input_integrity.json",
+      "published_path": "docs/thesis/validity_p1_v5/input_integrity.json",
+      "sha256": "b4e3d86acd4a31f92f1b85449828034039ec3850456637e790aff46022c27689",
+      "bytes": 41418
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\manifest.json",
+      "published_path": "docs/thesis/validity_p1_v5/manifest.json",
+      "sha256": "f239922b80f5f5833d0645dcaaa4933d85e7ab945f050f855feff8679052b2cf",
+      "bytes": 22885
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\math_checks.json",
+      "published_path": "docs/thesis/validity_p1_v5/math_checks.json",
+      "sha256": "1665a38f8974d4efb3ad582e40f074465cf94fb4dc27e309c0741ca95017dab9",
+      "bytes": 14692
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\metrics_main.csv",
+      "published_path": "docs/thesis/validity_p1_v5/metrics_main.csv",
+      "sha256": "8b31877695e123433539b3a64351fbdfa57a11be554b5843c23be1db1a9a6148",
+      "bytes": 733
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\normal_reference_hai.csv",
+      "published_path": "docs/thesis/validity_p1_v5/normal_reference_hai.csv",
+      "sha256": "b46868b8787aa919ed0e3fce5f76892d12944b5fec3730e5b674bb05108bd442",
+      "bytes": 89336
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\normal_reference_swat.csv",
+      "published_path": "docs/thesis/validity_p1_v5/normal_reference_swat.csv",
+      "sha256": "2e2affab3a60c3858df9dde8c45c4ec81107281866017535111ba28e43c1d450",
+      "bytes": 28802
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\normal_stats.csv",
+      "published_path": "docs/thesis/validity_p1_v5/normal_stats.csv",
+      "sha256": "a6598ccc8ac8089504bd924a08e5e5a63e9e7bc1c8e3580a8ab60ae77ca616f7",
+      "bytes": 178284
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\normal_stats.sha256",
+      "published_path": "docs/thesis/validity_p1_v5/normal_stats.sha256",
+      "sha256": "97911c92bb5290ce7353bc0b1a4140fc06ed94116757970e7c0ea110c382ba95",
+      "bytes": 114
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\orchestration_guard_test.json",
+      "published_path": "docs/thesis/validity_p1_v5/orchestration_guard_test.json",
+      "sha256": "f32ffe13678cd87e26145591874aef4c2d6e17280cc80eeb347f3b8e4b91b17b",
+      "bytes": 219
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\preservation_check.json",
+      "published_path": "docs/thesis/validity_p1_v5/preservation_check.json",
+      "sha256": "5ab31074294cde09a5e6130e01bc0f0655edaa40f41ee7a3f7a8502e2d380a07",
+      "bytes": 23882
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\preservation_check_after_stop.json",
+      "published_path": "docs/thesis/validity_p1_v5/preservation_check_after_stop.json",
+      "sha256": "4d543a4543a81644e1b950ac99c71857b331b160e51675077d3ed0c4ba206e91",
+      "bytes": 23882
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\protocol_v5.md",
+      "published_path": "docs/thesis/validity_p1_v5/protocol_v5.md",
+      "sha256": "cbde1ce71d8b10c784015dabbe28a5a764ba2a4c99edb91d9e8f623be0287e19",
+      "bytes": 21636
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\replay_check.json",
+      "published_path": "docs/thesis/validity_p1_v5/replay_check.json",
+      "sha256": "0d9d355c3dc7d1d074c06e322044bdf375c8d49fda8cacfc2be87079b1892dd7",
+      "bytes": 88607
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\replay_hai.json",
+      "published_path": "docs/thesis/validity_p1_v5/replay_hai.json",
+      "sha256": "7def1da77b96d8d88c6094d2735d66cc2818c945a2c19fdf7bbab1f38f7de23f",
+      "bytes": 58470
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\replay_swat.json",
+      "published_path": "docs/thesis/validity_p1_v5/replay_swat.json",
+      "sha256": "4e4729be1f20f287d1c3e69f162d8663265b28cc066c9209839fb6c760224f09",
+      "bytes": 18880
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\REPORT.md",
+      "published_path": "docs/thesis/validity_p1_v5/REPORT.md",
+      "sha256": "75dbf7891eb2bd9288f4d724e6bb9898cf30cc3ec2239f5f2df27f02d6a2cbfd",
+      "bytes": 6537
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\run_log.txt",
+      "published_path": "docs/thesis/validity_p1_v5/run_log.txt",
+      "sha256": "b94c83c5272002805737e44c18e073ff53a9b4ebdd491ffaa01bb55d3c9a3ec5",
+      "bytes": 3496
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\shared_source_hai.json",
+      "published_path": "docs/thesis/validity_p1_v5/shared_source_hai.json",
+      "sha256": "4e1eb5d7ff130d0eb19291a0038372c6bf0e4e20727d5b0ef04152c45d0b1169",
+      "bytes": 42096
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\shared_source_swat.json",
+      "published_path": "docs/thesis/validity_p1_v5/shared_source_swat.json",
+      "sha256": "2c8ddb47dda3ab18188a585e9dd6213022b8a4f4f4fa744499ba9cef32101ccb",
+      "bytes": 6795
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\skill_only_targets.csv",
+      "published_path": "docs/thesis/validity_p1_v5/skill_only_targets.csv",
+      "sha256": "c9bdde9caceafe501108c4a3d04d32f32ffd5a71a330e3537605a25f8d1c0c97",
+      "bytes": 5505
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v5\\skill_only_targets.sha256",
+      "published_path": "docs/thesis/validity_p1_v5/skill_only_targets.sha256",
+      "sha256": "9b4057701a47a676dec2b5cb94563c8b286192135ddb0991f7c217392907af78",
+      "bytes": 120
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\scripts\\thesis\\06_validity\\annotate_v5_stop.py",
+      "published_path": "scripts/thesis/06_validity/annotate_v5_stop.py",
+      "sha256": "3020ba4fb3d86a0197573440e48db890ce003abd22a841f142db2153be78cf31",
+      "bytes": 8787
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\scripts\\thesis\\06_validity\\evaluation_v5.py",
+      "published_path": "scripts/thesis/06_validity/evaluation_v5.py",
+      "sha256": "7ceee62a74bb796367e0315cf896d180b7c978e10a72aca746405de20d901fc3",
+      "bytes": 8027
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\scripts\\thesis\\06_validity\\format_v5_report.py",
+      "published_path": "scripts/thesis/06_validity/format_v5_report.py",
+      "sha256": "fc820f893c20eb8eced6dc5706d1dec5db684c07dcf3f1e5b9eef32c465c0a26",
+      "bytes": 3062
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\scripts\\thesis\\06_validity\\real_v5.py",
+      "published_path": "scripts/thesis/06_validity/real_v5.py",
+      "sha256": "ccd4591f32c579ecfc9b700cf8748063ccd504c07631668efa8819c2bdff7c06",
+      "bytes": 13867
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\scripts\\thesis\\06_validity\\run_validity_p1_v5.py",
+      "published_path": "scripts/thesis/06_validity/run_validity_p1_v5.py",
+      "sha256": "98262881676e5d233c64927a6a8327bc8e84a85edbf6a3a5bccde8d253882791",
+      "bytes": 16658
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\scripts\\thesis\\06_validity\\stats_v5.py",
+      "published_path": "scripts/thesis/06_validity/stats_v5.py",
+      "sha256": "561ac105d5774b560cceb072da731bfcb69a7f81dd32bda223670e98223e287e",
+      "bytes": 4945
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\scripts\\thesis\\06_validity\\validate_v5_artifacts.py",
+      "published_path": "scripts/thesis/06_validity/validate_v5_artifacts.py",
+      "sha256": "47f9c379c558c7bed3abcc19636c50f4f25cddb934d0569915b9ee85cfd5d182",
+      "bytes": 5201
+    },
+    {
+      "source": "D:\\workspace\\python\\mscad-thesis\\scripts\\thesis\\06_validity\\verify_v5_inputs.py",
+      "published_path": "scripts/thesis/06_validity/verify_v5_inputs.py",
+      "sha256": "b57e6854c6f5dc3ca312aca18a13d2372f5bbe0f6874bac85bc56858689acfdb",
+      "bytes": 7478
+    }
+  ],
+  "datasets_included": false,
+  "models_included": false,
+  "full_pointwise_predictions_included": false,
+  "isolated_dependencies_included": false,
+  "prior_v4_files_changed": false,
+  "thesis_chapters_changed": false
+}

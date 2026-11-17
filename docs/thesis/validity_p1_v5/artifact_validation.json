@@ -1,0 +1,95 @@
+{
+  "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+  "status": "PASS",
+  "scope": "COMPLETED_STEPS_OF_INCOMPLETE_AUDIT_ONLY",
+  "passed": 21,
+  "total": 21,
+  "checks": [
+    {
+      "check": "normal_statistics_hash",
+      "passed": true
+    },
+    {
+      "check": "skill_list_hash",
+      "passed": true
+    },
+    {
+      "check": "normal_frozen_before_partial_controls",
+      "passed": true
+    },
+    {
+      "check": "no_real_controls_after_exception",
+      "passed": true
+    },
+    {
+      "check": "swat_formal_gate",
+      "passed": true
+    },
+    {
+      "check": "swat_shared_raw_cal_aggregate_zero",
+      "passed": true
+    },
+    {
+      "check": "swat_two_runs_bitwise",
+      "passed": true
+    },
+    {
+      "check": "swat_saved_prediction_hash",
+      "passed": true
+    },
+    {
+      "check": "swat_saved_endpoint_count",
+      "passed": true
+    },
+    {
+      "check": "swat_saved_shared_formal_equal",
+      "passed": true
+    },
+    {
+      "check": "swat_saved_binding_fields",
+      "passed": true
+    },
+    {
+      "check": "swat_normal_reference_hash",
+      "passed": true
+    },
+    {
+      "check": "hai_formal_gate",
+      "passed": true
+    },
+    {
+      "check": "hai_shared_raw_cal_aggregate_zero",
+      "passed": true
+    },
+    {
+      "check": "hai_two_runs_bitwise",
+      "passed": true
+    },
+    {
+      "check": "hai_saved_prediction_hash",
+      "passed": true
+    },
+    {
+      "check": "hai_saved_endpoint_count",
+      "passed": true
+    },
+    {
+      "check": "hai_saved_shared_formal_equal",
+      "passed": true
+    },
+    {
+      "check": "hai_saved_binding_fields",
+      "passed": true
+    },
+    {
+      "check": "hai_normal_reference_hash",
+      "passed": true
+    },
+    {
+      "check": "v4_formal_history_unchanged",
+      "passed": true
+    }
+  ],
+  "no_model_execution": true,
+  "no_new_metrics": true
+}

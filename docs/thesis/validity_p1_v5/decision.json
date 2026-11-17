@@ -1,0 +1,49 @@
+{
+  "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+  "status": "VALIDITY_P1_INCOMPLETE",
+  "descriptive_label": "NOT_AVAILABLE",
+  "delta_HAI": null,
+  "delta_CTRL": null,
+  "H_kappa": {
+    "swat": "NOT_TESTABLE",
+    "hai": "NOT_TESTABLE"
+  },
+  "stop_reasons": [
+    "RuntimeError: S1_CONSISTENCY_FLAG: AUROC FIT601"
+  ],
+  "stop_category": "AUDIT_HELPER_ASSERTION_NOT_SHARED_SOURCE_FAILURE",
+  "main_replay_gates": {
+    "swat": "PASS",
+    "hai": "PASS"
+  },
+  "normal_statistics_frozen": true,
+  "math_checks_completed": true,
+  "controlled_failure": {
+    "status": "STOPPED_AUDIT_HELPER_ASSERTION",
+    "target": "FIT601",
+    "score": "S1",
+    "exception": "S1_CONSISTENCY_FLAG: AUROC FIT601",
+    "paired_raw_max_abs_difference": 0.0,
+    "paired_equality_evidence": "Control flow reached line207; preceding equal_delta != 0 gate at line196 did not raise.",
+    "actual_auroc": null,
+    "actual_auroc_status": "NOT_PERSISTED_BY_EXCEPTION",
+    "expected_mathematical_auroc": 0.5,
+    "failed_expression": "metrics[\"auroc\"] != 0.5",
+    "source": "D:\\workspace\\python\\mscad-thesis\\scripts\\thesis\\06_validity\\controlled_helper.py",
+    "source_sha256": "0f98b445d8793029a588d3164a345106a01fa125aae9bb1443cc15df6f80c575",
+    "interpretation": "Audit helper exact-floating-equality assertion stopped execution; not evidence that S1 paired samples differed. Magnitude/cause of AUROC deviation cannot be established from saved values.",
+    "previous_five_targets": "S1/S2/S3 metrics computed in local function memory but not returned or persisted; no numbers reconstructed.",
+    "real_S1_S2_evaluation": "NOT_RUN",
+    "controlled_retry": false,
+    "assertion_changed": false,
+    "scoring_changed": false
+  },
+  "skipped": [
+    "Real S1/S2 metrics and per-target/event comparison",
+    "Completed controlled S1/S2 table",
+    "Skill-only Test sensitivity",
+    "Historical CoMuT Test controls",
+    "H-kappa AUROC association",
+    "R-UP/R-DOWN/R-EQ label"
+  ]
+}

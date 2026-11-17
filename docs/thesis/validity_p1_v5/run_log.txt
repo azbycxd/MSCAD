@@ -1,0 +1,44 @@
+2026-11-17T10:14:39.182478+00:00 BEGIN_V5
+2026-11-17T10:14:41.145215+00:00 NORMAL_REPLAY_1_SWAT
+2026-11-17T10:14:43.922785+00:00 swat: normal-only exact fit P1, candidates=2
+2026-11-17T10:14:44.922031+00:00 swat: normal-only exact fit P2, candidates=4
+2026-11-17T10:14:45.878184+00:00 swat: normal-only exact fit P3, candidates=3
+2026-11-17T10:14:46.725844+00:00 swat: normal-only exact fit P4, candidates=4
+2026-11-17T10:14:48.674335+00:00 swat: normal-only exact fit P5, candidates=11
+2026-11-17T10:14:48.903477+00:00 swat: normal-only exact fit P6, candidates=1
+2026-11-17T10:14:53.199801+00:00 swat: Normal replay targets=PASS, threshold=PASS, all candidates=25
+2026-11-17T10:14:53.207801+00:00 NORMAL_REPLAY_2_SWAT
+2026-11-17T10:14:54.025898+00:00 swat: normal-only exact fit P1, candidates=2
+2026-11-17T10:14:55.090948+00:00 swat: normal-only exact fit P2, candidates=4
+2026-11-17T10:14:56.129172+00:00 swat: normal-only exact fit P3, candidates=3
+2026-11-17T10:14:57.079527+00:00 swat: normal-only exact fit P4, candidates=4
+2026-11-17T10:14:59.161184+00:00 swat: normal-only exact fit P5, candidates=11
+2026-11-17T10:14:59.419166+00:00 swat: normal-only exact fit P6, candidates=1
+2026-11-17T10:15:04.155805+00:00 swat: Normal replay targets=PASS, threshold=PASS, all candidates=25
+2026-11-17T10:15:04.166800+00:00 NORMAL_REPLAY_1_HAI
+2026-11-17T10:15:30.963232+00:00 hai: normal-only exact fit P1, candidates=31
+2026-11-17T10:15:33.617849+00:00 hai: normal-only exact fit P2, candidates=10
+2026-11-17T10:15:34.758718+00:00 hai: normal-only exact fit P3, candidates=5
+2026-11-17T10:15:37.276806+00:00 hai: normal-only exact fit P4, candidates=10
+2026-11-17T10:16:08.171460+00:00 hai: Normal replay targets=PASS, threshold=PASS, all candidates=56
+2026-11-17T10:16:08.245588+00:00 NORMAL_REPLAY_2_HAI
+2026-11-17T10:16:35.290630+00:00 hai: normal-only exact fit P1, candidates=31
+2026-11-17T10:16:37.901133+00:00 hai: normal-only exact fit P2, candidates=10
+2026-11-17T10:16:39.096976+00:00 hai: normal-only exact fit P3, candidates=5
+2026-11-17T10:16:41.744766+00:00 hai: normal-only exact fit P4, candidates=10
+2026-11-17T10:17:13.125859+00:00 hai: Normal replay targets=PASS, threshold=PASS, all candidates=56
+2026-11-17T10:17:13.201069+00:00 CONTROLLED_NORMAL_PREPARE
+2026-11-17T10:17:17.350720+00:00 COMUT_NORMAL_PREPARE
+2026-11-17T10:17:17.698131+00:00 CONTROLLED_FORMAL_S3_GATE
+2026-11-17T10:17:17.728643+00:00 FORMAL_TEST_REPLAY_SWAT
+2026-11-17T10:17:43.259683+00:00 swat: v5 two S3 replays and shared-source check 0, n=298774, shared=PASS
+2026-11-17T10:17:55.214515+00:00 swat: v5 two S3 replays and shared-source check 1, n=151019, shared=PASS
+2026-11-17T10:17:57.422353+00:00 FORMAL_TEST_REPLAY_HAI
+2026-11-17T10:18:07.487468+00:00 hai: v5 two S3 replays and shared-source check test1.csv.gz, n=43138, shared=PASS
+2026-11-17T10:18:45.252910+00:00 hai: v5 two S3 replays and shared-source check test2.csv.gz, n=118738, shared=PASS
+2026-11-17T10:19:16.134111+00:00 hai: v5 two S3 replays and shared-source check test3.csv.gz, n=107938, shared=PASS
+2026-11-17T10:19:25.370629+00:00 hai: v5 two S3 replays and shared-source check test4.csv.gz, n=39538, shared=PASS
+2026-11-17T10:19:51.229999+00:00 hai: v5 two S3 replays and shared-source check test5.csv.gz, n=92338, shared=PASS
+2026-11-17T10:19:55.915306+00:00 NORMAL_STATS_AND_MATH
+2026-11-17T10:19:59.859575+00:00 NORMAL_HASH_FROZEN
+2026-11-17T10:19:59.860571+00:00 CONTROLLED_S1_S2_S3
