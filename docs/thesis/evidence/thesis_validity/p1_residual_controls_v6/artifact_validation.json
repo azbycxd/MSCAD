@@ -1,0 +1,360 @@
+{
+  "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+  "status": "PASS",
+  "passed": 70,
+  "total": 70,
+  "checks": [
+    {
+      "check": "manifest_decision_completed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "normal_stats_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "skill_list_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "normal_freeze_precedes_all_new_metrics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all_fits_before_attack",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "v4_formal_history_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "six_main_rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "v5_normal_statistics_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metrics_finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_all_gates_pass",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_formal_archive_unavailable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_normal_validation_bitwise",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_test_bitwise",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_shared_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_saved_primary_targets",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_saved_endpoint_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_saved_shared_vs_formal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_S1_bound_length",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_S1_finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_S1_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_S1_frozen_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_S2_bound_length",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_S2_finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_S2_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_S2_frozen_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_S3_bound_length",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_S3_finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_S3_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_S3_frozen_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_evaluated_S3_is_saved_shared",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_primary_normal_rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_normal_scales",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_S1_dominance_sum",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_S2_dominance_sum",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_S3_dominance_sum",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_per_target_binding_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_normal_reference_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_all_gates_pass",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_formal_archive_unavailable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_normal_validation_bitwise",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_test_bitwise",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_shared_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_saved_primary_targets",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_saved_endpoint_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_saved_shared_vs_formal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_S1_bound_length",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_S1_finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_S1_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_S1_frozen_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_S2_bound_length",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_S2_finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_S2_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_S2_frozen_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_S3_bound_length",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_S3_finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_S3_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_S3_frozen_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_evaluated_S3_is_saved_shared",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_primary_normal_rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_normal_scales",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_S1_dominance_sum",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_S2_dominance_sum",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_S3_dominance_sum",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_per_target_binding_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_normal_reference_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "controlled_18_rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "controlled_S1_pairwise_equality",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "controlled_2000_pairs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "swat_math_Normal_only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hai_math_Normal_only",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "no_model_execution": true,
+  "no_new_metric_computation": true
+}

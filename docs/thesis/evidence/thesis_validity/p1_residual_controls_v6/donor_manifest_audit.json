@@ -1,0 +1,173 @@
+{
+  "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+  "status": "PASS",
+  "targets": [
+    "AIT202",
+    "FIT201",
+    "DPIT301",
+    "FIT301",
+    "FIT401",
+    "FIT601"
+  ],
+  "total_pairs": 12000,
+  "calibration_interval": [
+    396000,
+    445500
+  ],
+  "calibration_endpoint_start": 396030,
+  "calibration_endpoint_end_exclusive": 445500,
+  "no_cross_target_aggregation": true,
+  "no_new_corruption": true,
+  "attack_data_read": false,
+  "donor_manifest_sha256": "61ff7dda11ede79d6ebaad7a05baeac397c159cf46bae4e5c428d8c258786d6e",
+  "cases": [
+    {
+      "target": "AIT202",
+      "stage": "P2",
+      "sample_count": 2000,
+      "cross_sources": [
+        "AIT201",
+        "AIT203",
+        "FIT201",
+        "MV201",
+        "P203",
+        "P205"
+      ],
+      "target_excluded": true,
+      "pair_hash": "f75ff6d3f7fcac60a11aa4404cf85a8ef0489667428b35876ff401762f7ebaa3",
+      "self_and_target_from_clean": true,
+      "cross_only_from_donor": true,
+      "clean_range": [
+        445563,
+        494999
+      ],
+      "donor_range": [
+        448315,
+        492539
+      ]
+    },
+    {
+      "target": "FIT201",
+      "stage": "P2",
+      "sample_count": 2000,
+      "cross_sources": [
+        "AIT201",
+        "AIT202",
+        "AIT203",
+        "MV201",
+        "P203",
+        "P205"
+      ],
+      "target_excluded": true,
+      "pair_hash": "07c146159cffa308acc113cb4f75631d80dd9413f9871fde07af8b4d6e4d12a3",
+      "self_and_target_from_clean": true,
+      "cross_only_from_donor": true,
+      "clean_range": [
+        445563,
+        494999
+      ],
+      "donor_range": [
+        448315,
+        492539
+      ]
+    },
+    {
+      "target": "DPIT301",
+      "stage": "P3",
+      "sample_count": 2000,
+      "cross_sources": [
+        "FIT301",
+        "LIT301",
+        "MV301",
+        "MV302",
+        "MV303",
+        "MV304",
+        "P301",
+        "P302"
+      ],
+      "target_excluded": true,
+      "pair_hash": "2d4a02203e1613cef6e7ec8265cd64746c00b75119b9733d70c32ba7799c70b5",
+      "self_and_target_from_clean": true,
+      "cross_only_from_donor": true,
+      "clean_range": [
+        445563,
+        494999
+      ],
+      "donor_range": [
+        446403,
+        493864
+      ]
+    },
+    {
+      "target": "FIT301",
+      "stage": "P3",
+      "sample_count": 2000,
+      "cross_sources": [
+        "DPIT301",
+        "LIT301",
+        "MV301",
+        "MV302",
+        "MV303",
+        "MV304",
+        "P301",
+        "P302"
+      ],
+      "target_excluded": true,
+      "pair_hash": "a002b62b732134ab472603e59f8c622054acf8eea6143e4d12f02f1bb5261159",
+      "self_and_target_from_clean": true,
+      "cross_only_from_donor": true,
+      "clean_range": [
+        445563,
+        494999
+      ],
+      "donor_range": [
+        446403,
+        493864
+      ]
+    },
+    {
+      "target": "FIT401",
+      "stage": "P4",
+      "sample_count": 2000,
+      "cross_sources": [
+        "AIT401",
+        "AIT402",
+        "LIT401",
+        "P402",
+        "UV401"
+      ],
+      "target_excluded": true,
+      "pair_hash": "6c0d067c67eb4ae980f0a8107b7489a160127e3a2c5f56ad2025de3436bd19f4",
+      "self_and_target_from_clean": true,
+      "cross_only_from_donor": true,
+      "clean_range": [
+        445563,
+        494999
+      ],
+      "donor_range": [
+        452562,
+        492102
+      ]
+    },
+    {
+      "target": "FIT601",
+      "stage": "P6",
+      "sample_count": 2000,
+      "cross_sources": [
+        "P602"
+      ],
+      "target_excluded": true,
+      "pair_hash": "43ff968c504135aff54e5f98c67f3c890f0871fef1ad5854427775868be30ab6",
+      "self_and_target_from_clean": true,
+      "cross_only_from_donor": true,
+      "clean_range": [
+        445563,
+        494999
+      ],
+      "donor_range": [
+        445563,
+        493864
+      ]
+    }
+  ]
+}

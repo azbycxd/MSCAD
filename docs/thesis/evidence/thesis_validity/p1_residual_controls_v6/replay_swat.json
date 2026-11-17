@@ -1,0 +1,644 @@
+{
+  "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+  "status": "PASS",
+  "target_order": {
+    "status": "PASS",
+    "expected": [
+      "FIT101",
+      "LIT101",
+      "AIT202",
+      "FIT201",
+      "DPIT301",
+      "LIT301",
+      "AIT402",
+      "FIT401",
+      "AIT502",
+      "AIT504",
+      "FIT501",
+      "FIT502",
+      "FIT503",
+      "FIT504",
+      "FIT601"
+    ],
+    "replayed": [
+      "FIT101",
+      "LIT101",
+      "AIT202",
+      "FIT201",
+      "DPIT301",
+      "LIT301",
+      "AIT402",
+      "FIT401",
+      "AIT502",
+      "AIT504",
+      "FIT501",
+      "FIT502",
+      "FIT503",
+      "FIT504",
+      "FIT601"
+    ],
+    "order_equal": true
+  },
+  "threshold": {
+    "status": "PASS",
+    "replayed": 226462.91950212093,
+    "frozen": 226462.91950212093,
+    "max_abs_diff": 0.0,
+    "tolerance": 1e-09
+  },
+  "formal_archive": {
+    "status": "NOT_AVAILABLE",
+    "reason": "No same-path formal runner pointwise archive; E2-R1D reconstruction is diagnostic only",
+    "tolerance_if_present": 1e-09
+  },
+  "endpoints": {
+    "file_id": {
+      "status": "PASS",
+      "max_abs_diff": 0.0,
+      "difference_count": 0,
+      "first_difference": null,
+      "tolerance": 0,
+      "finite": true
+    },
+    "segment_id": {
+      "status": "PASS",
+      "max_abs_diff": 0.0,
+      "difference_count": 0,
+      "first_difference": null,
+      "tolerance": 0,
+      "finite": true
+    },
+    "local_index": {
+      "status": "PASS",
+      "max_abs_diff": 0.0,
+      "difference_count": 0,
+      "first_difference": null,
+      "tolerance": 0,
+      "finite": true
+    },
+    "global_index": {
+      "status": "PASS",
+      "max_abs_diff": 0.0,
+      "difference_count": 0,
+      "first_difference": null,
+      "tolerance": 0,
+      "finite": true
+    },
+    "label": {
+      "status": "PASS",
+      "max_abs_diff": 0.0,
+      "difference_count": 0,
+      "first_difference": null,
+      "tolerance": 0,
+      "finite": true
+    },
+    "valid_endpoint": {
+      "status": "PASS",
+      "max_abs_diff": 0.0,
+      "difference_count": 0,
+      "first_difference": null,
+      "tolerance": 0,
+      "finite": true
+    },
+    "timestamp": {
+      "status": "PASS",
+      "max_abs_diff": 0.0,
+      "difference_count": 0,
+      "first_difference": null,
+      "tolerance": 0,
+      "finite": true
+    }
+  },
+  "determinism": {
+    "normal_validation": {
+      "status": "PASS",
+      "max_abs_diff": 0.0,
+      "difference_count": 0,
+      "first_difference": null,
+      "tolerance": 0,
+      "finite": true,
+      "bitwise_identical": true,
+      "sha256_first": "c762d8f05a68299498189247aae0669d36bc8f30e141d8348f63c10a75596622",
+      "sha256_second": "c762d8f05a68299498189247aae0669d36bc8f30e141d8348f63c10a75596622"
+    },
+    "test": {
+      "status": "PASS",
+      "max_abs_diff": 0.0,
+      "difference_count": 0,
+      "first_difference": null,
+      "tolerance": 0,
+      "finite": true,
+      "bitwise_identical": true,
+      "sha256_first": "2caf425a42551b174ec4efc9b94bc67f32c8d75a89a10a7756689a7c61130a97",
+      "sha256_second": "2caf425a42551b174ec4efc9b94bc67f32c8d75a89a10a7756689a7c61130a97"
+    }
+  },
+  "shared_prediction_source": {
+    "status": "PASS",
+    "tolerance": 1e-09,
+    "normal_references": "unchanged official frozen Normal references",
+    "target_order": [
+      "FIT101",
+      "LIT101",
+      "AIT202",
+      "FIT201",
+      "DPIT301",
+      "LIT301",
+      "AIT402",
+      "FIT401",
+      "AIT502",
+      "AIT504",
+      "FIT501",
+      "FIT502",
+      "FIT503",
+      "FIT504",
+      "FIT601"
+    ],
+    "segments": [
+      {
+        "segment": "0",
+        "raw_disagreement": {
+          "status": "PASS",
+          "max_abs_diff": 0.0,
+          "difference_count": 0,
+          "first_difference": null,
+          "tolerance": 1e-09,
+          "finite": true
+        },
+        "calibrated_disagreement": {
+          "status": "PASS",
+          "max_abs_diff": 0.0,
+          "difference_count": 0,
+          "first_difference": null,
+          "tolerance": 1e-09,
+          "finite": true
+        },
+        "aggregate_disagreement": {
+          "status": "PASS",
+          "max_abs_diff": 0.0,
+          "difference_count": 0,
+          "first_difference": null,
+          "tolerance": 1e-09,
+          "finite": true
+        },
+        "status": "PASS",
+        "per_target": [
+          {
+            "target": "FIT101",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "LIT101",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "AIT202",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "FIT201",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "DPIT301",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "LIT301",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "AIT402",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "FIT401",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "AIT502",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "AIT504",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "FIT501",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "FIT502",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "FIT503",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "FIT504",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "FIT601",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          }
+        ]
+      },
+      {
+        "segment": "1",
+        "raw_disagreement": {
+          "status": "PASS",
+          "max_abs_diff": 0.0,
+          "difference_count": 0,
+          "first_difference": null,
+          "tolerance": 1e-09,
+          "finite": true
+        },
+        "calibrated_disagreement": {
+          "status": "PASS",
+          "max_abs_diff": 0.0,
+          "difference_count": 0,
+          "first_difference": null,
+          "tolerance": 1e-09,
+          "finite": true
+        },
+        "aggregate_disagreement": {
+          "status": "PASS",
+          "max_abs_diff": 0.0,
+          "difference_count": 0,
+          "first_difference": null,
+          "tolerance": 1e-09,
+          "finite": true
+        },
+        "status": "PASS",
+        "per_target": [
+          {
+            "target": "FIT101",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "LIT101",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "AIT202",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "FIT201",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "DPIT301",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "LIT301",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "AIT402",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "FIT401",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "AIT502",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "AIT504",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "FIT501",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "FIT502",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "FIT503",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "FIT504",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          },
+          {
+            "target": "FIT601",
+            "raw_max_abs_diff": 0.0,
+            "calibrated_max_abs_diff": 0.0
+          }
+        ]
+      }
+    ],
+    "raw_disagreement": {
+      "status": "PASS",
+      "max_abs_diff": 0.0,
+      "difference_count": 0,
+      "first_difference": null,
+      "tolerance": 1e-09,
+      "finite": true
+    },
+    "calibrated_disagreement": {
+      "status": "PASS",
+      "max_abs_diff": 0.0,
+      "difference_count": 0,
+      "first_difference": null,
+      "tolerance": 1e-09,
+      "finite": true
+    },
+    "aggregate_disagreement": {
+      "status": "PASS",
+      "max_abs_diff": 0.0,
+      "difference_count": 0,
+      "first_difference": null,
+      "tolerance": 1e-09,
+      "finite": true
+    }
+  },
+  "metrics": {
+    "auroc": {
+      "actual": 0.6756309010005985,
+      "expected": 0.6756309010005985,
+      "pass": true
+    },
+    "aupr": {
+      "actual": 0.16751025188900392,
+      "expected": 0.1675102518890039,
+      "pass": true
+    },
+    "precision": {
+      "actual": 0.08716617210682492,
+      "expected": 0.0871661721068249,
+      "pass": true
+    },
+    "recall": {
+      "actual": 0.008604749089178155,
+      "expected": 0.0086047490891781,
+      "pass": true
+    },
+    "f1": {
+      "actual": 0.015663272957525867,
+      "expected": 0.0156632729575258,
+      "pass": true
+    },
+    "fpr": {
+      "actual": 0.012455335904365693,
+      "expected": 0.0124553359043656,
+      "pass": true
+    }
+  },
+  "events": {
+    "hit_count": 2,
+    "expected_hit_count": 2,
+    "event_count": 36,
+    "expected_event_count": 36,
+    "high_median_hit": null,
+    "expected_high_median_hit": null,
+    "status": "PASS"
+  },
+  "reconstructed_archive_diagnostic": {
+    "status": "DIAGNOSTIC_ONLY_NOT_A_GATE",
+    "archive": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_evaluation\\literature_compatible\\raw_scores\\swat\\ours_dual\\test_raw_scores.npz",
+    "archive_dtype": "float64",
+    "reason": "E2-R1D reconstructed through saved efficiency coefficients and Innovation3B path, not same formal runner path",
+    "absolute_difference": {
+      "max": 0.8635878833010793,
+      "median": 7.542180060937653e-06,
+      "q99": 0.06844684911280674
+    },
+    "relative_difference": {
+      "max": 0.0014071906277882608,
+      "median": 1.7411002470574533e-07,
+      "q99": 4.837552101013059e-06
+    },
+    "relative_denominator": "max(abs(archived_score),1)",
+    "top10": [
+      {
+        "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+        "dataset": "swat",
+        "file_id": "0",
+        "segment_id": "0",
+        "local_index": 162019,
+        "global_index": 162019,
+        "label": 0,
+        "raw_label": 0,
+        "timestamp": 1451458819,
+        "valid_endpoint": true,
+        "valid_mask": true,
+        "source_hash": "0616f1a8d7e066d336a245355fb53386e4be9bbedffc5cfc4622baffbcae23c7",
+        "archive_position": 161956,
+        "formal_S3": 3208525.8428433114,
+        "reconstructed_S3": 3208526.7064311947,
+        "absolute_difference": 0.8635878833010793,
+        "relative_difference": 2.691540268529158e-07
+      },
+      {
+        "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+        "dataset": "swat",
+        "file_id": "0",
+        "segment_id": "0",
+        "local_index": 12079,
+        "global_index": 12079,
+        "label": 1,
+        "raw_label": 1,
+        "timestamp": 1451308879,
+        "valid_endpoint": true,
+        "valid_mask": true,
+        "source_hash": "0616f1a8d7e066d336a245355fb53386e4be9bbedffc5cfc4622baffbcae23c7",
+        "archive_position": 12016,
+        "formal_S3": 4878516.719007932,
+        "reconstructed_S3": 4878517.579086968,
+        "absolute_difference": 0.8600790360942483,
+        "relative_difference": 1.7629925938592501e-07
+      },
+      {
+        "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+        "dataset": "swat",
+        "file_id": "1",
+        "segment_id": "1",
+        "local_index": 73020,
+        "global_index": 371857,
+        "label": 1,
+        "raw_label": 1,
+        "timestamp": 1451668738,
+        "valid_endpoint": true,
+        "valid_mask": true,
+        "source_hash": "0616f1a8d7e066d336a245355fb53386e4be9bbedffc5cfc4622baffbcae23c7",
+        "archive_position": 371731,
+        "formal_S3": 293119.6695260923,
+        "reconstructed_S3": 293118.81830448535,
+        "absolute_difference": 0.8512216069502756,
+        "relative_difference": 2.904015552034757e-06
+      },
+      {
+        "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+        "dataset": "swat",
+        "file_id": "0",
+        "segment_id": "0",
+        "local_index": 271346,
+        "global_index": 271346,
+        "label": 0,
+        "raw_label": 0,
+        "timestamp": 1451568146,
+        "valid_endpoint": true,
+        "valid_mask": true,
+        "source_hash": "0616f1a8d7e066d336a245355fb53386e4be9bbedffc5cfc4622baffbcae23c7",
+        "archive_position": 271283,
+        "formal_S3": 92490.25615751809,
+        "reconstructed_S3": 92491.09251528692,
+        "absolute_difference": 0.8363577688287478,
+        "relative_difference": 9.042576383131323e-06
+      },
+      {
+        "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+        "dataset": "swat",
+        "file_id": "1",
+        "segment_id": "1",
+        "local_index": 135702,
+        "global_index": 434539,
+        "label": 0,
+        "raw_label": 0,
+        "timestamp": 1451731420,
+        "valid_endpoint": true,
+        "valid_mask": true,
+        "source_hash": "0616f1a8d7e066d336a245355fb53386e4be9bbedffc5cfc4622baffbcae23c7",
+        "archive_position": 434413,
+        "formal_S3": 204740.54947629134,
+        "reconstructed_S3": 204741.3819994582,
+        "absolute_difference": 0.832523166842293,
+        "relative_difference": 4.066218361486376e-06
+      },
+      {
+        "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+        "dataset": "swat",
+        "file_id": "1",
+        "segment_id": "1",
+        "local_index": 127901,
+        "global_index": 426738,
+        "label": 0,
+        "raw_label": 0,
+        "timestamp": 1451723619,
+        "valid_endpoint": true,
+        "valid_mask": true,
+        "source_hash": "0616f1a8d7e066d336a245355fb53386e4be9bbedffc5cfc4622baffbcae23c7",
+        "archive_position": 426612,
+        "formal_S3": 474789.7398991104,
+        "reconstructed_S3": 474790.56171776087,
+        "absolute_difference": 0.8218186504673213,
+        "relative_difference": 1.7309077238057045e-06
+      },
+      {
+        "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+        "dataset": "swat",
+        "file_id": "1",
+        "segment_id": "1",
+        "local_index": 74916,
+        "global_index": 373753,
+        "label": 0,
+        "raw_label": 0,
+        "timestamp": 1451670634,
+        "valid_endpoint": true,
+        "valid_mask": true,
+        "source_hash": "0616f1a8d7e066d336a245355fb53386e4be9bbedffc5cfc4622baffbcae23c7",
+        "archive_position": 373627,
+        "formal_S3": 145986.29090353305,
+        "reconstructed_S3": 145987.11125889892,
+        "absolute_difference": 0.8203553658677265,
+        "relative_difference": 5.619368441456986e-06
+      },
+      {
+        "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+        "dataset": "swat",
+        "file_id": "1",
+        "segment_id": "1",
+        "local_index": 140628,
+        "global_index": 439465,
+        "label": 0,
+        "raw_label": 0,
+        "timestamp": 1451736346,
+        "valid_endpoint": true,
+        "valid_mask": true,
+        "source_hash": "0616f1a8d7e066d336a245355fb53386e4be9bbedffc5cfc4622baffbcae23c7",
+        "archive_position": 439339,
+        "formal_S3": 132653.15263377715,
+        "reconstructed_S3": 132653.97289467813,
+        "absolute_difference": 0.8202609009749722,
+        "relative_difference": 6.183462757095304e-06
+      },
+      {
+        "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+        "dataset": "swat",
+        "file_id": "1",
+        "segment_id": "1",
+        "local_index": 59101,
+        "global_index": 357938,
+        "label": 0,
+        "raw_label": 0,
+        "timestamp": 1451654819,
+        "valid_endpoint": true,
+        "valid_mask": true,
+        "source_hash": "0616f1a8d7e066d336a245355fb53386e4be9bbedffc5cfc4622baffbcae23c7",
+        "archive_position": 357812,
+        "formal_S3": 2628067.019809876,
+        "reconstructed_S3": 2628067.8389001857,
+        "absolute_difference": 0.8190903095528483,
+        "relative_difference": 3.116701545632961e-07
+      },
+      {
+        "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+        "dataset": "swat",
+        "file_id": "0",
+        "segment_id": "0",
+        "local_index": 32578,
+        "global_index": 32578,
+        "label": 0,
+        "raw_label": 0,
+        "timestamp": 1451329378,
+        "valid_endpoint": true,
+        "valid_mask": true,
+        "source_hash": "0616f1a8d7e066d336a245355fb53386e4be9bbedffc5cfc4622baffbcae23c7",
+        "archive_position": 32515,
+        "formal_S3": 285240.861305848,
+        "reconstructed_S3": 285240.0463425334,
+        "absolute_difference": 0.8149633146240376,
+        "relative_difference": 2.8571139469153666e-06
+      }
+    ]
+  }
+}

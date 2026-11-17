@@ -1,0 +1,1592 @@
+{
+  "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+  "status": "PASS",
+  "tolerance": 1e-09,
+  "normal_references": "unchanged official frozen Normal references",
+  "target_order": [
+    "P1_B2004",
+    "P1_B2016",
+    "P1_B3004",
+    "P1_B3005",
+    "P1_B4002",
+    "P1_B4005",
+    "P1_B400B",
+    "P1_B4022",
+    "P1_FCV01D",
+    "P1_FCV01Z",
+    "P1_FCV02D",
+    "P1_FCV02Z",
+    "P1_FCV03D",
+    "P1_FCV03Z",
+    "P1_FT01",
+    "P1_FT01Z",
+    "P1_FT02",
+    "P1_FT02Z",
+    "P1_FT03",
+    "P1_FT03Z",
+    "P1_LCV01D",
+    "P1_LCV01Z",
+    "P1_LIT01",
+    "P1_PCV01D",
+    "P1_PCV01Z",
+    "P1_PIT01",
+    "P1_PIT02",
+    "P1_TIT01",
+    "P1_TIT02",
+    "P2_24Vdc",
+    "P2_CO_rpm",
+    "P2_HILout",
+    "P2_SIT01",
+    "P2_SIT02",
+    "P2_VT01",
+    "P2_VXT02",
+    "P2_VXT03",
+    "P2_VYT02",
+    "P2_VYT03",
+    "P3_FIT01",
+    "P3_LCP01D",
+    "P3_LCV01D",
+    "P3_LIT01",
+    "P3_PIT01",
+    "P4_HT_FD",
+    "P4_HT_LD",
+    "P4_HT_PO",
+    "P4_LD",
+    "P4_ST_FD",
+    "P4_ST_GOV",
+    "P4_ST_LD",
+    "P4_ST_PO",
+    "P4_ST_PT01",
+    "P4_ST_TT01"
+  ],
+  "segments": [
+    {
+      "segment": "test1.csv.gz",
+      "raw_disagreement": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null,
+        "tolerance": 1e-09,
+        "finite": true
+      },
+      "calibrated_disagreement": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null,
+        "tolerance": 1e-09,
+        "finite": true
+      },
+      "aggregate_disagreement": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null,
+        "tolerance": 1e-09,
+        "finite": true
+      },
+      "status": "PASS",
+      "per_target": [
+        {
+          "target": "P1_B2004",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B2016",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B3004",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B3005",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B4002",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B4005",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B400B",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B4022",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV01Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV02D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV02Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV03D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV03Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT01Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT02Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT03",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT03Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_LCV01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_LCV01Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_LIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_PCV01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_PCV01Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_PIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_PIT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_TIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_TIT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_24Vdc",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_CO_rpm",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_HILout",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_SIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_SIT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VXT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VXT03",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VYT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VYT03",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_FIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_LCP01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_LCV01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_LIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_PIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_HT_FD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_HT_LD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_HT_PO",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_LD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_FD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_GOV",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_LD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_PO",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_PT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_TT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        }
+      ]
+    },
+    {
+      "segment": "test2.csv.gz",
+      "raw_disagreement": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null,
+        "tolerance": 1e-09,
+        "finite": true
+      },
+      "calibrated_disagreement": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null,
+        "tolerance": 1e-09,
+        "finite": true
+      },
+      "aggregate_disagreement": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null,
+        "tolerance": 1e-09,
+        "finite": true
+      },
+      "status": "PASS",
+      "per_target": [
+        {
+          "target": "P1_B2004",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B2016",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B3004",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B3005",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B4002",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B4005",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B400B",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B4022",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV01Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV02D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV02Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV03D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV03Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT01Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT02Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT03",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT03Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_LCV01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_LCV01Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_LIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_PCV01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_PCV01Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_PIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_PIT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_TIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_TIT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_24Vdc",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_CO_rpm",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_HILout",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_SIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_SIT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VXT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VXT03",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VYT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VYT03",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_FIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_LCP01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_LCV01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_LIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_PIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_HT_FD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_HT_LD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_HT_PO",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_LD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_FD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_GOV",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_LD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_PO",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_PT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_TT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        }
+      ]
+    },
+    {
+      "segment": "test3.csv.gz",
+      "raw_disagreement": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null,
+        "tolerance": 1e-09,
+        "finite": true
+      },
+      "calibrated_disagreement": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null,
+        "tolerance": 1e-09,
+        "finite": true
+      },
+      "aggregate_disagreement": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null,
+        "tolerance": 1e-09,
+        "finite": true
+      },
+      "status": "PASS",
+      "per_target": [
+        {
+          "target": "P1_B2004",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B2016",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B3004",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B3005",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B4002",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B4005",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B400B",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B4022",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV01Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV02D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV02Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV03D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV03Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT01Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT02Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT03",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT03Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_LCV01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_LCV01Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_LIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_PCV01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_PCV01Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_PIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_PIT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_TIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_TIT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_24Vdc",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_CO_rpm",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_HILout",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_SIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_SIT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VXT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VXT03",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VYT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VYT03",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_FIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_LCP01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_LCV01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_LIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_PIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_HT_FD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_HT_LD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_HT_PO",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_LD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_FD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_GOV",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_LD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_PO",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_PT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_TT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        }
+      ]
+    },
+    {
+      "segment": "test4.csv.gz",
+      "raw_disagreement": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null,
+        "tolerance": 1e-09,
+        "finite": true
+      },
+      "calibrated_disagreement": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null,
+        "tolerance": 1e-09,
+        "finite": true
+      },
+      "aggregate_disagreement": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null,
+        "tolerance": 1e-09,
+        "finite": true
+      },
+      "status": "PASS",
+      "per_target": [
+        {
+          "target": "P1_B2004",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B2016",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B3004",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B3005",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B4002",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B4005",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B400B",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B4022",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV01Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV02D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV02Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV03D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV03Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT01Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT02Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT03",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT03Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_LCV01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_LCV01Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_LIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_PCV01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_PCV01Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_PIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_PIT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_TIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_TIT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_24Vdc",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_CO_rpm",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_HILout",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_SIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_SIT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VXT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VXT03",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VYT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VYT03",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_FIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_LCP01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_LCV01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_LIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_PIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_HT_FD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_HT_LD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_HT_PO",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_LD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_FD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_GOV",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_LD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_PO",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_PT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_TT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        }
+      ]
+    },
+    {
+      "segment": "test5.csv.gz",
+      "raw_disagreement": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null,
+        "tolerance": 1e-09,
+        "finite": true
+      },
+      "calibrated_disagreement": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null,
+        "tolerance": 1e-09,
+        "finite": true
+      },
+      "aggregate_disagreement": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null,
+        "tolerance": 1e-09,
+        "finite": true
+      },
+      "status": "PASS",
+      "per_target": [
+        {
+          "target": "P1_B2004",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B2016",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B3004",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B3005",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B4002",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B4005",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B400B",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_B4022",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV01Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV02D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV02Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV03D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FCV03Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT01Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT02Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT03",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_FT03Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_LCV01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_LCV01Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_LIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_PCV01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_PCV01Z",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_PIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_PIT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_TIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P1_TIT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_24Vdc",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_CO_rpm",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_HILout",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_SIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_SIT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VXT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VXT03",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VYT02",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P2_VYT03",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_FIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_LCP01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_LCV01D",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_LIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P3_PIT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_HT_FD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_HT_LD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_HT_PO",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_LD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_FD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_GOV",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_LD",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_PO",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_PT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "P4_ST_TT01",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        }
+      ]
+    }
+  ],
+  "raw_disagreement": {
+    "status": "PASS",
+    "max_abs_diff": 0.0,
+    "difference_count": 0,
+    "first_difference": null,
+    "tolerance": 1e-09,
+    "finite": true
+  },
+  "calibrated_disagreement": {
+    "status": "PASS",
+    "max_abs_diff": 0.0,
+    "difference_count": 0,
+    "first_difference": null,
+    "tolerance": 1e-09,
+    "finite": true
+  },
+  "aggregate_disagreement": {
+    "status": "PASS",
+    "max_abs_diff": 0.0,
+    "difference_count": 0,
+    "first_difference": null,
+    "tolerance": 1e-09,
+    "finite": true
+  },
+  "prediction_archive": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v6\\shared_predictions_hai.npz",
+  "prediction_archive_sha256": "59c0191f2670f8b0408b84e45ed276807a0dbb4e0ebd8a9aa67c0c9732f4b674",
+  "saved_all_candidate_targets": 56,
+  "saved_primary_targets": 54
+}

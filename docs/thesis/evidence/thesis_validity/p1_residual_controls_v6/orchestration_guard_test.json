@@ -1,0 +1,9 @@
+{
+  "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+  "status": "PASS",
+  "test": "Failed first gate prevents second dataset invocation",
+  "visited_mock_datasets": [
+    "swat"
+  ],
+  "real_data_read": false
+}

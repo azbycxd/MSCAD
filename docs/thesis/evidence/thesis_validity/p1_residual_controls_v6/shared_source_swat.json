@@ -1,0 +1,263 @@
+{
+  "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+  "status": "PASS",
+  "tolerance": 1e-09,
+  "normal_references": "unchanged official frozen Normal references",
+  "target_order": [
+    "FIT101",
+    "LIT101",
+    "AIT202",
+    "FIT201",
+    "DPIT301",
+    "LIT301",
+    "AIT402",
+    "FIT401",
+    "AIT502",
+    "AIT504",
+    "FIT501",
+    "FIT502",
+    "FIT503",
+    "FIT504",
+    "FIT601"
+  ],
+  "segments": [
+    {
+      "segment": "0",
+      "raw_disagreement": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null,
+        "tolerance": 1e-09,
+        "finite": true
+      },
+      "calibrated_disagreement": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null,
+        "tolerance": 1e-09,
+        "finite": true
+      },
+      "aggregate_disagreement": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null,
+        "tolerance": 1e-09,
+        "finite": true
+      },
+      "status": "PASS",
+      "per_target": [
+        {
+          "target": "FIT101",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "LIT101",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "AIT202",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "FIT201",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "DPIT301",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "LIT301",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "AIT402",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "FIT401",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "AIT502",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "AIT504",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "FIT501",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "FIT502",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "FIT503",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "FIT504",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "FIT601",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        }
+      ]
+    },
+    {
+      "segment": "1",
+      "raw_disagreement": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null,
+        "tolerance": 1e-09,
+        "finite": true
+      },
+      "calibrated_disagreement": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null,
+        "tolerance": 1e-09,
+        "finite": true
+      },
+      "aggregate_disagreement": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null,
+        "tolerance": 1e-09,
+        "finite": true
+      },
+      "status": "PASS",
+      "per_target": [
+        {
+          "target": "FIT101",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "LIT101",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "AIT202",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "FIT201",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "DPIT301",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "LIT301",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "AIT402",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "FIT401",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "AIT502",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "AIT504",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "FIT501",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "FIT502",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "FIT503",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "FIT504",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        },
+        {
+          "target": "FIT601",
+          "raw_max_abs_diff": 0.0,
+          "calibrated_max_abs_diff": 0.0
+        }
+      ]
+    }
+  ],
+  "raw_disagreement": {
+    "status": "PASS",
+    "max_abs_diff": 0.0,
+    "difference_count": 0,
+    "first_difference": null,
+    "tolerance": 1e-09,
+    "finite": true
+  },
+  "calibrated_disagreement": {
+    "status": "PASS",
+    "max_abs_diff": 0.0,
+    "difference_count": 0,
+    "first_difference": null,
+    "tolerance": 1e-09,
+    "finite": true
+  },
+  "aggregate_disagreement": {
+    "status": "PASS",
+    "max_abs_diff": 0.0,
+    "difference_count": 0,
+    "first_difference": null,
+    "tolerance": 1e-09,
+    "finite": true
+  },
+  "prediction_archive": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_validity\\p1_residual_controls_v6\\shared_predictions_swat.npz",
+  "prediction_archive_sha256": "e32efa1ece7508009af4093910a44a51584c87b348d67faac1c83b652f1a297b",
+  "saved_all_candidate_targets": 25,
+  "saved_primary_targets": 15
+}

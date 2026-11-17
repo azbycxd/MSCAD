@@ -1,0 +1,52 @@
+{
+  "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+  "status": "VALIDITY_P1_COMPLETED",
+  "descriptive_label": "R-EQ",
+  "delta_HAI": 0.014652356734228045,
+  "delta_CTRL": -0.000492000000000159,
+  "H_kappa": {
+    "swat": {
+      "status": "TESTABLE",
+      "positive_count": 3,
+      "nonpositive_count": 12,
+      "positive_group_S3_gt_S2_fraction": 0.3333333333333333,
+      "nonpositive_group_S3_gt_S2_fraction": 0.5,
+      "trend_present": false,
+      "interpretation": "descriptive association only; no causality or guaranteed ranking performance"
+    },
+    "hai": {
+      "status": "TESTABLE",
+      "positive_count": 18,
+      "nonpositive_count": 36,
+      "positive_group_S3_gt_S2_fraction": 0.7777777777777778,
+      "nonpositive_group_S3_gt_S2_fraction": 0.4722222222222222,
+      "trend_present": true,
+      "interpretation": "descriptive association only; no causality or guaranteed ranking performance"
+    }
+  },
+  "event_differences": {
+    "swat": {
+      "S3_greater_than_S2": 5,
+      "S3_less_than_S2": 3,
+      "equal": 28
+    },
+    "hai": {
+      "S3_greater_than_S2": 33,
+      "S3_less_than_S2": 4,
+      "equal": 13
+    }
+  },
+  "target_differences": {
+    "swat": {
+      "S3_greater_than_S2": 7,
+      "S3_less_than_S2": 8,
+      "equal": 0
+    },
+    "hai": {
+      "S3_greater_than_S2": 31,
+      "S3_less_than_S2": 23,
+      "equal": 0
+    }
+  },
+  "interpretation": "Pre-specified descriptive label only; no innovation/novelty conclusion"
+}

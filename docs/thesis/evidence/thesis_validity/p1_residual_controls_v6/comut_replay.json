@@ -1,0 +1,267 @@
+{
+  "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+  "status": "COMPLETED",
+  "replay": [
+    {
+      "case_name": "rmj-2-short-anomalies-on-2-different-channel",
+      "passed": true,
+      "checks": {
+        "auroc": true,
+        "aupr": true,
+        "precision_q99": true,
+        "recall_q99": true,
+        "f1_q99": true,
+        "fpr_q99": true
+      },
+      "differences": {
+        "auroc": 1.1102230246251565e-16,
+        "aupr": 0.0,
+        "precision_q99": 5.551115123125783e-17,
+        "recall_q99": 0.0,
+        "f1_q99": 0.0,
+        "fpr_q99": 4.85722573273506e-17
+      }
+    },
+    {
+      "case_name": "rmj-2-short-anomalies-on-2-same-channel",
+      "passed": true,
+      "checks": {
+        "auroc": true,
+        "aupr": true,
+        "precision_q99": true,
+        "recall_q99": true,
+        "f1_q99": true,
+        "fpr_q99": true
+      },
+      "differences": {
+        "auroc": 0.0,
+        "aupr": 0.0,
+        "precision_q99": 0.0,
+        "recall_q99": 0.0,
+        "f1_q99": 0.0,
+        "fpr_q99": 7.632783294297951e-17
+      }
+    },
+    {
+      "case_name": "rmj-3-short-anomalies-on-3-different-channel",
+      "passed": true,
+      "checks": {
+        "auroc": true,
+        "aupr": true,
+        "precision_q99": true,
+        "recall_q99": true,
+        "f1_q99": true,
+        "fpr_q99": true
+      },
+      "differences": {
+        "auroc": 1.1102230246251565e-16,
+        "aupr": 0.0,
+        "precision_q99": 0.0,
+        "recall_q99": 0.0,
+        "f1_q99": 0.0,
+        "fpr_q99": 5.898059818321144e-17
+      }
+    },
+    {
+      "case_name": "rmj-3-short-anomalies-on-3-same-channel",
+      "passed": true,
+      "checks": {
+        "auroc": true,
+        "aupr": true,
+        "precision_q99": true,
+        "recall_q99": true,
+        "f1_q99": true,
+        "fpr_q99": true
+      },
+      "differences": {
+        "auroc": 1.1102230246251565e-16,
+        "aupr": 0.0,
+        "precision_q99": 0.0,
+        "recall_q99": 0.0,
+        "f1_q99": 0.0,
+        "fpr_q99": 8.673617379884035e-18
+      }
+    },
+    {
+      "case_name": "rmj-large-mode-correlation-on-2",
+      "passed": true,
+      "checks": {
+        "auroc": true,
+        "aupr": true,
+        "precision_q99": true,
+        "recall_q99": true,
+        "f1_q99": true,
+        "fpr_q99": true
+      },
+      "differences": {
+        "auroc": -1.1102230246251565e-16,
+        "aupr": 1.1102230246251565e-16,
+        "precision_q99": 0.0,
+        "recall_q99": 0.0,
+        "f1_q99": 0.0,
+        "fpr_q99": 2.0816681711721685e-17
+      }
+    },
+    {
+      "case_name": "rmj-large-mode-correlation-on-3",
+      "passed": true,
+      "checks": {
+        "auroc": true,
+        "aupr": true,
+        "precision_q99": true,
+        "recall_q99": true,
+        "f1_q99": true,
+        "fpr_q99": true
+      },
+      "differences": {
+        "auroc": 1.1102230246251565e-16,
+        "aupr": 0.0,
+        "precision_q99": 0.0,
+        "recall_q99": 0.0,
+        "f1_q99": 0.0,
+        "fpr_q99": 1.734723475976807e-17
+      }
+    },
+    {
+      "case_name": "rmj-large-mode-correlation-on-4",
+      "passed": true,
+      "checks": {
+        "auroc": true,
+        "aupr": true,
+        "precision_q99": true,
+        "recall_q99": true,
+        "f1_q99": true,
+        "fpr_q99": true
+      },
+      "differences": {
+        "auroc": 0.0,
+        "aupr": 0.0,
+        "precision_q99": 0.0,
+        "recall_q99": 0.0,
+        "f1_q99": 0.0,
+        "fpr_q99": 2.2551405187698492e-17
+      }
+    },
+    {
+      "case_name": "rmj-medium-mode-correlation-on-2",
+      "passed": true,
+      "checks": {
+        "auroc": true,
+        "aupr": true,
+        "precision_q99": true,
+        "recall_q99": true,
+        "f1_q99": true,
+        "fpr_q99": true
+      },
+      "differences": {
+        "auroc": -1.1102230246251565e-16,
+        "aupr": 0.0,
+        "precision_q99": 5.551115123125783e-17,
+        "recall_q99": 0.0,
+        "f1_q99": 0.0,
+        "fpr_q99": 9.020562075079397e-17
+      }
+    },
+    {
+      "case_name": "rmj-medium-mode-correlation-on-3",
+      "passed": true,
+      "checks": {
+        "auroc": true,
+        "aupr": true,
+        "precision_q99": true,
+        "recall_q99": true,
+        "f1_q99": true,
+        "fpr_q99": true
+      },
+      "differences": {
+        "auroc": -1.1102230246251565e-16,
+        "aupr": 0.0,
+        "precision_q99": 0.0,
+        "recall_q99": 0.0,
+        "f1_q99": 0.0,
+        "fpr_q99": 2.2551405187698492e-17
+      }
+    },
+    {
+      "case_name": "rmj-medium-mode-correlation-on-4",
+      "passed": true,
+      "checks": {
+        "auroc": true,
+        "aupr": true,
+        "precision_q99": true,
+        "recall_q99": true,
+        "f1_q99": true,
+        "fpr_q99": true
+      },
+      "differences": {
+        "auroc": 0.0,
+        "aupr": 0.0,
+        "precision_q99": 5.551115123125783e-17,
+        "recall_q99": 0.0,
+        "f1_q99": 4.163336342344337e-17,
+        "fpr_q99": 1.734723475976807e-17
+      }
+    },
+    {
+      "case_name": "rmj-short-mode-correlation-on-2",
+      "passed": true,
+      "checks": {
+        "auroc": true,
+        "aupr": true,
+        "precision_q99": true,
+        "recall_q99": true,
+        "f1_q99": true,
+        "fpr_q99": true
+      },
+      "differences": {
+        "auroc": -1.1102230246251565e-16,
+        "aupr": 0.0,
+        "precision_q99": 0.0,
+        "recall_q99": 0.0,
+        "f1_q99": 0.0,
+        "fpr_q99": 3.642919299551295e-17
+      }
+    },
+    {
+      "case_name": "rmj-short-mode-correlation-on-3",
+      "passed": true,
+      "checks": {
+        "auroc": true,
+        "aupr": true,
+        "precision_q99": true,
+        "recall_q99": true,
+        "f1_q99": true,
+        "fpr_q99": true
+      },
+      "differences": {
+        "auroc": 0.0,
+        "aupr": 0.0,
+        "precision_q99": 5.551115123125783e-17,
+        "recall_q99": 0.0,
+        "f1_q99": 0.0,
+        "fpr_q99": 8.500145032286355e-17
+      }
+    },
+    {
+      "case_name": "rmj-short-mode-correlation-on-4",
+      "passed": true,
+      "checks": {
+        "auroc": true,
+        "aupr": true,
+        "precision_q99": true,
+        "recall_q99": true,
+        "f1_q99": true,
+        "fpr_q99": true
+      },
+      "differences": {
+        "auroc": 1.1102230246251565e-16,
+        "aupr": 5.551115123125783e-17,
+        "precision_q99": 0.0,
+        "recall_q99": 0.0,
+        "f1_q99": 5.551115123125783e-17,
+        "fpr_q99": 7.28583859910259e-17
+      }
+    }
+  ],
+  "normal_stats_sha256": "1abb4803dd2905f288d94a19b55473c9830248cb11e6fe7f71c8bf1f6153d55b"
+}
