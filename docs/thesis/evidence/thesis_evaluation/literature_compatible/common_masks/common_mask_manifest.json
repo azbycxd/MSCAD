@@ -1,0 +1,77 @@
+{
+  "policy": "E2_COMMON_MASK",
+  "join_policy": "exact identity intersection; never array-length trimming",
+  "datasets": {
+    "SWaT": {
+      "dataset": "Official SWaT 2015 Physical",
+      "n_total_candidate": 449793,
+      "n_common": 449791,
+      "per_method_n": {
+        "LSTM-AE": 449791,
+        "USAD": 449791,
+        "GDN": 449791,
+        "Ours-REC": 449793,
+        "Ours-DUAL": 449793,
+        "Ours-TAIL": 449793
+      },
+      "excluded_from_method_to_common": {
+        "LSTM-AE": 0,
+        "USAD": 0,
+        "GDN": 0,
+        "Ours-REC": 2,
+        "Ours-DUAL": 2,
+        "Ours-TAIL": 2
+      },
+      "segment_counts": {
+        "0": 298773,
+        "1": 151018
+      },
+      "join_keys": [
+        "dataset",
+        "segment_id",
+        "local_index",
+        "global_index",
+        "timestamp"
+      ],
+      "path": "outputs/thesis_evaluation/literature_compatible/common_masks/swat_common_mask.npz",
+      "sha256": "4c0d20a967c67caae58384b6b13b2d78312e2c351c6c48d13de722136bf9e0b1"
+    },
+    "HAI21": {
+      "dataset": "HAI 21.03",
+      "n_total_candidate": 401690,
+      "n_common": 401685,
+      "per_method_n": {
+        "LSTM-AE": 401685,
+        "USAD": 401685,
+        "GDN": 401685,
+        "Ours-REC": 401690,
+        "Ours-DUAL": 401690,
+        "Ours-TAIL": 401690
+      },
+      "excluded_from_method_to_common": {
+        "LSTM-AE": 0,
+        "USAD": 0,
+        "GDN": 0,
+        "Ours-REC": 5,
+        "Ours-DUAL": 5,
+        "Ours-TAIL": 5
+      },
+      "file_counts": {
+        "test1.csv.gz": 43137,
+        "test2.csv.gz": 118737,
+        "test3.csv.gz": 107937,
+        "test4.csv.gz": 39537,
+        "test5.csv.gz": 92337
+      },
+      "join_keys": [
+        "dataset",
+        "official_test_file",
+        "local_index",
+        "global_index",
+        "timestamp"
+      ],
+      "path": "outputs/thesis_evaluation/literature_compatible/common_masks/hai_common_mask.npz",
+      "sha256": "5f066250841ec5e79d51d49b841cc45dfaf626a8b77720d408e365862563ddb7"
+    }
+  }
+}

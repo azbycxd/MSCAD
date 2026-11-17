@@ -1,0 +1,77 @@
+{
+  "experiment": "Thesis Midterm Sprint S1",
+  "status": "PRELIMINARY_OFFICIAL_SWAT2015",
+  "seed": 1,
+  "device": "cuda",
+  "paths": {
+    "official_root": "dataset/Swat_2015",
+    "t2_audit_json": "outputs/thesis_t2_swat2015_audit/schema_profile.json",
+    "t25_point_policy": "outputs/thesis_t25_swat2015_protocol/point_label_policy.json",
+    "t25_segment_manifest": "outputs/thesis_t25_swat2015_protocol/segment_manifest.json",
+    "cache_dir": "outputs/thesis_midterm_s1/cache",
+    "a0_output": "outputs/thesis_midterm_s1/a0_rec_baseline",
+    "v3a_output": "outputs/thesis_midterm_s1/v3a_incremental_gate_float64"
+  },
+  "data": {
+    "dataset": "SWaT 2015 official Physical",
+    "normal_file": "Physical/SWaT_Dataset_Normal_v1.xlsx",
+    "normal_raw_rows": 495000,
+    "attack_file": "Physical/SWaT_Dataset_Attack_v0.xlsx",
+    "input_channels": 51,
+    "train_raw_rows": 396000,
+    "validation_raw_rows": 99000,
+    "split": "ordered_raw_rows_80_20",
+    "window": 64,
+    "stride": 1,
+    "window_alignment": "endpoint",
+    "gap_policy": "hard_session_boundary",
+    "cross_split_windows": false,
+    "cross_gap_windows": false,
+    "startup_trim_after_official_v1": false,
+    "point_label_mapping": {
+      "Normal": 0,
+      "Attack": 1,
+      "A ttack": 1
+    },
+    "unknown_label_policy": "hard_error"
+  },
+  "scaler": {
+    "class": "data.transforms.StandardScaler",
+    "fit_scope": "first_396000_normal_v1_raw_rows_only",
+    "zero_variance_scale": 1.0
+  },
+  "model": {
+    "class": "models.backbone_ae.BackboneAE",
+    "in_channels": 51,
+    "hidden_channels": 64,
+    "latent_channels": 32,
+    "dropout": 0.1
+  },
+  "training": {
+    "loss": "SmoothL1Loss",
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 256,
+    "max_epochs": 15,
+    "early_stopping_patience": 4,
+    "checkpoint_selection": "minimum_validation_reconstruction_loss"
+  },
+  "scoring": {
+    "primary": "endpoint_mae",
+    "secondary": "full_window_mae",
+    "threshold_source": "normal_validation_q99",
+    "threshold_quantile": 0.99,
+    "threshold_comparator": ">",
+    "point_adjustment": false
+  },
+  "v3a": {
+    "scope": "train_and_validation_normal_only",
+    "lags": [1, 5, 10, 20, 30],
+    "alpha": 1.0,
+    "full_feature_count": 255,
+    "numerical_floor": 1e-8,
+    "incremental_gain_threshold": 0.10,
+    "minimum_promising_targets": 3
+  }
+}

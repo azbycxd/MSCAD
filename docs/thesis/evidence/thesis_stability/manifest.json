@@ -1,0 +1,118 @@
+{
+  "phase": "Thesis Stability-STAB-P1",
+  "status": "THESIS_MULTI_SEED_STABILITY_COMPLETED",
+  "elapsed_seconds": 598.2008185000159,
+  "post_completion_validation_refresh_seconds": 82.05037870001979,
+  "seed_manifest_sha256": "97c21a6505f3d437e07752ed952b5b019fc5102533b718213ea6fd99e079c2e6",
+  "formal_metric_deltas": {
+    "SWaT_REC": {
+      "auroc": 0.0,
+      "aupr": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0
+    },
+    "SWaT_TAIL": {
+      "auroc": 0.0,
+      "aupr": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0
+    },
+    "HAI21_REC": {
+      "auroc": 0.0,
+      "aupr": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0
+    },
+    "HAI21_TAIL": {
+      "auroc": 0.0,
+      "aupr": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.0
+    }
+  },
+  "formal_hashes_before": {
+    "swat_checkpoint": "1f52c3eb5fb50f314d99780e2945c4a93a685b9cc9de4c880d1f245b2d5c08a0",
+    "swat_scaler": "b90abe2421d2632d13a0848ba2a93ee0a2b850d3b364f8077ceb2eb45766f239",
+    "swat_metrics": "781e35d3cfabc8c2ac3b10bbc48b2096b2a764a8bd7f2996ecad74c5aa776765",
+    "hai_checkpoint": "17625f51a6098845956623ced3ddad6fe6fed462544ed91b274430d278fbf30d",
+    "hai_metrics": "52e7d82c38d8fcbf23c623bebf4779852399a8167e7aac51d3c2a99fa3f10bfb",
+    "tail_metrics": "bae766bcd80a014bbf78b79a4d8c98056c4beb0d2f8a7c862c19a047717930b5"
+  },
+  "formal_hashes_after": {
+    "swat_checkpoint": "1f52c3eb5fb50f314d99780e2945c4a93a685b9cc9de4c880d1f245b2d5c08a0",
+    "swat_scaler": "b90abe2421d2632d13a0848ba2a93ee0a2b850d3b364f8077ceb2eb45766f239",
+    "swat_metrics": "781e35d3cfabc8c2ac3b10bbc48b2096b2a764a8bd7f2996ecad74c5aa776765",
+    "hai_checkpoint": "17625f51a6098845956623ced3ddad6fe6fed462544ed91b274430d278fbf30d",
+    "hai_metrics": "52e7d82c38d8fcbf23c623bebf4779852399a8167e7aac51d3c2a99fa3f10bfb",
+    "tail_metrics": "bae766bcd80a014bbf78b79a4d8c98056c4beb0d2f8a7c862c19a047717930b5"
+  },
+  "dual_hashes_before": {
+    "SWaT": {
+      "coefficients": "e98162c30d5a1bb80aaca1f12d9f8c3e21480b9f3324f3422f4a41877154159a",
+      "tail": "3798b59da87a925cb1444f745cea18b7aeb03fd2c446005d0003cebdb6124a82",
+      "reference": "ef4e15b567d832462ec41cdeeacda77868d407d1d540fd40a410fa317f7604d1",
+      "raw_test": "f6a31375ce5df5684e6feaf5f4677cbb58311e6e1fee8bee5573ea76be6233dc",
+      "targets": "af9f9aac9cb8b369015a94d4b88a4729d817c219d305eb3276050c5d33ad31bf"
+    },
+    "HAI21": {
+      "coefficients": "dbb880c33bd42babf227a07a0728f2ec0a3453a89a1e430f881cd10e82833ce6",
+      "tail": "5b1cbfb89be485a9586e3a90d00277c793a5aa1b414d81d5a566107a34562f51",
+      "reference": "cb7624392dc4f4eb0a55add1a37280bb67838e2d578a42a342710ff2dad10c55",
+      "raw_test": "35e88f8f01255213c9559ad25adce154b8e083e682a139045c12a7e390b826d4",
+      "targets": "a78e820567eaa15dd5a0cd2a9f6491d04102c0a50732a4de7aa918f1b20be5bb"
+    }
+  },
+  "dual_hashes_after": {
+    "SWaT": {
+      "coefficients": "e98162c30d5a1bb80aaca1f12d9f8c3e21480b9f3324f3422f4a41877154159a",
+      "tail": "3798b59da87a925cb1444f745cea18b7aeb03fd2c446005d0003cebdb6124a82",
+      "reference": "ef4e15b567d832462ec41cdeeacda77868d407d1d540fd40a410fa317f7604d1",
+      "raw_test": "f6a31375ce5df5684e6feaf5f4677cbb58311e6e1fee8bee5573ea76be6233dc",
+      "targets": "af9f9aac9cb8b369015a94d4b88a4729d817c219d305eb3276050c5d33ad31bf"
+    },
+    "HAI21": {
+      "coefficients": "dbb880c33bd42babf227a07a0728f2ec0a3453a89a1e430f881cd10e82833ce6",
+      "tail": "5b1cbfb89be485a9586e3a90d00277c793a5aa1b414d81d5a566107a34562f51",
+      "reference": "cb7624392dc4f4eb0a55add1a37280bb67838e2d578a42a342710ff2dad10c55",
+      "raw_test": "35e88f8f01255213c9559ad25adce154b8e083e682a139045c12a7e390b826d4",
+      "targets": "a78e820567eaa15dd5a0cd2a9f6491d04102c0a50732a4de7aa918f1b20be5bb"
+    }
+  },
+  "dual_deterministic_under_frozen_protocol": true,
+  "tests": {
+    "exactly_3_distinct_seeds_per_dataset": true,
+    "formal_seed_artifacts_not_overwritten": true,
+    "formal_seed_metrics_reproduce_le_1e_6": true,
+    "only_R0_architecture": true,
+    "no_R1_R2": true,
+    "checkpoint_by_normal_validation_loss": true,
+    "q99_from_normal_validation_only": true,
+    "dual_artifact_hash_unchanged": true,
+    "tail_formula_unchanged": true,
+    "per_seed_rec_calibration_bound": true,
+    "no_PA_oracle_test_best": true,
+    "all_raw_scores_persisted": true
+  },
+  "restrictions": {
+    "method_change": false,
+    "R1_R2": false,
+    "ridge_refit": false,
+    "target_reselection": false,
+    "hp_search": false,
+    "best_seed_selection": false,
+    "test_tuning": false,
+    "PA": false,
+    "oracle": false,
+    "baseline_rerun": false,
+    "commit": false,
+    "push": false
+  }
+}

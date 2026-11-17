@@ -1,0 +1,72 @@
+# Experiment registry for mapping legacy experiment names to paper candidate aliases.
+# This file is metadata only. It does not rename directories, move checkpoints, or
+# define model/training behavior.
+
+version: 1
+created_at: "2026-07-07"
+notes:
+  - "Do not rename legacy output directories."
+  - "Do not move existing checkpoints."
+  - "Do not treat candidate aliases as final paper names until evidence_status is upgraded."
+
+methods:
+  backbone:
+    original_name: "rec-only"
+    paper_alias: "MSCAD-Backbone"
+    role: "Reconstruction-only MSCAD backbone used to separate architecture capacity from structure-aware training and score fusion."
+    evidence_status: "confirmed_backbone"
+    train_config: "configs/swat_improve_v3_rec_only.yaml"
+    checkpoint_pattern:
+      current_single_seed: "outputs/swat_improve_v3_rec_only/best.pt"
+      multiseed: "results/multiseed/seed_{seed}/backbone/best.pt"
+    output_dir_pattern:
+      current_single_seed: "outputs/swat_improve_v3_rec_only"
+      multiseed: "results/multiseed/seed_{seed}/backbone"
+
+  ft:
+    original_name: "struct-finetune"
+    paper_alias: "MSCAD-FT-candidate"
+    role: "Two-stage weak-structure fine-tuning initialized from the corresponding MSCAD-Backbone checkpoint."
+    evidence_status: "candidate_need_multiseed"
+    train_config: "configs/swat_improve_v4_struct_finetune.yaml"
+    checkpoint_pattern:
+      current_single_seed: "outputs/swat_improve_v4_struct_finetune/best.pt"
+      multiseed: "results/multiseed/seed_{seed}/ft/best.pt"
+    output_dir_pattern:
+      current_single_seed: "outputs/swat_improve_v4_struct_finetune"
+      multiseed: "results/multiseed/seed_{seed}/ft"
+
+  score:
+    original_name: "R5/R6 fusion"
+    paper_alias: "MSCAD-Score-candidate"
+    role: "Score-level fusion candidate evaluated from R5/R6 or seed-specific FT checkpoints; this is an evaluation/fusion variant rather than an independently trained model."
+    evidence_status: "candidate_need_sensitivity"
+    train_config: "TODO: no standalone training config; current score candidate is produced by fusion/evaluation over existing FT/R5/R6 checkpoints."
+    checkpoint_pattern:
+      current_r5: "outputs/stage3_refine/R5_ws96_ss24_ls0.05_ll0.02_top15_corr0.92/best.pt"
+      current_r6: "outputs/stage3_refine/R6_ws96_ss24_ls0.05_ll0.02_top25_corr0.88/best.pt"
+      multiseed: "results/multiseed/seed_{seed}/ft/best.pt"
+    output_dir_pattern:
+      current_fusion_summary: "outputs/stage4_fusion_refine"
+      multiseed: "results/multiseed/seed_{seed}/score"
+
+  joint:
+    original_name: "MSCAD main"
+    paper_alias: "MSCAD-Joint"
+    role: "Joint training with reconstruction loss plus short-term and long-term structure losses."
+    evidence_status: "confirmed_ablation"
+    train_config: "configs/swat_main.yaml"
+    checkpoint_pattern:
+      current_single_seed: "outputs/swat_main/best.pt"
+      multiseed: "TODO: not part of scripts/run_multiseed_swat.py unless explicitly extended."
+    output_dir_pattern:
+      current_single_seed: "outputs/swat_main"
+      multiseed: "TODO: no current multiseed output pattern for MSCAD-Joint."
+
+result_files:
+  method_alias_mapping: "results/method_alias_mapping.csv"
+  candidate_table_csv: "results/candidate_tables/mscad_candidate_methods.csv"
+  candidate_table_markdown: "results/candidate_tables/mscad_candidate_methods.md"
+  stage3_refine_summary: "outputs/stage3_refine/stage3_refine_summary.json"
+  stage4_fusion_summary: "outputs/stage4_fusion_refine/stage4_fusion_refine_summary.json"
+  multiseed_summary: "results/multiseed/multiseed_summary.csv"

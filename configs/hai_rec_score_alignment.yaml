@@ -1,0 +1,31 @@
+{
+  "dataset": "hai",
+  "data_root": "D:/workspace/python/mscad/dataset/dataset/hai-22.04",
+  "seeds": [1, 2, 3],
+  "checkpoint_pattern": "outputs/hai_step3a_rec_baseline_seed{seed}/best.pt",
+  "historical_result_pattern": "outputs/hai_step3a_rec_baseline_seed{seed}",
+  "window_size": 64,
+  "stride": 1,
+  "batch_size": 128,
+  "num_workers": 0,
+  "device": "cuda",
+  "score_variants": [
+    "window_mean_current",
+    "endpoint_mean",
+    "recent8_mean",
+    "recent16_mean",
+    "offline_overlap_point_mean"
+  ],
+  "thresholds": {
+    "pot_q": 0.95,
+    "pot_target_prob": 0.005,
+    "validation_quantile": 0.99
+  },
+  "consistency": {
+    "score_absolute_tolerance": 1e-6,
+    "ranking_metric_tolerance": 1e-6
+  },
+  "smoke_max_windows_per_sequence": 2048,
+  "output_dir": "outputs/hai_step3c_rec_score_alignment",
+  "smoke_output_dir": "outputs/hai_step3c_rec_score_alignment_smoke"
+}

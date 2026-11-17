@@ -1,0 +1,11 @@
+name: mscad-thesis
+
+channels:
+  - defaults
+
+# Conda owns the interpreter and environment bootstrap only. Direct Python
+# dependencies are pinned in requirements.txt so the two files do not define
+# the same package twice.
+dependencies:
+  - python=3.10.19
+  - pip=26.0.1

@@ -1,0 +1,58 @@
+{
+  "dataset": "hai",
+  "seed": 1,
+  "run_name": "hai_rec_only_seed1",
+  "device": "cuda",
+  "protocol": {
+    "name": "hai_22_04_rec_only_seed1",
+    "notes": "HAI Step 3A seed=1 reconstruction-only baseline; no structure loss, structure score, fusion, or SWaT initialization."
+  },
+  "data": {
+    "data_root": "D:/workspace/python/mscad/dataset/dataset/hai-22.04",
+    "feature_count": 86,
+    "timestamp_col": "timestamp",
+    "label_col": "Attack",
+    "window_size": 64,
+    "short_window": 16,
+    "stride_train": 1,
+    "stride_val": 1,
+    "stride_test": 1,
+    "val_ratio": 0.20,
+    "label_mode": "end",
+    "batch_size": 128,
+    "num_workers": 0,
+    "shuffle_train": true
+  },
+  "model": {
+    "input_channels": 86,
+    "hidden_channels": 64,
+    "latent_channels": 32,
+    "dropout": 0.1,
+    "backbone_variant": "base",
+    "rec_only": true,
+    "use_structure_loss": false,
+    "use_short_score": false,
+    "use_long_score": false
+  },
+  "training": {
+    "seed": 1,
+    "epochs": 20,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "patience": 5,
+    "early_stopping": true,
+    "batch_size": 128,
+    "num_workers": 0,
+    "shuffle_train": true,
+    "init_checkpoint": null
+  },
+  "thresholds": {
+    "pot_q": 0.95,
+    "pot_target_prob": 0.005,
+    "validation_quantile": 0.99
+  },
+  "output": {
+    "dir": "outputs/hai_step3a_rec_baseline_seed1",
+    "smoke_dir": "outputs/hai_step3a_rec_baseline_smoke"
+  }
+}

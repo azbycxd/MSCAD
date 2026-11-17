@@ -1,0 +1,38 @@
+[
+  {
+    "name": "CCM-TAD",
+    "path": "external/baselines/CCM-TAD",
+    "remote": "https://github.com/Secure-and-Intelligent-Systems-Lab/CCM-TAD.git",
+    "commit": "3a8bc8263b648a707cd0658bf4f06517fb9e52c5",
+    "branch": "main",
+    "status": "",
+    "included": false
+  },
+  {
+    "name": "LatentFlow",
+    "path": "external/baselines/LatentFlow",
+    "remote": "https://github.com/SunboTax/LatentFlow.git",
+    "commit": "3695f54317fcc1a3fdbfa0a7037d1cdf4369db27",
+    "branch": "master",
+    "status": "",
+    "included": false
+  },
+  {
+    "name": "MAD-TCN",
+    "path": "external/baselines/MAD-TCN",
+    "remote": "https://github.com/qianmo2001/MAD-TCN.git",
+    "commit": "24d42ee0e0fc5a5460d437026cf4b89f05381293",
+    "branch": "main",
+    "status": "",
+    "included": false
+  },
+  {
+    "name": "plugin-mtsad",
+    "path": "external/baselines/plugin-mtsad",
+    "remote": "https://github.com/bae301764/plugin-mtsad.git",
+    "commit": "84e0d145de4c53b4d4733e3b33164e6068a3d5e9",
+    "branch": "main",
+    "status": "",
+    "included": false
+  }
+]

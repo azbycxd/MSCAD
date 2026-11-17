@@ -1,0 +1,53 @@
+{
+  "dataset": "swat",
+  "seed": 42,
+  "device": "cuda",
+  "protocol": {
+    "name": "swat_main_unified",
+    "notes": "MTAD baseline under the same data split, windowing, threshold, and metrics protocol."
+  },
+  "data": {
+    "train_csv": "Swat/normal.csv",
+    "test_csv": "Swat/merged.csv",
+    "label_col": "Normal/Attack",
+    "timestamp_col": "Timestamp",
+    "window_size": 64,
+    "short_window": 16,
+    "val_ratio": 0.2,
+    "stride_train": 1,
+    "stride_test": 1,
+    "batch_size": 64,
+    "num_workers": 0
+  },
+  "model": {
+    "variant": "core",
+    "d_model": 64,
+    "nhead": 4,
+    "num_layers": 1,
+    "ff_dim": 128,
+    "dropout": 0.1,
+    "max_len": 256,
+    "ot_svd_enabled": false,
+    "ot_svd_rank_ratio": 0.5,
+    "ot_svd_shrink": 0.1
+  },
+  "train": {
+    "epochs": 30,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "patience": 6,
+    "lambda_rec": 0.5,
+    "lambda_pred": 0.5
+  },
+  "eval": {
+    "alpha": 0.5,
+    "beta": 0.5,
+    "smooth_window": 3,
+    "threshold_mode": "pot",
+    "pot_q": 0.95,
+    "pot_target_prob": 0.005
+  },
+  "output": {
+    "dir": "outputs/mtad_swat"
+  }
+}

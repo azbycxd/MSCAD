@@ -1,0 +1,56 @@
+{
+  "dataset": "swat",
+  "seed": 42,
+  "device": "cuda",
+  "protocol": {
+    "name": "paper_main_improve_v2",
+    "notes": "Conservative structure warm-up with sparse high-corr pairs on base backbone."
+  },
+  "data": {
+    "train_csv": "Swat/normal.csv",
+    "test_csv": "Swat/merged.csv",
+    "label_col": "Normal/Attack",
+    "timestamp_col": "Timestamp",
+    "window_size": 64,
+    "short_window": 16,
+    "val_ratio": 0.2,
+    "stride_train": 1,
+    "stride_test": 1,
+    "batch_size": 128,
+    "num_workers": 0
+  },
+  "model": {
+    "in_channels": 51,
+    "hidden_channels": 64,
+    "latent_channels": 32,
+    "dropout": 0.1,
+    "backbone_variant": "base"
+  },
+  "train": {
+    "epochs": 20,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "patience": 5,
+    "lambda_rec": 1.0,
+    "lambda_s": 0.05,
+    "lambda_l": 0.02,
+    "structure_warmup_epochs": 12,
+    "cov_type": "corr",
+    "structure_pairs": {
+      "enabled": true,
+      "topk": 40,
+      "min_abs_corr": 0.75
+    }
+  },
+  "eval": {
+    "alpha": 0.6,
+    "beta": 0.2,
+    "gamma": 0.2,
+    "threshold_mode": "pot",
+    "pot_q": 0.95,
+    "pot_target_prob": 0.005
+  },
+  "output": {
+    "dir": "outputs/swat_improve_v2"
+  }
+}

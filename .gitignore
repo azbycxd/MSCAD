@@ -1,0 +1,67 @@
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+.vscode/
+
+# Environments and secrets
+.env
+.env.*
+.venv/
+venv/
+*.key
+*.pem
+id_rsa
+id_ed25519
+.aws/
+.ssh/
+credentials.json
+credentials.*.json
+secrets.*
+*.p12
+*.pfx
+
+# Raw and local datasets
+dataset/
+datasets/
+Swat/*.csv
+*.pcap
+*.pcapng
+
+# Checkpoints, raw arrays and serialized state
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.joblib
+*.safetensors
+*.h5
+*.hdf5
+*.onnx
+
+# Local results, external clones and environments
+outputs/
+results/
+logs/
+runs/
+external/
+node_modules/
+
+# Temporary files and archives
+tmp/
+.codex_tmp/
+*.tmp
+*.log
+*.bak
+*.zip
+*.7z
+*.tar
+*.gz

@@ -1,0 +1,30 @@
+{
+  "experiment": "Thesis Midterm Sprint S2 A0+",
+  "status": "VALID_DIAGNOSTIC / PRELIMINARY",
+  "s1_config": "configs/thesis/swat2015_midterm_seed1.yaml",
+  "a0_output": "outputs/thesis_midterm_s1/a0_rec_baseline",
+  "output": "outputs/thesis_midterm_s2_a0plus",
+  "residual": "endpoint_absolute_reconstruction_error_per_channel",
+  "calibration": {
+    "fit_scope": "Normal Train endpoint residual only",
+    "center": "per_channel_median",
+    "scale": "max(1.4826 * per_channel_MAD, 1e-6)",
+    "floor": 1e-6,
+    "negative_z_clip": 0.0
+  },
+  "primary": {
+    "score": "mean_top6_calibrated_endpoint_residual",
+    "top_fraction": 0.10,
+    "k": 6,
+    "threshold": "Normal Validation q99"
+  },
+  "secondary": {
+    "score": "mean_all_51_calibrated_endpoint_residual",
+    "threshold": "Normal Validation q99"
+  },
+  "threshold_quantile": 0.99,
+  "threshold_comparator": ">",
+  "point_adjustment": false,
+  "test_driven_tuning": false,
+  "retraining": false
+}

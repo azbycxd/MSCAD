@@ -1,0 +1,56 @@
+{
+  "dataset": "swat",
+  "seed": 42,
+  "device": "cuda",
+  "protocol": {
+    "name": "paper_main_improve_v1",
+    "notes": "Backbone+warmup+high-corr structural pairs"
+  },
+  "data": {
+    "train_csv": "Swat/normal.csv",
+    "test_csv": "Swat/merged.csv",
+    "label_col": "Normal/Attack",
+    "timestamp_col": "Timestamp",
+    "window_size": 64,
+    "short_window": 16,
+    "val_ratio": 0.2,
+    "stride_train": 1,
+    "stride_test": 1,
+    "batch_size": 128,
+    "num_workers": 0
+  },
+  "model": {
+    "in_channels": 51,
+    "hidden_channels": 96,
+    "latent_channels": 48,
+    "dropout": 0.1,
+    "backbone_variant": "plus"
+  },
+  "train": {
+    "epochs": 24,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "patience": 6,
+    "lambda_rec": 1.0,
+    "lambda_s": 0.2,
+    "lambda_l": 0.1,
+    "structure_warmup_epochs": 8,
+    "cov_type": "corr",
+    "structure_pairs": {
+      "enabled": true,
+      "topk": 60,
+      "min_abs_corr": 0.7
+    }
+  },
+  "eval": {
+    "alpha": 0.55,
+    "beta": 0.2,
+    "gamma": 0.25,
+    "threshold_mode": "pot",
+    "pot_q": 0.95,
+    "pot_target_prob": 0.005
+  },
+  "output": {
+    "dir": "outputs/swat_improve_v1"
+  }
+}

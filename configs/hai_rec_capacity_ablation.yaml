@@ -1,0 +1,38 @@
+{
+  "dataset": "hai",
+  "data_root": "D:/workspace/python/mscad/dataset/dataset/hai-22.04",
+  "device": "cuda",
+  "seeds": [1, 2, 3],
+  "tiny_checkpoint_pattern": "outputs/hai_step3a_rec_baseline_seed{seed}/best.pt",
+  "tiny_score_pattern": "outputs/hai_step3d_rec_channel_calibration/rec_channel_scores_seed{seed}.npz",
+  "source_output_dirs": [
+    "outputs/hai_step3a_rec_baseline_seed1", "outputs/hai_step3a_rec_baseline_seed2",
+    "outputs/hai_step3a_rec_baseline_seed3", "outputs/hai_step3c_rec_score_alignment",
+    "outputs/hai_step3d_rec_channel_calibration", "outputs/hai_step3e_rec_causal_alarm_policy",
+    "outputs/hai_step3f_rec_state_conditioned_threshold"
+  ],
+  "architecture": {
+    "input_channels": 86, "tiny_hidden": 64, "tiny_latent": 32,
+    "small_target": 48000, "small_range": [40000, 55000],
+    "medium_target": 88000, "medium_range": [80000, 95000],
+    "hidden_candidates": {"start": 64, "stop": 256, "step": 8},
+    "latent_candidates": {"start": 32, "stop": 192, "step": 8},
+    "dropout": 0.1, "backbone_variant": "base"
+  },
+  "data": {
+    "window_size": 64, "stride_train": 1, "stride_test": 1,
+    "validation_ratio": 0.20, "batch_size": 128, "num_workers": 0
+  },
+  "training": {
+    "loss": "SmoothL1Loss", "optimizer": "AdamW", "lr": 0.001,
+    "weight_decay": 0.0001, "max_epochs": 20, "patience": 5,
+    "early_stopping": true
+  },
+  "thresholds": {"pot_q": 0.95, "pot_target_prob": 0.005, "validation_q99": 0.99},
+  "score": {"name": "endpoint_raw_top5", "top_k": 5, "pointwise": true},
+  "tiny_consistency": {"absolute_tolerance": 0.0001, "relative_tolerance": 0.000001},
+  "efficiency": {"warmup": 10, "repetitions": 100, "batch_size": 128},
+  "smoke": {"max_rows_per_file": 25000, "max_windows_per_sequence": 2048, "epochs": 1},
+  "output_dir": "outputs/hai_step3g_rec_capacity_ablation",
+  "smoke_output_dir": "outputs/hai_step3g_rec_capacity_ablation_smoke"
+}

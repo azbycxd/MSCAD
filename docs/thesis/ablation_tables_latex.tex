@@ -1,0 +1,74 @@
+% Auto-generated from frozen final CSVs; no model metric was recomputed.
+% Requires: \usepackage{booktabs}
+\begin{table}[htbp]
+\centering
+\caption{Table Abl-1: Lightweight framework structural and efficiency analysis.}
+\label{tab:abl1}
+\begin{tabular}{llrrrrrr}
+\toprule
+Dataset & Variant & Params & AUROC & AUPR & F1 & FPR & Latency (ms) \\
+\midrule
+SWaT & R0 Final & 11,730 & 0.834887 & 0.743353 & 0.258067 & 0.718133 & 0.722302 \\
+SWaT & R1 & 11,436 & \textbf{0.862082} & \textbf{0.775608} & 0.268399 & 0.665935 & 0.886306 \\
+SWaT & R2 & 25,715 & 0.831320 & 0.735137 & 0.258918 & 0.704556 & 0.711675 \\
+HAI21 & R0 Final & 15,482 & 0.852899 & 0.536294 & 0.520594 & 0.016133 & 0.786008 \\
+HAI21 & R1 & 15,132 & \textbf{0.872754} & \textbf{0.564453} & 0.535371 & 0.017362 & 0.604107 \\
+HAI21 & R2 & 32,911 & 0.844836 & 0.508042 & 0.496158 & 0.016833 & 0.595262 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Table Abl-2: Core method innovation 1 real-attack ablation.}
+\label{tab:abl2}
+\begin{tabular}{llrrrrrr}
+\toprule
+Dataset & Variant & Targets & AUROC & AUPR & F1 & FPR & Event hits \\
+\midrule
+SWaT & D0 Final & 15 & 0.675631 & 0.167510 & 0.015663 & 0.012455 & 2 \\
+SWaT & D1 Short-lag & 16 & \textbf{0.865991} & \textbf{0.565012} & 0.015249 & 0.012301 & 2 \\
+SWaT & D2 No-Gate & 25 & 0.665518 & 0.165144 & 0.015663 & 0.012455 & 2 \\
+HAI & D0 Final & 54 & \textbf{0.916334} & 0.570193 & 0.610556 & 0.012443 & 44 \\
+HAI & D1 Short-lag & 54 & 0.882610 & 0.426064 & 0.556056 & 0.009882 & 44 \\
+HAI & D2 No-Gate & 56 & 0.915105 & \textbf{0.570880} & 0.610556 & 0.012443 & 44 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Table Abl-3: Core method innovation 1 mechanism ablation.}
+\label{tab:abl3}
+\begin{tabular}{llrrrr}
+\toprule
+Dataset & Variant & AUROC & AUPR & Recall & FPR \\
+\midrule
+Historical CoMuT & D0 Final & 0.995989 & 0.686927 & 0.937500 & 0.010313 \\
+Historical CoMuT & D1 Short-lag & 0.995305 & 0.638043 & 0.925000 & 0.010775 \\
+SWaT controlled & D0 Final & 0.996913 & 0.996931 & 0.872750 & 0.009500 \\
+SWaT controlled & D1 Short-lag & 0.995790 & 0.995124 & 0.839750 & 0.009750 \\
+SWaT controlled & D2 No-Gate & 0.630637 & 0.550076 & 0.008000 & 0.008000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Table Abl-4: Core method innovation 2 calibration and fusion ablation.}
+\label{tab:abl4}
+\begin{tabular}{llrrrrr}
+\toprule
+Dataset & Variant & AUROC & AUPR & F1 & FPR & Role \\
+\midrule
+SWaT & F0 REC & 0.834887 & \textbf{0.743353} & 0.258067 & 0.718133 & PRIMARY \\
+SWaT & F1 DUAL & 0.675631 & 0.167510 & 0.015663 & 0.012455 & PRIMARY \\
+SWaT & F3 Robust-Z & 0.681368 & 0.168979 & 0.015664 & 0.012453 & PRIMARY \\
+SWaT & F4 Tail-Calibrated & 0.708375 & 0.206747 & 0.260789 & 0.692531 & PRIMARY \\
+HAI21 & F0 REC & 0.852899 & 0.536294 & 0.520594 & 0.016133 & PRIMARY \\
+HAI21 & F1 DUAL & 0.916334 & 0.570193 & 0.610556 & 0.012443 & PRIMARY \\
+HAI21 & F3 Robust-Z & 0.907834 & 0.576716 & 0.619503 & 0.012471 & PRIMARY \\
+HAI21 & F4 Tail-Calibrated & 0.901850 & \textbf{0.617897} & 0.617350 & 0.012627 & PRIMARY \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,43 @@
+%%{init: {"theme":"base","themeVariables":{"fontFamily":"Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif","fontSize":"15px","lineColor":"#334155","primaryTextColor":"#111827","primaryBorderColor":"#475569","clusterBkg":"#F8FAFC","clusterBorder":"#64748B","edgeLabelBackground":"#FFFFFF"},"flowchart":{"curve":"linear","htmlLabels":true,"nodeSpacing":24,"rankSpacing":36,"padding":10}}}%%
+flowchart TB
+    subgraph F["阶段 1：正常阶段（仅 Normal Train / Normal Validation）"]
+        direction LR
+        NT["Normal Train"] --> DSPLIT["发现期拟合与选择<br/>完整 Train 上拟合 Self / Cross Ridge"]
+        DSPLIT --> RG["Reliability Gate<br/>8 项正向技能门禁"]
+        NV["Normal Validation"] --> RG
+        NV --> STAB["前半 / 后半<br/>预测分歧稳定性"]
+        STAB --> RG
+        NV --> NC["正常预测分歧参考<br/>median 与 1.4826 MAD<br/>scale floor = 1e-6"]
+        RG --> RS["可靠 target 集合"]
+        RS --> NC
+        NC --> FR["冻结逐 target 正常参考"]
+    end
+
+    subgraph I["阶段 2：冻结 Test 推理（不再拟合或校准）"]
+        direction LR
+        TH["target 历史<br/>L_self = 1, 5, 10, 20, 30"] --> SV["Self View<br/>Ridge alpha = 1"]
+        SP["同一 process 的其他非恒定变量<br/>target excluded<br/>L_cross = 0, 1, 5, 10, 20, 30"] --> CV["Cross View<br/>Ridge alpha = 1"]
+        SV --> PS["Self 预测"]
+        CV --> PC["Cross 预测"]
+        PS --> DG["预测分歧<br/>|ŷ_self − ŷ_cross|"]
+        PC --> DG
+        DG --> STD["应用冻结正常参考<br/>逐 target 标准化证据"]
+        FR --> STD
+        STD --> TE["逐 target 证据"]
+        TE --> MAX["可靠 target 上取 max"]
+        RS --> MAX
+        MAX --> DUAL["DUAL score"]
+    end
+
+    NT -. "仅拟合 scaler 与 Ridge" .-> SV
+    NT -. "仅拟合 scaler 与 Ridge" .-> CV
+    F ~~~ I
+
+    style F fill:#F4F8FC,stroke:#52677A,stroke-width:1.6px
+    style I fill:#FCFAF4,stroke:#52677A,stroke-width:1.6px,stroke-dasharray:7 4
+    classDef train fill:#EAF2F8,stroke:#52677A,stroke-width:1.4px,color:#111827
+    classDef frozen fill:#FFF7DD,stroke:#6B5B2A,stroke-width:1.4px,color:#111827
+    classDef core fill:#FFFFFF,stroke:#111827,stroke-width:2.4px,color:#111827,font-weight:bold
+    class NT,NV,DSPLIT,RG,STAB,NC,RS train
+    class FR,SV,CV,STD frozen
+    class DG,MAX,DUAL core

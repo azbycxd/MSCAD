@@ -1,0 +1,48 @@
+{
+  "dataset": "swat_a12_2026",
+  "seed": 1,
+  "run_name": "swat2026_batch_m1_rec_baseline_seed1",
+  "device": "cuda",
+  "data": {
+    "data_path": "Swat_new/11-Mar-2026_0900_1700.csv",
+    "n2_dir": "outputs/swat2026_n2_label_split",
+    "window_size": 128,
+    "feature_count": 31,
+    "batch_size": 128,
+    "num_workers": 0,
+    "shuffle_train": true
+  },
+  "model": {
+    "input_channels": 31,
+    "hidden_channels": 64,
+    "latent_channels": 32,
+    "dropout": 0.1,
+    "backbone_variant": "base",
+    "rec_only": true,
+    "use_structure_loss": false,
+    "use_short_score": false,
+    "use_long_score": false,
+    "init_checkpoint": null
+  },
+  "training": {
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "max_epochs": 20,
+    "early_stopping_patience": 5,
+    "reconstruction_loss": "SmoothL1Loss",
+    "gradient_clip_norm": null
+  },
+  "scoring": {
+    "primary_score_name": "full_window_mean_absolute_reconstruction_error",
+    "validation_quantile": 0.99,
+    "point_adjustment": false
+  },
+  "efficiency": {
+    "warmup_iterations": 10,
+    "measurement_iterations": 50
+  },
+  "output": {
+    "dir": "outputs/swat2026_batch_m1_rec_baseline"
+  }
+}

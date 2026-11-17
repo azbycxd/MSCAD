@@ -1,0 +1,9 @@
+dataset,variant,rec_q99,dual_q99,balance_ratio,top1_rec_share,top1_dual_share,normal_fpr_at_audit_threshold,notes
+SWaT,RAW_SCORE,0.17535898745059983,237519.19354812737,1354474.0249771266,,,,raw Calibration-A score scale; no direct fusion
+SWaT,F3 Robust-Z,,,,0,1,0.0090763912753441,historical Calibration-A robust center/scale; Audit-B top-1% dominance
+SWaT,F4 Tail-Calibrated,2.041120617553636,1.9534339834716072,1.04488845531713,0.6519114688128773,0.3480885311871227,0.0109967858658958,Calibration-A ECDF; Audit-B q99 balance and top-1% contribution
+HAI21,RAW_SCORE,0.30315840840339625,38.646888099500224,127.48083849310534,,,,raw Calibration-A score scale; no direct fusion
+HAI21,F3 Robust-Z,,,,0,1,0.0123605635026665,historical Calibration-A robust center/scale; Audit-B top-1% dominance
+HAI21,F4 Tail-Calibrated,2.0948769893117007,2.094290501063349,1.0002800414976116,0.5915492957746479,0.4084507042253521,0.0134575906676659,Calibration-A ECDF; Audit-B q99 balance and top-1% contribution
+WADI.A2,F3 Robust-Z,,,,0,1,0.0145608146909814,historical Calibration-A robust center/scale; Audit-B top-1% dominance
+WADI.A2,F4 Tail-Calibrated,2.235510963061188,2.159294597733852,1.0352968814016037,0.5178117048346056,0.4821882951653944,0.0162198032184377,Calibration-A ECDF; Audit-B q99 balance and top-1% contribution

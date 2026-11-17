@@ -1,0 +1,27 @@
+{
+  "phase": "Thesis Stability-STAB-P1",
+  "created_before_training": true,
+  "selection_rule": "formal seed plus 42 and 43; use 44 only if a duplicate occurs",
+  "datasets": {
+    "SWaT": {
+      "formal_seed": 1,
+      "seeds": [
+        1,
+        42,
+        43
+      ]
+    },
+    "HAI21": {
+      "formal_seed": 1,
+      "seeds": [
+        1,
+        42,
+        43
+      ]
+    }
+  },
+  "exactly_three_distinct_per_dataset": true,
+  "frozen_after_creation": true,
+  "method": "R0 Final REC only",
+  "dual": "deterministic frozen artifact; no Ridge refit or target reselection"
+}

@@ -1,0 +1,32 @@
+data_root: D:/workspace/python/mscad/dataset/dataset/hai-22.04
+step2_output: outputs/hai_step2_dataloader_validation
+step4a_output: outputs/hai_step4a_normal_relation_diagnosis
+output_dir: outputs/hai_structure_v2a_lagged_dependency
+smoke_output_dir: outputs/hai_structure_v2a_lagged_dependency_smoke
+self_lags: [1, 2, 4, 8, 16, 32]
+source_lags: [0, 1, 2, 4, 8, 16, 32]
+max_lag: 32
+ridge_alpha: 1.0
+discovery_fit_ratio: 0.8
+screening_median_min: 0.08
+screening_sequence_min: 0.05
+screening_sequence_count: 4
+screening_max_sources_per_target: 4
+gain_global_min: 0.03
+gain_median_min: 0.01
+gain_positive_sequence_count: 5
+gain_worst_min: -0.05
+pool_target_count: 12
+pool_min: 8
+pool_max: 16
+max_incoming_per_target: 2
+max_degree_per_channel: 3
+min_target_channels: 6
+min_unique_channels: 10
+rolling_dependency_window: 16
+validation_max_windows_per_sequence: 100
+replacement_quantile_bins: 5
+aggregations: [dynamic_edge_max, dynamic_edge_top2_mean]
+primary_aggregation: dynamic_edge_top2_mean
+threshold_quantile: 0.99
+seed: 1

@@ -1,0 +1,55 @@
+{
+  "dataset": "swat",
+  "seed": 42,
+  "device": "cuda",
+  "protocol": {
+    "name": "swat_main_unified",
+    "notes": "CATCH baseline under unified SWaT protocol."
+  },
+  "data": {
+    "train_csv": "Swat/normal.csv",
+    "test_csv": "Swat/merged.csv",
+    "label_col": "Normal/Attack",
+    "timestamp_col": "Timestamp",
+    "window_size": 64,
+    "short_window": 16,
+    "val_ratio": 0.2,
+    "stride_train": 1,
+    "stride_test": 1,
+    "batch_size": 64,
+    "num_workers": 0
+  },
+  "model": {
+    "variant": "core",
+    "patch_size": 8,
+    "patch_stride": 4,
+    "d_model": 64,
+    "nhead": 4,
+    "num_layers": 1,
+    "ff_dim": 128,
+    "dropout": 0.1,
+    "mask_hidden": 32
+  },
+  "train": {
+    "epochs": 30,
+    "lr": 0.001,
+    "mask_lr": 0.001,
+    "weight_decay": 0.0001,
+    "patience": 6,
+    "lambda_time": 1.0,
+    "lambda_freq": 1.0,
+    "lambda_cluster": 0.1,
+    "lambda_reg": 0.05
+  },
+  "eval": {
+    "alpha": 0.5,
+    "beta": 0.5,
+    "smooth_window": 3,
+    "threshold_mode": "pot",
+    "pot_q": 0.95,
+    "pot_target_prob": 0.005
+  },
+  "output": {
+    "dir": "outputs/catch_swat"
+  }
+}

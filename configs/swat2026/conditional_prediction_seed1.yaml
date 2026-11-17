@@ -1,0 +1,35 @@
+{
+  "dataset": "swat_a12_2026",
+  "seed": 1,
+  "data": {
+    "data_path": "Swat_new/11-Mar-2026_0900_1700.csv",
+    "n2_dir": "outputs/swat2026_n2_label_split",
+    "m1_dir": "outputs/swat2026_batch_m1_rec_baseline",
+    "checkpoint": "outputs/swat2026_batch_m1_rec_baseline/checkpoints/best_seed1.pt",
+    "checkpoint_sha256": "0f145cc0385bdbb6d8b638dde3c087cf757380c7f845dfdc45bb90d6fc4a5728",
+    "source_sha256": "d1dd05034b393a6b201f39e86ac3b933000551d26680c5d91c5ff8db0559cf72"
+  },
+  "prediction": {
+    "cross_lags": [0, 5, 10, 20, 30],
+    "self_lags": [1, 5, 10, 20, 30],
+    "alphas": [0.01, 0.1, 1.0, 10.0, 100.0],
+    "discovery_fit_ratio": 0.80,
+    "residual_scale_floor": 0.05
+  },
+  "qualification": {
+    "minimum_confirmation_samples": 2048,
+    "minimum_cross_r2": 0.20,
+    "minimum_median_improvement": 0.20,
+    "minimum_prediction_correlation": 0.45,
+    "maximum_confirmation_selection_mae_ratio": 1.50,
+    "general_target_count": 3
+  },
+  "validation": {"quantile": 0.99, "history_guard_points": 30},
+  "controlled": {
+    "window_size": 128, "shifts": [8, 16, 24, 32],
+    "minimum_auroc": 0.80, "minimum_advantage": 0.10,
+    "minimum_coverage": 0.95
+  },
+  "evaluation": {"test_points": 14400, "point_adjustment": false, "fusion": false},
+  "output": {"dir": "outputs/swat2026_batch_m2p_conditional_prediction"}
+}

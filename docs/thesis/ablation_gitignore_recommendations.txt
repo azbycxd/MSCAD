@@ -1,0 +1,26 @@
+# Recommendations only. This file does not modify .gitignore.
+
+# Large and binary ablation evidence
+outputs/thesis_ablation/**/*.npz
+outputs/thesis_ablation/**/*.npy
+outputs/thesis_ablation/**/*.pt
+outputs/thesis_ablation/**/*.pth
+outputs/thesis_ablation/**/*.ckpt
+
+# Resume, optimizer, cache, and raw score artifacts
+outputs/thesis_ablation/**/latest_training_state*
+outputs/thesis_ablation/**/optimizer*
+outputs/thesis_ablation/**/raw_scores*
+outputs/thesis_ablation/**/*_scores.npz
+outputs/thesis_ablation/**/validation_raw_scores*
+outputs/thesis_ablation/**/test_raw_scores*
+outputs/thesis_ablation/**/__pycache__/
+
+# Generated figures remain ignored unless explicitly selected for thesis versioning
+outputs/thesis_figures/ablation/*.png
+outputs/thesis_figures/ablation/*.pdf
+
+# Upstream or temporary content
+external/
+.codex_tmp/
+

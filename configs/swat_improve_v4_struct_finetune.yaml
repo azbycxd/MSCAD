@@ -1,0 +1,56 @@
+{
+  "dataset": "swat",
+  "seed": 42,
+  "device": "cuda",
+  "protocol": {
+    "name": "paper_main_improve_v4_struct_finetune",
+    "notes": "Stage-2 fine-tune from rec-only checkpoint with weak structure constraints."
+  },
+  "data": {
+    "train_csv": "Swat/normal.csv",
+    "test_csv": "Swat/merged.csv",
+    "label_col": "Normal/Attack",
+    "timestamp_col": "Timestamp",
+    "window_size": 64,
+    "short_window": 16,
+    "val_ratio": 0.2,
+    "stride_train": 1,
+    "stride_test": 1,
+    "batch_size": 128,
+    "num_workers": 0
+  },
+  "model": {
+    "in_channels": 51,
+    "hidden_channels": 64,
+    "latent_channels": 32,
+    "dropout": 0.1,
+    "backbone_variant": "base"
+  },
+  "train": {
+    "epochs": 8,
+    "lr": 0.0005,
+    "weight_decay": 0.0001,
+    "patience": 3,
+    "lambda_rec": 1.0,
+    "lambda_s": 0.02,
+    "lambda_l": 0.01,
+    "structure_warmup_epochs": 4,
+    "cov_type": "corr",
+    "structure_pairs": {
+      "enabled": true,
+      "topk": 40,
+      "min_abs_corr": 0.75
+    }
+  },
+  "eval": {
+    "alpha": 0.8,
+    "beta": 0.1,
+    "gamma": 0.1,
+    "threshold_mode": "pot",
+    "pot_q": 0.95,
+    "pot_target_prob": 0.005
+  },
+  "output": {
+    "dir": "outputs/swat_improve_v4_struct_finetune"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "phase": "Thesis Evaluation-E2-R2",
+  "status": "LITERATURE_COMPATIBLE_EVAL_COMPLETED",
+  "preconditions": {
+    "status": "PASS",
+    "checks": {
+      "final_status": true,
+      "twelve_of_twelve": true,
+      "all_raw_score_reproduced": true,
+      "strict_tolerance": true,
+      "common_counts": true
+    },
+    "max_strict_difference": 2.393751322715687e-07
+  },
+  "datasets": [
+    "SWaT",
+    "HAI21"
+  ],
+  "methods": [
+    "LSTM-AE",
+    "USAD",
+    "GDN",
+    "Ours-REC",
+    "Ours-DUAL",
+    "Ours-TAIL"
+  ],
+  "combination_count": 12,
+  "common_mask_counts": {
+    "SWaT": 449791,
+    "HAI21": 401685
+  },
+  "strict_primary_unchanged": true,
+  "common_mask_protocol": "exact identity intersection; no length trimming",
+  "metrics": {
+    "historical_strict": "Primary; unchanged",
+    "common_q99": "frozen Validation q99 on common endpoints",
+    "oracle": "exact Test-best threshold diagnostic",
+    "pa_q99": "classic PA after frozen q99",
+    "pa_oracle": "exact Test-best threshold plus PA diagnostic"
+  },
+  "historical_ours_rec_regression": {
+    "status": "PASS",
+    "expected_rounded": {
+      "oracle_f1": 0.768959,
+      "pa_q99_f1": 0.272041,
+      "pa_oracle_f1": 0.887275
+    },
+    "actual": {
+      "oracle_f1": 0.7689594356261024,
+      "pa_q99_f1": 0.2720407267082648,
+      "pa_oracle_f1": 0.8872750056960582
+    },
+    "absolute_difference": {
+      "oracle_f1": 4.3562610241298927e-07,
+      "pa_q99_f1": 2.732917351866426e-07,
+      "pa_oracle_f1": 5.696058180681973e-09
+    },
+    "max_absolute_difference": 4.3562610241298927e-07,
+    "historical_endpoint_count": 449793
+  },
+  "source_hashes": {
+    "SWaT_common_mask_sha256": "4c0d20a967c67caae58384b6b13b2d78312e2c351c6c48d13de722136bf9e0b1",
+    "SWaT_LSTM-AE_raw_score_sha256": "446b78b259b5de67506cfcc69c553da4a9b29ac188c8dc09ab332cbe5a137b64",
+    "SWaT_USAD_raw_score_sha256": "9aff564c4f2af326cb107c2ab256e3748ad974c99ec72116e064e41289fd8f75",
+    "SWaT_GDN_raw_score_sha256": "ebedc50766a459ce34ddec5c05d084691ccac7e66542eda98369e26f093ab2fc",
+    "SWaT_Ours-REC_raw_score_sha256": "23831a9eaa82871a8280585025a28db2287f47ddbce52f091033d6106162f0fd",
+    "SWaT_Ours-DUAL_raw_score_sha256": "f6a31375ce5df5684e6feaf5f4677cbb58311e6e1fee8bee5573ea76be6233dc",
+    "SWaT_Ours-TAIL_raw_score_sha256": "4001a2dbfa9ac1cac7f8a955570198a8ce0fabed5d4b6cfc5d554701c2b82379",
+    "HAI21_common_mask_sha256": "5f066250841ec5e79d51d49b841cc45dfaf626a8b77720d408e365862563ddb7",
+    "HAI21_LSTM-AE_raw_score_sha256": "403d023978c259561cf51eb1764e2953fd684553e47f3e772f9433122a74903d",
+    "HAI21_USAD_raw_score_sha256": "d3dcef884b55ffe6a6cd5c585d3f7add0d5e73eb37457e9b19e0f3737bcf1582",
+    "HAI21_GDN_raw_score_sha256": "c085777a1030214909d7e2abe9ff82fa77a03ca8c9e309689ed5dc2cd241efea",
+    "HAI21_Ours-REC_raw_score_sha256": "2bf80551643300bee33580f6db2c77c83c8d3499d122d12240bfa5df8fc18502",
+    "HAI21_Ours-DUAL_raw_score_sha256": "35e88f8f01255213c9559ad25adce154b8e083e682a139045c12a7e390b826d4",
+    "HAI21_Ours-TAIL_raw_score_sha256": "5d6a1194a3e41cc5ac1647f5c613716d27202e8d59c301f172a5bc6dd34c6714"
+  },
+  "elapsed_seconds": 6.434944599997834,
+  "restrictions": {
+    "training": false,
+    "inference": false,
+    "model_change": false,
+    "score_change": false,
+    "scaler_recalculation": false,
+    "ridge_recalculation": false,
+    "tail_recalibration": false,
+    "checkpoint_read": false,
+    "hp_search": false,
+    "new_fusion": false,
+    "test_driven_model_change": false,
+    "strict_result_overwrite": false,
+    "commit": false,
+    "push": false
+  }
+}

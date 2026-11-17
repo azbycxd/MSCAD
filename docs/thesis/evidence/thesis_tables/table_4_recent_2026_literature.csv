@@ -1,0 +1,50 @@
+Method,Venue,Dataset,Metric,Reported value,PA,Test-best,Test-driven selection,Source,Comparability
+Park-Shim Plug-in,Expert Systems with Applications,SWaT,Precision,NOT_EXTRACTED,UNKNOWN,UNKNOWN,UNKNOWN,https://doi.org/10.1016/j.eswa.2026.131906 | NOT_EXTRACTED | p.NOT_EXTRACTED,PARTIAL
+Park-Shim Plug-in,Expert Systems with Applications,SWaT,Recall,NOT_EXTRACTED,UNKNOWN,UNKNOWN,UNKNOWN,https://doi.org/10.1016/j.eswa.2026.131906 | NOT_EXTRACTED | p.NOT_EXTRACTED,PARTIAL
+Park-Shim Plug-in,Expert Systems with Applications,SWaT,F1,NOT_EXTRACTED,UNKNOWN,UNKNOWN,UNKNOWN,https://doi.org/10.1016/j.eswa.2026.131906 | NOT_EXTRACTED | p.NOT_EXTRACTED,PARTIAL
+Park-Shim Plug-in,Expert Systems with Applications,SWaT,AUROC,NOT_EXTRACTED,UNKNOWN,UNKNOWN,UNKNOWN,https://doi.org/10.1016/j.eswa.2026.131906 | NOT_EXTRACTED | p.NOT_EXTRACTED,PARTIAL
+Park-Shim Plug-in,Expert Systems with Applications,SWaT,AUPR,NOT_EXTRACTED,UNKNOWN,UNKNOWN,UNKNOWN,https://doi.org/10.1016/j.eswa.2026.131906 | NOT_EXTRACTED | p.NOT_EXTRACTED,PARTIAL
+Park-Shim Plug-in,Expert Systems with Applications,WADI,Precision,NOT_EXTRACTED,UNKNOWN,UNKNOWN,UNKNOWN,https://doi.org/10.1016/j.eswa.2026.131906 | NOT_EXTRACTED | p.NOT_EXTRACTED,PARTIAL
+Park-Shim Plug-in,Expert Systems with Applications,WADI,Recall,NOT_EXTRACTED,UNKNOWN,UNKNOWN,UNKNOWN,https://doi.org/10.1016/j.eswa.2026.131906 | NOT_EXTRACTED | p.NOT_EXTRACTED,PARTIAL
+Park-Shim Plug-in,Expert Systems with Applications,WADI,F1,NOT_EXTRACTED,UNKNOWN,UNKNOWN,UNKNOWN,https://doi.org/10.1016/j.eswa.2026.131906 | NOT_EXTRACTED | p.NOT_EXTRACTED,PARTIAL
+Park-Shim Plug-in,Expert Systems with Applications,WADI,AUROC,NOT_EXTRACTED,UNKNOWN,UNKNOWN,UNKNOWN,https://doi.org/10.1016/j.eswa.2026.131906 | NOT_EXTRACTED | p.NOT_EXTRACTED,PARTIAL
+Park-Shim Plug-in,Expert Systems with Applications,WADI,AUPR,NOT_EXTRACTED,UNKNOWN,UNKNOWN,UNKNOWN,https://doi.org/10.1016/j.eswa.2026.131906 | NOT_EXTRACTED | p.NOT_EXTRACTED,PARTIAL
+Park-Shim Plug-in,Expert Systems with Applications,SWaT,F1 gain range,0.028–0.050,UNKNOWN,UNKNOWN,UNKNOWN,https://www.sciencedirect.com/science/article/pii/S0957417426008195 | Section: Overall performance comparison (text summary of Table 3) | p.Publisher HTML (no stable PDF page),NOT_DIRECT
+Park-Shim Plug-in,Expert Systems with Applications,WADI,Maximum F1 gain,0.417,UNKNOWN,UNKNOWN,UNKNOWN,https://www.sciencedirect.com/science/article/pii/S0957417426008195 | ABSTRACT (not tabular) | p.N/A,NOT_DIRECT
+LatentFlow,KDD 2026,SWaT,Affiliation Precision,65.01 ± 0.74,false,false,UNKNOWN (origin of fixed repository q not documented),https://doi.org/10.1145/3770855.3818034 | Table 1 | p.4503 (PDF page 7 of 12),NOT_DIRECT
+LatentFlow,KDD 2026,SWaT,Affiliation Recall,93.59 ± 2.28,false,false,UNKNOWN (origin of fixed repository q not documented),https://doi.org/10.1145/3770855.3818034 | Table 1 | p.4503 (PDF page 7 of 12),NOT_DIRECT
+LatentFlow,KDD 2026,SWaT,Affiliation-F1,76.70 ± 0.50,false,false,UNKNOWN (origin of fixed repository q not documented),https://doi.org/10.1145/3770855.3818034 | Table 1 | p.4503 (PDF page 7 of 12),NOT_DIRECT
+LatentFlow,KDD 2026,SWaT,VUS-ROC,78.47,false,false,UNKNOWN (origin of fixed repository q not documented),https://doi.org/10.1145/3770855.3818034 | Table 7 | p.4509 (PDF page 12 of 12),NOT_DIRECT
+LatentFlow,KDD 2026,SWaT,VUS-PR,59.45,false,false,UNKNOWN (origin of fixed repository q not documented),https://doi.org/10.1145/3770855.3818034 | Table 7 | p.4509 (PDF page 12 of 12),NOT_DIRECT
+LatentFlow,KDD 2026,WADI,Affiliation Precision,63.72 ± 0.30,false,false,UNKNOWN (origin of fixed repository q not documented),https://doi.org/10.1145/3770855.3818034 | Table 1 | p.4503 (PDF page 7 of 12),NOT_DIRECT
+LatentFlow,KDD 2026,WADI,Affiliation Recall,95.71 ± 0.73,false,false,UNKNOWN (origin of fixed repository q not documented),https://doi.org/10.1145/3770855.3818034 | Table 1 | p.4503 (PDF page 7 of 12),NOT_DIRECT
+LatentFlow,KDD 2026,WADI,Affiliation-F1,76.51 ± 0.13,false,false,UNKNOWN (origin of fixed repository q not documented),https://doi.org/10.1145/3770855.3818034 | Table 1 | p.4503 (PDF page 7 of 12),NOT_DIRECT
+LatentFlow,KDD 2026,WADI,VUS-ROC,47.69,false,false,UNKNOWN (origin of fixed repository q not documented),https://doi.org/10.1145/3770855.3818034 | Table 7 | p.4509 (PDF page 12 of 12),NOT_DIRECT
+LatentFlow,KDD 2026,WADI,VUS-PR,6.15,false,false,UNKNOWN (origin of fixed repository q not documented),https://doi.org/10.1145/3770855.3818034 | Table 7 | p.4509 (PDF page 12 of 12),NOT_DIRECT
+MAD-TCN,Neurocomputing,SWaT,AUC,NOT_EXTRACTED,UNKNOWN,UNKNOWN,UNKNOWN,https://www.sciencedirect.com/science/article/pii/S0925231226003516 | NOT_EXTRACTED | p.NOT_EXTRACTED,PARTIAL
+MAD-TCN,Neurocomputing,SWaT,F1,NOT_EXTRACTED,UNKNOWN,UNKNOWN,UNKNOWN,https://www.sciencedirect.com/science/article/pii/S0925231226003516 | NOT_EXTRACTED | p.NOT_EXTRACTED,PARTIAL
+MAD-TCN,Neurocomputing,SWaT,Precision,NOT_EXTRACTED,UNKNOWN,UNKNOWN,UNKNOWN,https://www.sciencedirect.com/science/article/pii/S0925231226003516 | NOT_EXTRACTED | p.NOT_EXTRACTED,PARTIAL
+MAD-TCN,Neurocomputing,SWaT,Recall,NOT_EXTRACTED,UNKNOWN,UNKNOWN,UNKNOWN,https://www.sciencedirect.com/science/article/pii/S0925231226003516 | NOT_EXTRACTED | p.NOT_EXTRACTED,PARTIAL
+MAD-TCN,Neurocomputing,Cross-dataset paper claim,Parameter count; training/inference speed improvement,≈0.026 M; ≈34%,N/A,N/A,UNKNOWN,https://www.sciencedirect.com/science/article/pii/S0925231226003516 | ABSTRACT (not tabular) | p.N/A | restricted_source_recovery_log.csv,NOT_DIRECT
+CCM-TAD,ICML 2026,SWaT,Sequential Best-F1 (SF1 in repo),0.883,false,true,true,https://arxiv.org/pdf/2506.00188 | Table 2 | p.7,NOT_DIRECT
+CCM-TAD,ICML 2026,WADI,Sequential Best-F1 (SF1 in repo),0.761,false,true,true,https://arxiv.org/pdf/2506.00188 | Table 2 | p.7,NOT_DIRECT
+CCM-TAD,ICML 2026,SWaT,Point-based Best-F1 (PF1 in repo),0.882,false,true,true,https://arxiv.org/pdf/2506.00188 | Table 4 | p.8,PARTIAL
+CCM-TAD,ICML 2026,WADI,Point-based Best-F1 (PF1 in repo),0.739,false,true,true,https://arxiv.org/pdf/2506.00188 | Table 4 | p.8,PARTIAL
+CCM-TAD,ICML 2026,SWaT,PR AUC,0.911,false,false,true,https://arxiv.org/pdf/2506.00188 | Table 3 | p.8,PARTIAL
+CCM-TAD,ICML 2026,WADI,PR AUC,0.72,false,false,true,https://arxiv.org/pdf/2506.00188 | Table 3 | p.8,PARTIAL
+CCM-TAD,ICML 2026,SWaT,VUS-PR,0.779,false,false,true,https://arxiv.org/pdf/2506.00188 | Table 10 | p.19,NOT_DIRECT
+CCM-TAD,ICML 2026,SWaT,VUS-ROC,0.758,false,false,true,https://arxiv.org/pdf/2506.00188 | Table 10 | p.19,NOT_DIRECT
+CCM-TAD,ICML 2026,WADI,VUS-PR,0.776,false,false,true,https://arxiv.org/pdf/2506.00188 | Table 10 | p.19,NOT_DIRECT
+CCM-TAD,ICML 2026,WADI,VUS-ROC,0.822,false,false,true,https://arxiv.org/pdf/2506.00188 | Table 10 | p.19,NOT_DIRECT
+CCM-TAD,ICML 2026,SWaT,Range-F1,0.681,false,false,true,https://arxiv.org/pdf/2506.00188 | Table 11 | p.19,NOT_DIRECT
+CCM-TAD,ICML 2026,SWaT,Affiliation-F1,0.781,false,false,true,https://arxiv.org/pdf/2506.00188 | Table 11 | p.19,NOT_DIRECT
+CCM-TAD,ICML 2026,SWaT,Sequential Best-F1 five-seed mean,0.877 ± 0.004,false,true,true,https://arxiv.org/pdf/2506.00188 | Table 12 | p.20,NOT_DIRECT
+CCM-TAD,ICML 2026,SWaT,PR AUC five-seed mean,0.907 ± 0.004,false,false,true,https://arxiv.org/pdf/2506.00188 | Table 12 | p.20,PARTIAL
+CCM-TAD,ICML 2026,SWaT,VUS-ROC five-seed mean,0.749 ± 0.011,false,false,true,https://arxiv.org/pdf/2506.00188 | Table 12 | p.20,NOT_DIRECT
+CCM-TAD,ICML 2026,SWaT,VUS-PR five-seed mean,0.770 ± 0.009,false,false,true,https://arxiv.org/pdf/2506.00188 | Table 12 | p.20,NOT_DIRECT
+CCM-TAD,ICML 2026,WADI,Sequential Best-F1 five-seed mean,0.744 ± 0.015,false,true,true,https://arxiv.org/pdf/2506.00188 | Table 12 | p.20,NOT_DIRECT
+CCM-TAD,ICML 2026,WADI,PR AUC five-seed mean,0.698 ± 0.024,false,false,true,https://arxiv.org/pdf/2506.00188 | Table 12 | p.20,PARTIAL
+CCM-TAD,ICML 2026,WADI,VUS-ROC five-seed mean,0.813 ± 0.017,false,false,true,https://arxiv.org/pdf/2506.00188 | Table 12 | p.20,NOT_DIRECT
+CCM-TAD,ICML 2026,WADI,VUS-PR five-seed mean,0.756 ± 0.016,false,false,true,https://arxiv.org/pdf/2506.00188 | Table 12 | p.20,NOT_DIRECT
+Ours-TAIL,This thesis,SWaT,AUPR,0.20674706781718546,false,false,false,E2 Historical Strict,LOCAL_REFERENCE
+Ours-TAIL,This thesis,SWaT,F1-Oracle,0.33980429815556806,false,true,Threshold diagnostic only,E2-R2 common-mask literature-compatible,LOCAL_REFERENCE

@@ -1,0 +1,153 @@
+subsection,ablation_id,dataset,variant,metric,value,source_csv,source_row,claim_id,notes
+6.6.1,ABL3,SWaT,R0 Final,params,11730,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,2,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,SWaT,R0 Final,auroc,0.8348868332349793,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,2,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,SWaT,R0 Final,aupr,0.7433527352403178,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,2,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,SWaT,R0 Final,f1,0.25806733892346256,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,2,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,SWaT,R0 Final,fpr,0.7181328636644296,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,2,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,SWaT,R0 Final,latency_mean_ms,0.7223017998185242,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,2,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,SWaT,R1,params,11436,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,3,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,SWaT,R1,auroc,0.8620823035712569,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,3,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,SWaT,R1,aupr,0.775608190669719,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,3,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,SWaT,R1,f1,0.2683987401780752,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,3,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,SWaT,R1,fpr,0.6659353395483486,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,3,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,SWaT,R1,latency_mean_ms,0.8863062000600621,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,3,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,SWaT,R2,params,25715,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,4,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,SWaT,R2,auroc,0.8313200302292119,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,4,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,SWaT,R2,aupr,0.7351371211709987,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,4,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,SWaT,R2,f1,0.25891799910604363,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,4,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,SWaT,R2,fpr,0.7045564969177979,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,4,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,SWaT,R2,latency_mean_ms,0.7116745987441391,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,4,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,HAI21,R0 Final,params,15482,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,5,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,HAI21,R0 Final,auroc,0.8528994386388824,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,5,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,HAI21,R0 Final,aupr,0.5362938177968499,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,5,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,HAI21,R0 Final,f1,0.5205943565171095,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,5,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,HAI21,R0 Final,fpr,0.016132687278958505,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,5,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,HAI21,R0 Final,latency_mean_ms,0.78600819989515,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,5,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,HAI21,R1,params,15132,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,6,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,HAI21,R1,auroc,0.8727543909607163,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,6,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,HAI21,R1,aupr,0.5644530407384591,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,6,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,HAI21,R1,f1,0.5353708950717636,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,6,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,HAI21,R1,fpr,0.017362499140659415,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,6,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,HAI21,R1,latency_mean_ms,0.6041066002217121,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,6,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,HAI21,R2,params,32911,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,7,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,HAI21,R2,auroc,0.8448357395183277,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,7,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,HAI21,R2,aupr,0.5080417375772849,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,7,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,HAI21,R2,f1,0.4961577497462666,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,7,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,HAI21,R2,fpr,0.016832890719885522,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,7,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,HAI21,R2,latency_mean_ms,0.5952618994633667,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,7,T6-6,表6-6；正文按6位小数展示
+6.6.1,ABL3,SWaT,R2 vs R0 Final,params_ratio_vs_R0,2.192242,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,2;4,C661-DENSE,冻结A3包记录的参数比；约值2.19
+6.6.1,ABL3,HAI21,R2 vs R0 Final,params_ratio_vs_R0,2.125759,outputs/thesis_ablation/innovation1/innovation1_cross_dataset_ablation.csv,5;7,C661-DENSE,冻结A3包记录的参数比；约值2.13
+6.6.2,ABL1,SWaT,D0 Final,selected_target_count,15,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,2,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,SWaT,D0 Final,auroc,0.6756309010005985,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,2,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,SWaT,D0 Final,aupr,0.1675102518890039,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,2,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,SWaT,D0 Final,f1,0.0156632729575258,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,2,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,SWaT,D0 Final,fpr,0.0124553359043656,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,2,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,SWaT,D0 Final,event_hit_count,2,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,2,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,SWaT,D1 Short-lag,selected_target_count,16,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,3,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,SWaT,D1 Short-lag,auroc,0.8659912392444066,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,3,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,SWaT,D1 Short-lag,aupr,0.5650122652604772,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,3,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,SWaT,D1 Short-lag,f1,0.015248836316922204,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,3,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,SWaT,D1 Short-lag,fpr,0.012300972740983672,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,3,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,SWaT,D1 Short-lag,event_hit_count,2,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,3,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,SWaT,D2 No-Gate,selected_target_count,25,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,4,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,SWaT,D2 No-Gate,auroc,0.6655179860409105,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,4,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,SWaT,D2 No-Gate,aupr,0.16514374157412573,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,4,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,SWaT,D2 No-Gate,f1,0.015663272957525867,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,4,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,SWaT,D2 No-Gate,fpr,0.012455335904365693,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,4,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,SWaT,D2 No-Gate,event_hit_count,2,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,4,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,HAI21,D0 Final,selected_target_count,54,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,9,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,HAI21,D0 Final,auroc,0.9163340375775214,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,9,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,HAI21,D0 Final,aupr,0.57019334460984,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,9,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,HAI21,D0 Final,f1,0.610555918244363,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,9,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,HAI21,D0 Final,fpr,0.0124432516938557,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,9,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,HAI21,D0 Final,event_hit_count,44,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,9,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,HAI21,D1 Short-lag,selected_target_count,54,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,10,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,HAI21,D1 Short-lag,auroc,0.8826102952837502,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,10,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,HAI21,D1 Short-lag,aupr,0.42606421169843145,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,10,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,HAI21,D1 Short-lag,f1,0.5560558307068889,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,10,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,HAI21,D1 Short-lag,fpr,0.009881780197228213,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,10,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,HAI21,D1 Short-lag,event_hit_count,44,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,10,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,HAI21,D2 No-Gate,selected_target_count,56,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,11,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,HAI21,D2 No-Gate,auroc,0.9151051847719168,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,11,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,HAI21,D2 No-Gate,aupr,0.5708803757686349,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,11,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,HAI21,D2 No-Gate,f1,0.610555918244363,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,11,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,HAI21,D2 No-Gate,fpr,0.012443251693855779,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,11,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,HAI21,D2 No-Gate,event_hit_count,44,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,11,T6-7,表6-7；正文按6位小数展示
+6.6.2,ABL1,HAI21,D0 Final,high19_median_hit,0.8410852713178295,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,9,C662-HAI-LAG,HAI HIGH19 lag贡献
+6.6.2,ABL1,HAI21,D1 Short-lag,high19_median_hit,0.5590551181102362,outputs/thesis_ablation/innovation2/summary/innovation2_real_ablation.csv,10,C662-HAI-LAG,HAI HIGH19 lag贡献
+6.6.2,ABL1-D3,SWaT,D3-A,target_count,25,outputs/thesis_ablation/innovation2/summary/gate_stage_details.csv,2,C662-GATE-STAGES,D3 Gate阶段target数
+6.6.2,ABL1-D3,SWaT,D3-B,target_count,20,outputs/thesis_ablation/innovation2/summary/gate_stage_details.csv,3,C662-GATE-STAGES,D3 Gate阶段target数
+6.6.2,ABL1-D3,SWaT,D3-C,target_count,18,outputs/thesis_ablation/innovation2/summary/gate_stage_details.csv,4,C662-GATE-STAGES,D3 Gate阶段target数
+6.6.2,ABL1-D3,SWaT,D3-D,target_count,15,outputs/thesis_ablation/innovation2/summary/gate_stage_details.csv,5,C662-GATE-STAGES,D3 Gate阶段target数
+6.6.2,ABL1-D3,HAI21,D3-A,target_count,56,outputs/thesis_ablation/innovation2/summary/gate_stage_details.csv,6,C662-GATE-STAGES,D3 Gate阶段target数
+6.6.2,ABL1-D3,HAI21,D3-B,target_count,54,outputs/thesis_ablation/innovation2/summary/gate_stage_details.csv,7,C662-GATE-STAGES,D3 Gate阶段target数
+6.6.2,ABL1-D3,HAI21,D3-C,target_count,54,outputs/thesis_ablation/innovation2/summary/gate_stage_details.csv,8,C662-GATE-STAGES,D3 Gate阶段target数
+6.6.2,ABL1-D3,HAI21,D3-D,target_count,54,outputs/thesis_ablation/innovation2/summary/gate_stage_details.csv,9,C662-GATE-STAGES,D3 Gate阶段target数
+6.6.2,ABL1,Historical CoMuT,D0 Final,auroc,0.9959890016920473,outputs/thesis_ablation/innovation2/summary/innovation2_mechanism_ablation.csv,2,T6-8,表6-8；机制场景与真实攻击不直接排名
+6.6.2,ABL1,Historical CoMuT,D0 Final,aupr,0.6869274738232765,outputs/thesis_ablation/innovation2/summary/innovation2_mechanism_ablation.csv,2,T6-8,表6-8；机制场景与真实攻击不直接排名
+6.6.2,ABL1,Historical CoMuT,D0 Final,recall,0.9375,outputs/thesis_ablation/innovation2/summary/innovation2_mechanism_ablation.csv,2,T6-8,表6-8；机制场景与真实攻击不直接排名
+6.6.2,ABL1,Historical CoMuT,D0 Final,fpr,0.01031344792719919,outputs/thesis_ablation/innovation2/summary/innovation2_mechanism_ablation.csv,2,T6-8,表6-8；机制场景与真实攻击不直接排名
+6.6.2,ABL1,Historical CoMuT,D1 Short-lag,auroc,0.9953051732925586,outputs/thesis_ablation/innovation2/summary/innovation2_mechanism_ablation.csv,3,T6-8,表6-8；机制场景与真实攻击不直接排名
+6.6.2,ABL1,Historical CoMuT,D1 Short-lag,aupr,0.6380431314389398,outputs/thesis_ablation/innovation2/summary/innovation2_mechanism_ablation.csv,3,T6-8,表6-8；机制场景与真实攻击不直接排名
+6.6.2,ABL1,Historical CoMuT,D1 Short-lag,recall,0.925,outputs/thesis_ablation/innovation2/summary/innovation2_mechanism_ablation.csv,3,T6-8,表6-8；机制场景与真实攻击不直接排名
+6.6.2,ABL1,Historical CoMuT,D1 Short-lag,fpr,0.010775427995971802,outputs/thesis_ablation/innovation2/summary/innovation2_mechanism_ablation.csv,3,T6-8,表6-8；机制场景与真实攻击不直接排名
+6.6.2,ABL1,SWaT controlled,D0 Final,auroc,0.9969127499999999,outputs/thesis_ablation/innovation2/summary/innovation2_mechanism_ablation.csv,4,T6-8,表6-8；机制场景与真实攻击不直接排名
+6.6.2,ABL1,SWaT controlled,D0 Final,aupr,0.9969305918972058,outputs/thesis_ablation/innovation2/summary/innovation2_mechanism_ablation.csv,4,T6-8,表6-8；机制场景与真实攻击不直接排名
+6.6.2,ABL1,SWaT controlled,D0 Final,recall,0.8727499999999999,outputs/thesis_ablation/innovation2/summary/innovation2_mechanism_ablation.csv,4,T6-8,表6-8；机制场景与真实攻击不直接排名
+6.6.2,ABL1,SWaT controlled,D0 Final,fpr,0.009500000000000001,outputs/thesis_ablation/innovation2/summary/innovation2_mechanism_ablation.csv,4,T6-8,表6-8；机制场景与真实攻击不直接排名
+6.6.2,ABL1,SWaT controlled,D1 Short-lag,auroc,0.99579,outputs/thesis_ablation/innovation2/summary/innovation2_mechanism_ablation.csv,5,T6-8,表6-8；机制场景与真实攻击不直接排名
+6.6.2,ABL1,SWaT controlled,D1 Short-lag,aupr,0.9951244475694246,outputs/thesis_ablation/innovation2/summary/innovation2_mechanism_ablation.csv,5,T6-8,表6-8；机制场景与真实攻击不直接排名
+6.6.2,ABL1,SWaT controlled,D1 Short-lag,recall,0.83975,outputs/thesis_ablation/innovation2/summary/innovation2_mechanism_ablation.csv,5,T6-8,表6-8；机制场景与真实攻击不直接排名
+6.6.2,ABL1,SWaT controlled,D1 Short-lag,fpr,0.00975,outputs/thesis_ablation/innovation2/summary/innovation2_mechanism_ablation.csv,5,T6-8,表6-8；机制场景与真实攻击不直接排名
+6.6.2,ABL1,SWaT controlled,D2 No-Gate,auroc,0.6306372499999999,outputs/thesis_ablation/innovation2/summary/innovation2_mechanism_ablation.csv,6,T6-8,表6-8；机制场景与真实攻击不直接排名
+6.6.2,ABL1,SWaT controlled,D2 No-Gate,aupr,0.5500758181908233,outputs/thesis_ablation/innovation2/summary/innovation2_mechanism_ablation.csv,6,T6-8,表6-8；机制场景与真实攻击不直接排名
+6.6.2,ABL1,SWaT controlled,D2 No-Gate,recall,0.008,outputs/thesis_ablation/innovation2/summary/innovation2_mechanism_ablation.csv,6,T6-8,表6-8；机制场景与真实攻击不直接排名
+6.6.2,ABL1,SWaT controlled,D2 No-Gate,fpr,0.008,outputs/thesis_ablation/innovation2/summary/innovation2_mechanism_ablation.csv,6,T6-8,表6-8；机制场景与真实攻击不直接排名
+6.6.3,ABL2,SWaT,F0 REC,auroc,0.8348868332349793,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,2,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,SWaT,F0 REC,aupr,0.7433527352403178,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,2,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,SWaT,F0 REC,f1,0.2580673389234625,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,2,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,SWaT,F0 REC,fpr,0.7181328636644296,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,2,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,SWaT,F1 DUAL,auroc,0.6756309010005985,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,3,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,SWaT,F1 DUAL,aupr,0.1675102518890039,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,3,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,SWaT,F1 DUAL,f1,0.0156632729575258,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,3,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,SWaT,F1 DUAL,fpr,0.0124553359043656,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,3,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,SWaT,F3 Robust-Z,auroc,0.6813680669306438,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,4,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,SWaT,F3 Robust-Z,aupr,0.1689788715329632,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,4,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,SWaT,F3 Robust-Z,f1,0.0156635339598746,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,4,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,SWaT,F3 Robust-Z,fpr,0.0124528053607036,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,4,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,SWaT,F4 Tail-Calibrated,auroc,0.7083750969633809,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,5,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,SWaT,F4 Tail-Calibrated,aupr,0.2067470678171854,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,5,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,SWaT,F4 Tail-Calibrated,f1,0.26078894669365,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,5,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,SWaT,F4 Tail-Calibrated,fpr,0.6925313534359722,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,5,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,HAI21,F0 REC,auroc,0.8528994386388824,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,6,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,HAI21,F0 REC,aupr,0.5362938177968499,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,6,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,HAI21,F0 REC,f1,0.5205943565171095,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,6,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,HAI21,F0 REC,fpr,0.0161326872789585,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,6,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,HAI21,F1 DUAL,auroc,0.9163340375775214,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,7,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,HAI21,F1 DUAL,aupr,0.57019334460984,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,7,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,HAI21,F1 DUAL,f1,0.610555918244363,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,7,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,HAI21,F1 DUAL,fpr,0.0124432516938557,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,7,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,HAI21,F3 Robust-Z,auroc,0.9078336961531244,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,8,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,HAI21,F3 Robust-Z,aupr,0.5767157779034672,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,8,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,HAI21,F3 Robust-Z,f1,0.6195034400239305,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,8,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,HAI21,F3 Robust-Z,fpr,0.0124712598314928,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,8,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,HAI21,F4 Tail-Calibrated,auroc,0.901849793561368,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,9,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,HAI21,F4 Tail-Calibrated,aupr,0.6178966926696478,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,9,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,HAI21,F4 Tail-Calibrated,f1,0.6173502361421824,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,9,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,HAI21,F4 Tail-Calibrated,fpr,0.0126265776856621,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,9,T6-9,表6-9；正文按6位小数展示
+6.6.3,ABL2,SWaT,F3 Robust-Z,top1_rec_share,0,outputs/thesis_ablation/innovation3/normal_tail_balance.csv,3,C663-ROBUSTZ,Normal top-1% evidence贡献
+6.6.3,ABL2,SWaT,F3 Robust-Z,top1_dual_share,1,outputs/thesis_ablation/innovation3/normal_tail_balance.csv,3,C663-ROBUSTZ,Normal top-1% evidence贡献
+6.6.3,ABL2,SWaT,F4 Tail-Calibrated,balance_ratio,1.04488845531713,outputs/thesis_ablation/innovation3/normal_tail_balance.csv,4,C663-TAIL-BALANCE,Normal-tail balance；WADI仅域偏移压力测试
+6.6.3,ABL2,SWaT,F4 Tail-Calibrated,top1_rec_share,0.6519114688128773,outputs/thesis_ablation/innovation3/normal_tail_balance.csv,4,C663-TAIL-BALANCE,Normal-tail balance；WADI仅域偏移压力测试
+6.6.3,ABL2,SWaT,F4 Tail-Calibrated,top1_dual_share,0.3480885311871227,outputs/thesis_ablation/innovation3/normal_tail_balance.csv,4,C663-TAIL-BALANCE,Normal-tail balance；WADI仅域偏移压力测试
+6.6.3,ABL2,HAI21,F3 Robust-Z,top1_rec_share,0,outputs/thesis_ablation/innovation3/normal_tail_balance.csv,6,C663-ROBUSTZ,Normal top-1% evidence贡献
+6.6.3,ABL2,HAI21,F3 Robust-Z,top1_dual_share,1,outputs/thesis_ablation/innovation3/normal_tail_balance.csv,6,C663-ROBUSTZ,Normal top-1% evidence贡献
+6.6.3,ABL2,HAI21,F4 Tail-Calibrated,balance_ratio,1.0002800414976116,outputs/thesis_ablation/innovation3/normal_tail_balance.csv,7,C663-TAIL-BALANCE,Normal-tail balance；WADI仅域偏移压力测试
+6.6.3,ABL2,HAI21,F4 Tail-Calibrated,top1_rec_share,0.5915492957746479,outputs/thesis_ablation/innovation3/normal_tail_balance.csv,7,C663-TAIL-BALANCE,Normal-tail balance；WADI仅域偏移压力测试
+6.6.3,ABL2,HAI21,F4 Tail-Calibrated,top1_dual_share,0.4084507042253521,outputs/thesis_ablation/innovation3/normal_tail_balance.csv,7,C663-TAIL-BALANCE,Normal-tail balance；WADI仅域偏移压力测试
+6.6.3,ABL2,WADI.A2,F3 Robust-Z,top1_rec_share,0,outputs/thesis_ablation/innovation3/normal_tail_balance.csv,8,C663-ROBUSTZ,Normal top-1% evidence贡献
+6.6.3,ABL2,WADI.A2,F3 Robust-Z,top1_dual_share,1,outputs/thesis_ablation/innovation3/normal_tail_balance.csv,8,C663-ROBUSTZ,Normal top-1% evidence贡献
+6.6.3,ABL2,WADI.A2,F4 Tail-Calibrated,balance_ratio,1.0352968814016037,outputs/thesis_ablation/innovation3/normal_tail_balance.csv,9,C663-TAIL-BALANCE,Normal-tail balance；WADI仅域偏移压力测试
+6.6.3,ABL2,WADI.A2,F4 Tail-Calibrated,top1_rec_share,0.5178117048346056,outputs/thesis_ablation/innovation3/normal_tail_balance.csv,9,C663-TAIL-BALANCE,Normal-tail balance；WADI仅域偏移压力测试
+6.6.3,ABL2,WADI.A2,F4 Tail-Calibrated,top1_dual_share,0.4821882951653944,outputs/thesis_ablation/innovation3/normal_tail_balance.csv,9,C663-TAIL-BALANCE,Normal-tail balance；WADI仅域偏移压力测试
+6.6.3,ABL2,HAI21,F4 Tail-Calibrated,delta_vs_best_single_AUPR,0.047703348059807804,outputs/thesis_ablation/innovation3/fusion_detection_ablation.csv,9,C663-HAI-COMPLEMENT,相对最佳单分支AUPR增量

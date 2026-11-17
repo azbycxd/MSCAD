@@ -1,0 +1,37 @@
+{
+  "dataset": "hai",
+  "data_root": "D:/workspace/python/mscad/dataset/dataset/hai-22.04",
+  "seeds": [1, 2, 3],
+  "checkpoint_pattern": "outputs/hai_step3a_rec_baseline_seed{seed}/best.pt",
+  "step3c_score_pattern": "outputs/hai_step3c_rec_score_alignment/rec_alignment_scores_seed{seed}.npz",
+  "window_size": 64,
+  "stride": 1,
+  "batch_size": 128,
+  "num_workers": 0,
+  "device": "cuda",
+  "minimum_channel_scale": 1e-8,
+  "score_variants": [
+    "endpoint_raw_mean",
+    "endpoint_raw_top5",
+    "endpoint_calibrated_mean",
+    "endpoint_calibrated_top3",
+    "endpoint_calibrated_top5",
+    "endpoint_calibrated_top10",
+    "endpoint_calibrated_max"
+  ],
+  "primary_score": "endpoint_calibrated_top5",
+  "baseline_score": "endpoint_raw_mean",
+  "thresholds": {
+    "pot_q": 0.95,
+    "pot_target_prob": 0.005,
+    "validation_q99": 0.99,
+    "validation_q995": 0.995,
+    "sequence_max_quantile": 0.99
+  },
+  "consistency_tolerance": 2e-5,
+  "normal_high_score_points_per_file": 1000,
+  "anomaly_high_score_points_per_file": 1000,
+  "smoke_max_windows_per_sequence": 2048,
+  "output_dir": "outputs/hai_step3d_rec_channel_calibration",
+  "smoke_output_dir": "outputs/hai_step3d_rec_channel_calibration_smoke"
+}

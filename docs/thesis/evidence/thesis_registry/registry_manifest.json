@@ -1,0 +1,73 @@
+{
+  "phase": "Thesis E3-FINAL",
+  "status": "THESIS_PRE_ABLATION_STATE_FROZEN",
+  "freeze_date": "2026-09-23",
+  "counts": {
+    "strict_rows": 12,
+    "literature_compatible_rows": 12,
+    "efficiency_rows": 14,
+    "recent_literature_source_rows": 47,
+    "recent_literature_local_reference_rows": 2,
+    "experiment_registry_rows": 20,
+    "literature_registry_rows": 4,
+    "external_direct_rows": 0
+  },
+  "method_freeze": {
+    "ours_status": "FROZEN",
+    "unified_reliability_gate": "FROZEN",
+    "self_cross_lags": "FROZEN",
+    "ridge_alpha": "FROZEN",
+    "dual_score": "FROZEN",
+    "tail_calibration": "FROZEN",
+    "primary_datasets": [
+      "SWaT 2015 Official Physical",
+      "HAI 21.03"
+    ],
+    "wadi_role": "DOMAIN_SHIFT_STRESS_TEST",
+    "ablation_rule": "Ablations may remove or isolate frozen components; they may not redefine the main method or refit protocol from Test results."
+  },
+  "evaluation_layers": {
+    "historical_strict": "Primary; frozen Validation q99; no PA; no Test tuning",
+    "common_mask_strict": "Same legal endpoint identity intersection; frozen Validation q99",
+    "literature_compatible": "Retrospective diagnostic only; includes Test-best Oracle and classic PA",
+    "paper_reported": "External first-party values preserved without metric conversion"
+  },
+  "literature_freeze": {
+    "literature_search_closed": true,
+    "reason": "Official first-party evidence exhausted and predefined E3-R1 time budget reached",
+    "park_shim_2026": "PARTIAL_FINAL",
+    "latentflow_2026": "RESULTS_PARTIALLY_EXTRACTED",
+    "mad_tcn_2026": "OFFICIAL_CODE_INCOMPLETE/PERFORMANCE_NOT_EXTRACTED",
+    "ccm_tad_2026": "RESULTS_EXTRACTED/PROTOCOL_REQUIRES_REVIEW"
+  },
+  "restrictions": {
+    "training": false,
+    "inference": false,
+    "baseline_run": false,
+    "literature_search": false,
+    "value_guessing": false,
+    "metric_conversion": false,
+    "method_change": false,
+    "test_tuning": false,
+    "files_deleted": false,
+    "commit": false,
+    "push": false
+  },
+  "output_sha256": {
+    "table1": "164e27d8c4e83d8e33a56392a974418e8a325b24cc223d3228c48b1ea55af6d8",
+    "table2": "d480e8aed48e90b54a6405bd88165bf95ec54bfc00cafa835d024c6b93aa7d15",
+    "table3": "ae57b2da61ad58c0fbe0d910ab8b5bff38655fa0115c1a599aad42d8ea8d6d39",
+    "table4": "fbd38af1b5fe595cfbf7dbda319e739e780adeab0c6d0119c73b9c3dbb098f78",
+    "experiments": "60dafafb73c19c86aa0e84b073283a4fdda26756eb8372740b36d6cd16e05d9f",
+    "literature": "daabb08e93e9fde211961730c259f15b3c433e6c41d951113c70fc2025a66bb0"
+  },
+  "source_sha256": {
+    "e2_historical_strict": "7713658433fdd150864bafb93ad7a8e9d540b62fd35366b215d8b81b8a38184c",
+    "e2_common_mask": "3eb20a68fe0432fda50edf864d6cc44e6d0f3c4c1dec2907411c06f96e108061",
+    "e2_literature_compatible": "1c1cc0da1f907cb7739f6f72794a1db747fb33cb849d602ed81327c3401c5629",
+    "e3_park": "c6e89187af2fc8c65fe2afddffe7ac6c66cc119db9c072cc028a7fc806c7098d",
+    "e3_latentflow": "8db6a396e94cb91580ead76d7e4ec910ef475d6ed7c23ce046a83175c3c24665",
+    "e3_madtcn": "7409a7c96b76a6ac574d264193f0abd9e89b75b894145a93e449d69aa92e9556",
+    "e3_ccmtad": "ecca364b3c67c96dc21cc0ef6fb5f73d7815332c577dda2738bf01a2661ec8c8"
+  }
+}

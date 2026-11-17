@@ -1,0 +1,13 @@
+dataset,variant,event_count,event_hit_at_least_0_10,median_event_hit,high_event_count,high_median_hit,direct_median_hit,rec_near_miss_recovered,notes
+SWaT,F0 REC,36,29,1,,,,,frozen official event semantics
+SWaT,F1 DUAL,36,2,0,,,,,frozen official event semantics
+SWaT,F3 Robust-Z,36,2,0,,,,,frozen official event semantics
+SWaT,F4 Tail-Calibrated,36,28,1,,,,,frozen official event semantics
+HAI21,F0 REC,50,45,0.6411870110572091,19,0.6501901140684411,0.5588235294117647,,frozen official event semantics
+HAI21,F1 DUAL,50,44,0.8356369752815562,19,0.8410852713178295,0.8301886792452831,3,frozen official event semantics
+HAI21,F3 Robust-Z,50,46,0.8477079899896234,19,0.8410852713178295,0.8679245283018868,,frozen official event semantics
+HAI21,F4 Tail-Calibrated,50,45,0.8437709821156076,19,0.8388625592417062,0.8734177215189873,1,frozen official event semantics
+WADI.A2,F0 REC,14,11,1,,,,,frozen official event semantics
+WADI.A2,F1 DUAL,14,7,0.5321489001692047,,,,,frozen official event semantics
+WADI.A2,F3 Robust-Z,14,8,0.9971387696709585,,,,,frozen official event semantics
+WADI.A2,F4 Tail-Calibrated,14,9,1,,,,,frozen official event semantics

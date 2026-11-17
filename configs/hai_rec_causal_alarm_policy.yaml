@@ -1,0 +1,32 @@
+{
+  "dataset": "hai",
+  "seeds": [1, 2, 3],
+  "step3d_output_dir": "outputs/hai_step3d_rec_channel_calibration",
+  "score_npz_pattern": "outputs/hai_step3d_rec_channel_calibration/rec_channel_scores_seed{seed}.npz",
+  "threshold_file": "outputs/hai_step3d_rec_channel_calibration/rec_channel_thresholds.csv",
+  "point_metric_file": "outputs/hai_step3d_rec_channel_calibration/rec_channel_point_metrics_by_seed.csv",
+  "event_metric_file": "outputs/hai_step3d_rec_channel_calibration/rec_channel_event_summary.csv",
+  "score_variant": "endpoint_raw_top5",
+  "threshold_methods": [
+    "train_only_pot",
+    "normal_validation_q99",
+    "normal_validation_q995",
+    "validation_sequence_max_q99"
+  ],
+  "policies": [
+    "pointwise_baseline",
+    "consecutive_2",
+    "consecutive_3",
+    "vote_2_of_3",
+    "vote_3_of_5",
+    "hysteresis_q995_q99_exit3"
+  ],
+  "primary_policy": "vote_2_of_3",
+  "primary_threshold_method": "normal_validation_q99",
+  "hysteresis_enter_method": "normal_validation_q995",
+  "hysteresis_stay_method": "normal_validation_q99",
+  "consistency_tolerance": 1e-12,
+  "smoke_max_points_per_sequence": 4096,
+  "output_dir": "outputs/hai_step3e_rec_causal_alarm_policy",
+  "smoke_output_dir": "outputs/hai_step3e_rec_causal_alarm_policy_smoke"
+}

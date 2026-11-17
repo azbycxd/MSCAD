@@ -1,0 +1,67 @@
+%%{init: {"theme":"base","themeVariables":{"fontFamily":"Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif","fontSize":"15px","lineColor":"#334155","primaryTextColor":"#111827","primaryBorderColor":"#475569","clusterBkg":"#F8FAFC","clusterBorder":"#64748B","edgeLabelBackground":"#FFFFFF"},"flowchart":{"curve":"linear","htmlLabels":true,"nodeSpacing":24,"rankSpacing":36,"padding":10}}}%%
+flowchart TB
+    subgraph CAL["阶段 1：正常验证校准（仅 Normal Validation）"]
+        direction LR
+        VREC["对齐后的 REC Validation 分数"]
+        VDUAL["对齐后的 DUAL Validation 分数"]
+        ALIGN["逐连续 segment 对齐<br/>共同合法 endpoint"]
+        SPLIT["按时间顺序 50 / 50 切分<br/>前半：Calibration-A<br/>后半：Threshold-B"]
+        CREC["Calibration-A<br/>REC 正常参考 C_REC"]
+        CDUAL["Calibration-A<br/>DUAL 正常参考 C_DUAL"]
+        MAPREC["REC 经验正常上尾映射<br/>count(s ≥ x)，有限样本 +1 修正"]
+        MAPDUAL["DUAL 经验正常上尾映射<br/>count(s ≥ x)，有限样本 +1 修正"]
+        BREC["Threshold-B<br/>REC 分数"]
+        BDUAL["Threshold-B<br/>DUAL 分数"]
+        EBREC["尾部证据<br/>E_REC = −log10(p_tail,REC)"]
+        EBDUAL["尾部证据<br/>E_DUAL = −log10(p_tail,DUAL)"]
+        BFUSE["Threshold-B 融合分数<br/>S_TAIL^B = max(E_REC, E_DUAL)"]
+        TAU["冻结阈值<br/>tau_TAIL = q99(S_TAIL^B)"]
+
+        VREC --> ALIGN
+        VDUAL --> ALIGN
+        ALIGN --> SPLIT
+        SPLIT --> CREC
+        SPLIT --> CDUAL
+        SPLIT --> BREC
+        SPLIT --> BDUAL
+        CREC --> MAPREC
+        CDUAL --> MAPDUAL
+        BREC --> EBREC
+        MAPREC --> EBREC
+        BDUAL --> EBDUAL
+        MAPDUAL --> EBDUAL
+        EBREC --> BFUSE
+        EBDUAL --> BFUSE
+        BFUSE --> TAU
+    end
+
+    subgraph TEST["阶段 2：冻结 Test 推理（无 Test adaptation）"]
+        direction LR
+        TREC["REC Test score  S_REC(t)"]
+        TDUAL["DUAL Test score  S_DUAL(t)"]
+        TEREC["冻结 REC 映射<br/>E_REC(t)"]
+        TEDUAL["冻结 DUAL 映射<br/>E_DUAL(t)"]
+        TFUSE["Tail-Calibrated Fusion Score<br/>S_TAIL(t) = max(E_REC(t), E_DUAL(t))"]
+        DECIDE["S_TAIL(t) > tau_TAIL ?"]
+        ANOM["二值异常判定"]
+
+        TREC --> TEREC
+        TDUAL --> TEDUAL
+        TEREC --> TFUSE
+        TEDUAL --> TFUSE
+        TFUSE --> DECIDE --> ANOM
+    end
+
+    MAPREC -. "冻结 C_REC" .-> TEREC
+    MAPDUAL -. "冻结 C_DUAL" .-> TEDUAL
+    TAU -. "冻结 q99 阈值" .-> DECIDE
+    CAL ~~~ TEST
+
+    style CAL fill:#F4F8FC,stroke:#52677A,stroke-width:1.6px
+    style TEST fill:#FCFAF4,stroke:#52677A,stroke-width:1.6px,stroke-dasharray:7 4
+    classDef normal fill:#EAF2F8,stroke:#52677A,stroke-width:1.4px,color:#111827
+    classDef frozen fill:#FFF7DD,stroke:#6B5B2A,stroke-width:1.4px,color:#111827
+    classDef core fill:#FFFFFF,stroke:#111827,stroke-width:2.4px,color:#111827,font-weight:bold
+    class VREC,VDUAL,ALIGN,SPLIT,CREC,CDUAL,BREC,BDUAL normal
+    class MAPREC,MAPDUAL,TAU,TEREC,TEDUAL frozen
+    class BFUSE,TFUSE,DECIDE,ANOM core

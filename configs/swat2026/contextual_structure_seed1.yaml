@@ -1,0 +1,36 @@
+{
+  "dataset": "swat_a12_2026",
+  "seed": 1,
+  "data": {
+    "data_path": "Swat_new/11-Mar-2026_0900_1700.csv",
+    "n2_dir": "outputs/swat2026_n2_label_split",
+    "m1_dir": "outputs/swat2026_batch_m1_rec_baseline",
+    "checkpoint": "outputs/swat2026_batch_m1_rec_baseline/checkpoints/best_seed1.pt",
+    "checkpoint_sha256": "0f145cc0385bdbb6d8b638dde3c087cf757380c7f845dfdc45bb90d6fc4a5728",
+    "source_sha256": "d1dd05034b393a6b201f39e86ac3b933000551d26680c5d91c5ff8db0559cf72"
+  },
+  "split": {"window_size": 128, "discovery_ratio": 0.70, "boundary_guard_points": 127},
+  "lag_seconds": [-30, -20, -10, -5, 0, 5, 10, 20, 30],
+  "representations": ["lagged_level", "lagged_delta", "conditioned_level", "conditioned_delta"],
+  "reproducibility": {
+    "valid_window_ratio": 0.95, "median_abs_corr": 0.25,
+    "sign_consistency": 0.75, "corr_iqr": 0.40,
+    "absolute_median_gap": 0.15, "pooled_scale_multiplier": 2.5,
+    "activity_valid_ratio": 0.95, "max_pairs": 20,
+    "max_degree": 3, "fisher_scale_floor": 0.05
+  },
+  "states": {
+    "allowed_suffixes": [".Stat", "_STATE"], "forbidden_fragments": [".Al", ".Alarm"],
+    "explicit_binary_mappings": {}, "minimum_state_points": 512,
+    "minimum_stable_windows": 256, "maximum_unknown_ratio": 0.01,
+    "maximum_channels": 2,
+    "ranking": "ascending occupancy-ratio gap, then channel name"
+  },
+  "controlled": {
+    "shifts": [8, 16, 24, 32], "validation_quantile": 0.99,
+    "minimum_primary_auroc": 0.80, "minimum_coverage": 0.80,
+    "seed": 1
+  },
+  "evaluation": {"point_adjustment": false, "fusion": false, "test_points": 14400},
+  "output": {"dir": "outputs/swat2026_batch_m2s_contextual_structure"}
+}

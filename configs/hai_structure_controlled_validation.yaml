@@ -1,0 +1,44 @@
+dataset: HAI-22.04
+seed: 2026
+reuse_frozen: true
+force_recompute: false
+data_root: D:/workspace/python/mscad/dataset/dataset/hai-22.04
+step1_output: outputs/hai_step1_dataset_audit
+step2_output: outputs/hai_step2_dataloader_validation
+step3g_output: outputs/hai_step3g_rec_capacity_ablation
+step4a_output: outputs/hai_step4a_normal_relation_diagnosis
+output_dir: outputs/hai_step4b_structure_controlled_validation
+smoke_output_dir: outputs/hai_step4b_structure_controlled_validation_smoke
+windows: [64, 128]
+primary_window: 128
+train_stride: 32
+diagnostic_stride: 16
+max_windows_per_sequence: 1000
+smoke_rows_per_split: 768
+smoke_max_windows_per_sequence: 16
+reference_strategies:
+  - strict_global_2
+  - diversity_global
+  - mixed_nearest_normal_reference
+  - mixed_global_only_ablation
+aggregations: [top3_mean, max]
+primary_aggregation: top3_mean
+corruptions:
+  breaking: [R1_one_channel_circular_shift, R2_one_channel_block_permutation, R3_matched_normal_channel_replacement]
+  preserving: [C1_both_channels_circular_shift, C2_both_channels_block_permutation]
+block_order: [2, 0, 3, 1]
+shift_by_window: {64: 16, 128: 32}
+replacement_quantile_bins: 5
+reference_epsilon: 1.0e-6
+threshold_quantile: 0.99
+selection_gates:
+  overall_fpr_max: 0.015
+  sequence_fpr_max: 0.04
+  corruption_auroc_min: 0.75
+  corruption_families_required: 2
+  macro_auroc_min: 0.72
+  macro_tpr_min: 0.45
+  sequence_auroc_min: 0.65
+  sequences_required: 5
+  preserving_fpr_max: 0.08
+  epsilon_fallback_ratio_max: 0.20

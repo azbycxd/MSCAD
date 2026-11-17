@@ -1,0 +1,31 @@
+# Template only. No train/validation/test split is defined at SWaT-N0.
+dataset:
+  name: swat2026
+  csv_path_env: SWAT2026_DATA_PATH
+  timestamp_column: t_stamp
+  label_column: null
+  feature_mode: process_values_only
+  include_status_columns: false
+  include_alarm_columns: false
+  categorical_unknown_policy: error
+  preserve_original_order: true
+
+window:
+  window_size: 64
+  stride: 1
+
+preprocessing:
+  scaler: standard
+  fit_on_normal_train_only: true
+  missing_numeric_policy: error
+  missing_categorical_policy: error
+
+split:
+  status: undefined_requires_labels_or_official_attack_schedule
+  train: null
+  validation: null
+  test: null
+
+output:
+  root: outputs/swat2026
+

@@ -1,0 +1,22 @@
+{
+  "status": "ABLATION_FINAL_PACKAGE_READY",
+  "source_sha256": {
+    "innovation1": "c4e67f14469df91814c5d26c37e298b28b866d2dce71cc26f331ee0262728246",
+    "innovation2_real": "242f721bff61c3c39b43c885fadb47b6b5311f5711fe5072888e0ea88213dbb7",
+    "innovation2_mechanism": "1828b40164099ec8b12c0adb1e42e578e8982803cccdc643ec1ea3fa3cb24fa1",
+    "normal_tail": "925d624211d3c5ec60f6417a4e8b1aeb53ddbd2650bd15dd5d75c007e626114a",
+    "fusion": "fce442bb3fde4e200dd20c43120d9300055451e86ec3f81187d04714031f180c"
+  },
+  "figure_audit_rows": 54,
+  "prohibited_actions": {
+    "training": false,
+    "inference": false,
+    "new_experiment": false,
+    "result_recomputation": false,
+    "test_tuning": false,
+    "file_delete": false,
+    "git_add": false,
+    "commit": false,
+    "push": false
+  }
+}

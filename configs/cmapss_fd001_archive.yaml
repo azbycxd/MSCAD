@@ -1,0 +1,63 @@
+{
+  "dataset": "cmapss",
+  "seed": 42,
+  "device": "cuda",
+  "protocol": {
+    "name": "cmapss_fd001_main",
+    "notes": "FD001-style anomaly protocol. Train uses normal-only prefix, test labels by last-K or RUL-threshold."
+  },
+  "data": {
+    "source": "fd001_txt",
+    "train_path": "dataset/dataset/CMAPSS/archive/train_FD001.txt",
+    "test_path": "dataset/dataset/CMAPSS/archive/test_FD001.txt",
+    "rul_path": "dataset/dataset/CMAPSS/archive/RUL_FD001.txt",
+    "npz_path": null,
+    "label_mode": "last_k",
+    "last_k_cycles": 30,
+    "rul_threshold": 30,
+    "use_ops": true,
+    "use_sensors": true,
+    "near_const_var_threshold": 1e-8,
+    "window_size": 50,
+    "short_window": 10,
+    "val_ratio": 0.2,
+    "stride_train": 1,
+    "stride_test": 1,
+    "batch_size": 128,
+    "num_workers": 0
+  },
+  "model": {
+    "in_channels": 24,
+    "hidden_channels": 64,
+    "latent_channels": 32,
+    "dropout": 0.1
+  },
+  "train": {
+    "epochs": 40,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "patience": 8,
+    "lambda_rec": 1.0,
+    "lambda_s": 0.05,
+    "lambda_l": 0.02,
+    "structure_warmup_epochs": 10,
+    "cov_type": "corr",
+    "structure_pairs": {
+      "enabled": true,
+      "topk": 15,
+      "min_abs_corr": 0.9
+    }
+  },
+  "eval": {
+    "alpha": 0.5,
+    "beta": 0.2,
+    "gamma": 0.3,
+    "smooth_window": 3,
+    "threshold_mode": "pot",
+    "pot_q": 0.95,
+    "pot_target_prob": 0.005
+  },
+  "output": {
+    "dir": "outputs/cmapss_fd001_main"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "dataset": "cmapss",
+  "seed": 42,
+  "device": "cuda",
+  "protocol": {
+    "name": "ncmapss_ds02_lastk30",
+    "notes": "Use preprocessed N-CMAPSS (converted to CMAPSS-style anomaly detection protocol)."
+  },
+  "data": {
+    "source": "npz",
+    "npz_path": "dataset/dataset/CMAPSS/processed/ncmapss_ds02_006_lastk30.npz",
+    "train_path": null,
+    "test_path": null,
+    "rul_path": null,
+    "label_mode": "last_k",
+    "last_k_cycles": 30,
+    "rul_threshold": 30,
+    "use_ops": true,
+    "use_sensors": true,
+    "near_const_var_threshold": 1e-8,
+    "window_size": 30,
+    "short_window": 8,
+    "val_ratio": 0.2,
+    "stride_train": 1,
+    "stride_test": 1,
+    "batch_size": 128,
+    "num_workers": 0
+  },
+  "model": {
+    "in_channels": 18,
+    "hidden_channels": 64,
+    "latent_channels": 32,
+    "dropout": 0.1
+  },
+  "train": {
+    "epochs": 40,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "patience": 8,
+    "lambda_rec": 1.0,
+    "lambda_s": 0.05,
+    "lambda_l": 0.02,
+    "structure_warmup_epochs": 10,
+    "cov_type": "corr",
+    "structure_pairs": {
+      "enabled": true,
+      "topk": 15,
+      "min_abs_corr": 0.9
+    }
+  },
+  "eval": {
+    "alpha": 0.5,
+    "beta": 0.2,
+    "gamma": 0.3,
+    "smooth_window": 3,
+    "threshold_mode": "pot",
+    "pot_q": 0.95,
+    "pot_target_prob": 0.005
+  },
+  "output": {
+    "dir": "outputs/cmapss_ncmapss_main"
+  }
+}

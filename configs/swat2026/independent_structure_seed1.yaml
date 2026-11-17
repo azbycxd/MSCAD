@@ -1,0 +1,44 @@
+{
+  "dataset": "swat_a12_2026",
+  "seed": 1,
+  "data": {
+    "data_path": "Swat_new/11-Mar-2026_0900_1700.csv",
+    "n2_dir": "outputs/swat2026_n2_label_split",
+    "m1_dir": "outputs/swat2026_batch_m1_rec_baseline",
+    "checkpoint": "outputs/swat2026_batch_m1_rec_baseline/checkpoints/best_seed1.pt",
+    "checkpoint_sha256": "0f145cc0385bdbb6d8b638dde3c087cf757380c7f845dfdc45bb90d6fc4a5728"
+  },
+  "relations": {
+    "primary_window": 128,
+    "diagnostic_window": 64,
+    "strict_valid_window_ratio": 0.95,
+    "strict_median_abs_corr": 0.30,
+    "strict_corr_iqr": 0.25,
+    "strict_sign_consistency": 0.80,
+    "expanded_valid_window_ratio": 0.90,
+    "expanded_median_abs_corr": 0.20,
+    "expanded_corr_iqr": 0.35,
+    "activity_ratio_min": 0.50,
+    "strict_max_pairs": 20,
+    "diverse_max_pairs": 10,
+    "diverse_max_degree": 2,
+    "fisher_scale_floor": 0.05,
+    "primary_score": "strict_max_128",
+    "secondary_scores": ["strict_top3_mean", "diverse_max_128", "expanded_max_128", "strict_max_window64"]
+  },
+  "controlled": {
+    "shifts": [8, 16, 24, 32],
+    "seed": 1,
+    "validation_quantile": 0.99,
+    "validated_auroc_min": 0.80,
+    "weak_auroc_min": 0.60
+  },
+  "evaluation": {
+    "validation_quantile": 0.99,
+    "point_adjustment": false,
+    "fusion": false
+  },
+  "output": {
+    "dir": "outputs/swat2026_batch_m2_structure"
+  }
+}
