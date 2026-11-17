@@ -1,0 +1,5 @@
+audit_label,dataset,status,reason
+RETROSPECTIVE_VALIDITY_AUDIT,swat,NOT_PERSISTED_NOT_FROZEN,Stopped at failed S3 gate; no normal statistics are claimed by this status-only file
+RETROSPECTIVE_VALIDITY_AUDIT,hai,NOT_PERSISTED_NOT_FROZEN,Stopped at failed S3 gate; no normal statistics are claimed by this status-only file
+RETROSPECTIVE_VALIDITY_AUDIT,SWaT controlled,NOT_PERSISTED_NOT_FROZEN,Stopped at failed S3 gate; no normal statistics are claimed by this status-only file
+RETROSPECTIVE_VALIDITY_AUDIT,Historical CoMuT,NOT_PERSISTED_NOT_FROZEN,Stopped at failed S3 gate; no normal statistics are claimed by this status-only file

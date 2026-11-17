@@ -1,0 +1,23 @@
+2026-11-17T09:49:48.761068+00:00 STARTED
+2026-11-17T09:49:49.483447+00:00 NORMAL_PREPARE_SWAT
+2026-11-17T09:49:53.147387+00:00 swat: normal-only exact fit P1, candidates=2
+2026-11-17T09:49:54.012800+00:00 swat: normal-only exact fit P2, candidates=4
+2026-11-17T09:49:54.930216+00:00 swat: normal-only exact fit P3, candidates=3
+2026-11-17T09:49:55.716283+00:00 swat: normal-only exact fit P4, candidates=4
+2026-11-17T09:49:57.505329+00:00 swat: normal-only exact fit P5, candidates=11
+2026-11-17T09:49:57.720451+00:00 swat: normal-only exact fit P6, candidates=1
+2026-11-17T09:50:01.619642+00:00 swat: Normal replay targets=PASS, threshold=PASS, all candidates=25
+2026-11-17T09:50:01.628647+00:00 NORMAL_PREPARE_HAI
+2026-11-17T09:50:29.277223+00:00 hai: normal-only exact fit P1, candidates=31
+2026-11-17T09:50:31.920052+00:00 hai: normal-only exact fit P2, candidates=10
+2026-11-17T09:50:33.013057+00:00 hai: normal-only exact fit P3, candidates=5
+2026-11-17T09:50:35.490900+00:00 hai: normal-only exact fit P4, candidates=10
+2026-11-17T09:51:05.906177+00:00 hai: Normal replay targets=PASS, threshold=PASS, all candidates=56
+2026-11-17T09:51:05.979445+00:00 CONTROLLED_NORMAL_PREPARE
+2026-11-17T09:51:10.103391+00:00 COMUT_NORMAL_PREPARE
+2026-11-17T09:51:10.572262+00:00 S3_REPLAY_CONTROLLED
+2026-11-17T09:51:10.604143+00:00 S3_REPLAY_SWAT
+2026-11-17T09:51:31.046366+00:00 swat: S3 replay scored 0, endpoints=298774
+2026-11-17T09:51:40.351184+00:00 swat: S3 replay scored 1, endpoints=151019
+2026-11-17T09:51:41.009030+00:00 S3_REPLAY_HAI
+2026-11-17T09:51:52.937058+00:00 hai: S3 replay scored test1.csv.gz, endpoints=43138

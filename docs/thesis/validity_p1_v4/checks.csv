@@ -1,0 +1,10 @@
+audit_label,check,status,reason,max_abs_diff,difference_count,tolerance,first_difference
+RETROSPECTIVE_VALIDITY_AUDIT,SWaT S3 pointwise archive reproduction,FAIL,STOP_B,0.8635878833010793,449635,1e-09,"{'archive_position': 0, 'file_id': '0', 'local_index': 63, 'global_index': 63}"
+RETROSPECTIVE_VALIDITY_AUDIT,Immediate real-part stopping control,FAIL,Executed runner entered HAI S3 replay after SWaT FAIL. Supervisor terminated the exact audit PID. All 5 HAI Test files had been loaded by replay_test; log confirms only test1 completed scoring before termination. No HAI final metrics were produced.,,,,
+RETROSPECTIVE_VALIDITY_AUDIT,HAI full S3 test reproduction,INTERRUPTED_STOP_B,Normal targets and threshold passed; test reproduction not completed,,,,
+RETROSPECTIVE_VALIDITY_AUDIT,normal_stats and skill-only hash freeze,NOT_COMPLETED,Process stopped at S3 gate; statistics existed only in memory for some auxiliary preparations and were not persisted/frozen,,,,
+RETROSPECTIVE_VALIDITY_AUDIT,New real S1/S2 metrics and bound Test score exports,SKIPPED_STOP_B,S3 gate did not pass and Normal hash not frozen,,,,
+RETROSPECTIVE_VALIDITY_AUDIT,"Controlled S1/S2, paired consistency and signed-change check",SKIPPED_STOP_B,"Controlled S3 passed; no Normal hash freeze, so new controls not evaluated",,,,
+RETROSPECTIVE_VALIDITY_AUDIT,Historical CoMuT controls,SKIPPED_STOP_B,"13 Normal preparations completed, no Test evaluation; test files were hashed only for provenance",,,,
+RETROSPECTIVE_VALIDITY_AUDIT,"Skill-only sensitivity, H-kappa, descriptive R label",NOT_TESTABLE,No authorized S1/S2 Test metrics,,,,
+RETROSPECTIVE_VALIDITY_AUDIT,Normal-only mathematical operation-B checks,SKIPPED_STOP_B,Not reached before audit termination,,,,

@@ -1,0 +1,71 @@
+{
+  "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+  "status": "VALIDITY_P1_INCOMPLETE",
+  "stop_condition": "STOP_B_S3_POINTWISE_REPRODUCTION_MISMATCH",
+  "descriptive_label": "NOT_AVAILABLE",
+  "delta_HAI": null,
+  "delta_CTRL": null,
+  "H_kappa": {
+    "swat": "NOT_TESTABLE",
+    "hai": "NOT_TESTABLE"
+  },
+  "new_S1_S2_Test_metrics_computed": false,
+  "normal_stats_frozen": false,
+  "primary_overwritten": false,
+  "failed_or_skipped_checks": [
+    {
+      "check": "SWaT S3 pointwise archive reproduction",
+      "status": "FAIL",
+      "reason": "STOP_B",
+      "max_abs_diff": 0.8635878833010793,
+      "difference_count": 449635,
+      "tolerance": 1e-09,
+      "first_difference": {
+        "archive_position": 0,
+        "file_id": "0",
+        "local_index": 63,
+        "global_index": 63
+      }
+    },
+    {
+      "check": "Immediate real-part stopping control",
+      "status": "FAIL",
+      "reason": "Executed runner entered HAI S3 replay after SWaT FAIL. Supervisor terminated the exact audit PID. All 5 HAI Test files had been loaded by replay_test; log confirms only test1 completed scoring before termination. No HAI final metrics were produced."
+    },
+    {
+      "check": "HAI full S3 test reproduction",
+      "status": "INTERRUPTED_STOP_B",
+      "reason": "Normal targets and threshold passed; test reproduction not completed"
+    },
+    {
+      "check": "normal_stats and skill-only hash freeze",
+      "status": "NOT_COMPLETED",
+      "reason": "Process stopped at S3 gate; statistics existed only in memory for some auxiliary preparations and were not persisted/frozen"
+    },
+    {
+      "check": "New real S1/S2 metrics and bound Test score exports",
+      "status": "SKIPPED_STOP_B",
+      "reason": "S3 gate did not pass and Normal hash not frozen"
+    },
+    {
+      "check": "Controlled S1/S2, paired consistency and signed-change check",
+      "status": "SKIPPED_STOP_B",
+      "reason": "Controlled S3 passed; no Normal hash freeze, so new controls not evaluated"
+    },
+    {
+      "check": "Historical CoMuT controls",
+      "status": "SKIPPED_STOP_B",
+      "reason": "13 Normal preparations completed, no Test evaluation; test files were hashed only for provenance"
+    },
+    {
+      "check": "Skill-only sensitivity, H-kappa, descriptive R label",
+      "status": "NOT_TESTABLE",
+      "reason": "No authorized S1/S2 Test metrics"
+    },
+    {
+      "check": "Normal-only mathematical operation-B checks",
+      "status": "SKIPPED_STOP_B",
+      "reason": "Not reached before audit termination"
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+  "status": "PASS",
+  "checks": [
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\scripts\\thesis\\02_collaboration\\run_swat2015_final_unified.py",
+      "expected_sha256": "d9c1bb5d9fe2ac4abc0e15d73ac5374362bf669e79c12ec85151e0ac59a4e797",
+      "actual_sha256": "d9c1bb5d9fe2ac4abc0e15d73ac5374362bf669e79c12ec85151e0ac59a4e797",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\scripts\\thesis\\02_collaboration\\run_hai21_final_unified.py",
+      "expected_sha256": "90a22e79c9f408f8a8cc9b9353bf117c4346a1d577afd2a8919225173230fd9c",
+      "actual_sha256": "90a22e79c9f408f8a8cc9b9353bf117c4346a1d577afd2a8919225173230fd9c",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\scripts\\thesis\\02_collaboration\\run_innovation2d1_swat_controlled.py",
+      "expected_sha256": "9e559579e562f774c7271108170fbf0b4737dedacbb1b806f594153802e0d8a8",
+      "actual_sha256": "9e559579e562f774c7271108170fbf0b4737dedacbb1b806f594153802e0d8a8",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\scripts\\thesis\\02_collaboration\\run_innovation2b_controlled.py",
+      "expected_sha256": "d8ba45caa7e15a4f3813ee6d3aedf18d2b31e9aaf0ecba87e53b91a03c8141b3",
+      "actual_sha256": "d8ba45caa7e15a4f3813ee6d3aedf18d2b31e9aaf0ecba87e53b91a03c8141b3",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\scripts\\thesis\\02_collaboration\\run_innovation2d0_dual_view_comut.py",
+      "expected_sha256": "1fcdbc2fabe8548420a395ef3b7dc9b1bf891aa330118fd892e625de6f7953b8",
+      "actual_sha256": "1fcdbc2fabe8548420a395ef3b7dc9b1bf891aa330118fd892e625de6f7953b8",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\scripts\\thesis\\02_collaboration\\run_innovation2a2_joint_lagged.py",
+      "expected_sha256": "23e47baa52c98a5318ee5d0a40d8d52d4d66f3cd7e2e0f4c6ad0427549e526eb",
+      "actual_sha256": "23e47baa52c98a5318ee5d0a40d8d52d4d66f3cd7e2e0f4c6ad0427549e526eb",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\scripts\\thesis\\02_collaboration\\run_hai21_b1_real.py",
+      "expected_sha256": "33bbb9afb3073324d1dfe7cc5e3c4afe72ce8b1331d3f286b66b919232a2da41",
+      "actual_sha256": "33bbb9afb3073324d1dfe7cc5e3c4afe72ce8b1331d3f286b66b919232a2da41",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\scripts\\thesis\\02_collaboration\\run_wadi_b1_external.py",
+      "expected_sha256": "80b150b77400f8f12dcabbde60336d575c618104c97aedbc0b7cbe73e71d3d9d",
+      "actual_sha256": "80b150b77400f8f12dcabbde60336d575c618104c97aedbc0b7cbe73e71d3d9d",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\scripts\\thesis\\02_collaboration\\run_swat2015_pcc1.py",
+      "expected_sha256": "51ca7a59500e2f64a48ee63714ad6b5c900caf99ec4471ce750435ee6f5bdf2f",
+      "actual_sha256": "51ca7a59500e2f64a48ee63714ad6b5c900caf99ec4471ce750435ee6f5bdf2f",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\scripts\\thesis\\02_collaboration\\run_innovation3b_tail_fusion_final.py",
+      "expected_sha256": "74ad66081ee0f120c735034ec7ed132c18fb22566c91b33c265d243705446191",
+      "actual_sha256": "74ad66081ee0f120c735034ec7ed132c18fb22566c91b33c265d243705446191",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\scripts\\thesis\\00_audit\\recover_e2_r1d_artifacts.py",
+      "expected_sha256": "d06e98948250bed39a75c289d586cc539084f3d1932652fab545e9b5ca9f7904",
+      "actual_sha256": "d06e98948250bed39a75c289d586cc539084f3d1932652fab545e9b5ca9f7904",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\data\\swat2015_official.py",
+      "expected_sha256": "1aa999b48f776efd1793cec89c083b78cfbd8c569f07f7c60bdd4ed196745163",
+      "actual_sha256": "1aa999b48f776efd1793cec89c083b78cfbd8c569f07f7c60bdd4ed196745163",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\data\\transforms.py",
+      "expected_sha256": "853e5c9500ce980ed6f9f6886ab30f04406accfae657b63184db41c2e92eed61",
+      "actual_sha256": "853e5c9500ce980ed6f9f6886ab30f04406accfae657b63184db41c2e92eed61",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\configs\\thesis\\swat2015_midterm_seed1.yaml",
+      "expected_sha256": "3cb2e38c5687ac6999b194a1e1a2e7fa3dd605e3b4649f2032ef31ec113f9a4d",
+      "actual_sha256": "3cb2e38c5687ac6999b194a1e1a2e7fa3dd605e3b4649f2032ef31ec113f9a4d",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_swat_final_unified\\dual_targets_unified_frozen.csv",
+      "expected_sha256": "af9f9aac9cb8b369015a94d4b88a4729d817c219d305eb3276050c5d33ad31bf",
+      "actual_sha256": "af9f9aac9cb8b369015a94d4b88a4729d817c219d305eb3276050c5d33ad31bf",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_swat_final_unified\\global_metrics.csv",
+      "expected_sha256": "89635bb5acf7ac04b9de7ab32efdc5e195187e84c24b22b51913a67a826949d8",
+      "actual_sha256": "89635bb5acf7ac04b9de7ab32efdc5e195187e84c24b22b51913a67a826949d8",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_swat_final_unified\\thresholds.json",
+      "expected_sha256": "e5d1b2325fe9c9961fe0de989be1409f4d9ea0a4f03e5ca8ea992c1b9952afd1",
+      "actual_sha256": "e5d1b2325fe9c9961fe0de989be1409f4d9ea0a4f03e5ca8ea992c1b9952afd1",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_swat_final_unified\\manifest.json",
+      "expected_sha256": "579ce225118b7b98ddcfa27c17275157298e6795c08117782904538f6d88fc97",
+      "actual_sha256": "579ce225118b7b98ddcfa27c17275157298e6795c08117782904538f6d88fc97",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_hai21_final_unified\\dual_targets_unified_frozen.csv",
+      "expected_sha256": "a78e820567eaa15dd5a0cd2a9f6491d04102c0a50732a4de7aa918f1b20be5bb",
+      "actual_sha256": "a78e820567eaa15dd5a0cd2a9f6491d04102c0a50732a4de7aa918f1b20be5bb",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_hai21_final_unified\\global_metrics.csv",
+      "expected_sha256": "013657fdd213bcc54b38c93f04f9cd8ee03fa540ad25f764e26264b221998bf6",
+      "actual_sha256": "013657fdd213bcc54b38c93f04f9cd8ee03fa540ad25f764e26264b221998bf6",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_hai21_final_unified\\thresholds.json",
+      "expected_sha256": "c32a27222b0a0a61bbd3cb027e7ad40daff834d0d69ec3a67a94b1c70a986a15",
+      "actual_sha256": "c32a27222b0a0a61bbd3cb027e7ad40daff834d0d69ec3a67a94b1c70a986a15",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_hai21_final_unified\\manifest.json",
+      "expected_sha256": "93003614031564dd3e76d470e6f8fb8437546c0c656e97ec93813af175905b30",
+      "actual_sha256": "93003614031564dd3e76d470e6f8fb8437546c0c656e97ec93813af175905b30",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_innovation2d1_swat_controlled\\target_metrics.csv",
+      "expected_sha256": "3680290b4de2f278822f79220bfc7a2c3b0b8b13f47e2f397fa198adb47d8a52",
+      "actual_sha256": "3680290b4de2f278822f79220bfc7a2c3b0b8b13f47e2f397fa198adb47d8a52",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_innovation2d1_swat_controlled\\manifest.json",
+      "expected_sha256": "41b292f9cb566e860a9946ad0af2097138224a85dd8554c0c5658c8ecfe44a97",
+      "actual_sha256": "41b292f9cb566e860a9946ad0af2097138224a85dd8554c0c5658c8ecfe44a97",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_innovation2b2_relation_breaking\\donor_manifest.csv",
+      "expected_sha256": "61ff7dda11ede79d6ebaad7a05baeac397c159cf46bae4e5c428d8c258786d6e",
+      "actual_sha256": "61ff7dda11ede79d6ebaad7a05baeac397c159cf46bae4e5c428d8c258786d6e",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_midterm_s1\\cache\\cache_manifest.json",
+      "expected_sha256": "aceb64295407ee51c91a99e55e6eb28c26a8bd354f5426bba44aac431fffe5ae",
+      "actual_sha256": "aceb64295407ee51c91a99e55e6eb28c26a8bd354f5426bba44aac431fffe5ae",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_midterm_s1\\cache\\normal_v1_features.npy",
+      "expected_sha256": "3bc91dc2d7b0dae7db585fe86c11dbaa1e33772c41d984777b1b7ece6841bbac",
+      "actual_sha256": "3bc91dc2d7b0dae7db585fe86c11dbaa1e33772c41d984777b1b7ece6841bbac",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_efficiency_final\\swat_dual_coefficients.npz",
+      "expected_sha256": "e98162c30d5a1bb80aaca1f12d9f8c3e21480b9f3324f3422f4a41877154159a",
+      "actual_sha256": "e98162c30d5a1bb80aaca1f12d9f8c3e21480b9f3324f3422f4a41877154159a",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_efficiency_final\\hai21_dual_coefficients.npz",
+      "expected_sha256": "dbb880c33bd42babf227a07a0728f2ec0a3453a89a1e430f881cd10e82833ce6",
+      "actual_sha256": "dbb880c33bd42babf227a07a0728f2ec0a3453a89a1e430f881cd10e82833ce6",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_evaluation\\literature_compatible\\raw_scores\\swat\\ours_dual\\test_raw_scores.npz",
+      "expected_sha256": "f6a31375ce5df5684e6feaf5f4677cbb58311e6e1fee8bee5573ea76be6233dc",
+      "actual_sha256": "f6a31375ce5df5684e6feaf5f4677cbb58311e6e1fee8bee5573ea76be6233dc",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_evaluation\\literature_compatible\\raw_scores\\hai\\ours_dual\\test_raw_scores.npz",
+      "expected_sha256": "35e88f8f01255213c9559ad25adce154b8e083e682a139045c12a7e390b826d4",
+      "actual_sha256": "35e88f8f01255213c9559ad25adce154b8e083e682a139045c12a7e390b826d4",
+      "unchanged": true
+    }
+  ],
+  "additional_accessed_input_hashes": [
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_midterm_s1\\cache\\normal_v1_features.npy",
+      "sha256": "3bc91dc2d7b0dae7db585fe86c11dbaa1e33772c41d984777b1b7ece6841bbac"
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_midterm_s1\\cache\\cache_manifest.json",
+      "sha256": "aceb64295407ee51c91a99e55e6eb28c26a8bd354f5426bba44aac431fffe5ae"
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_midterm_s1\\cache\\attack_v0_features.npy",
+      "sha256": "0616f1a8d7e066d336a245355fb53386e4be9bbedffc5cfc4622baffbcae23c7"
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_midterm_s1\\cache\\attack_v0_labels.npy",
+      "sha256": "4fc0e339d5ef4a77e4a93f69c098dd42372040542d179f6a04e361b184d408d0"
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_midterm_s1\\cache\\attack_v0_timestamps.npy",
+      "sha256": "c52d71e584a26d1e210339d25a39e510772dd07261f44a54cfae7aea18fb8112"
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\dataset\\hai\\hai-21.03\\test1.csv.gz",
+      "sha256": "532de41bed372206941609d05b763958f59abecfd63c8c123649f823452e445e"
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\dataset\\hai\\hai-21.03\\test2.csv.gz",
+      "sha256": "c5572e0ed19906107ceb56c4b4f40e165153fc7ba87b3506230d53d2478c29bb"
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\dataset\\hai\\hai-21.03\\test3.csv.gz",
+      "sha256": "bff835894baff0c73871bc01ece4f5cf759d455a049e808b012128767420caaf"
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\dataset\\hai\\hai-21.03\\test4.csv.gz",
+      "sha256": "51380fd28fd985b94a10cae3d8b80926becb3af9f233f2d3a38ab8be9482a482"
+    },
+    {
+      "path": "D:\\workspace\\python\\mscad-thesis\\dataset\\hai\\hai-21.03\\test5.csv.gz",
+      "sha256": "f0d59308b167ed95d0e81fb3e27c906682c9b21d3dba0ab4c4d696565df35179"
+    }
+  ],
+  "no_further_experiment_execution": true,
+  "stop_guard_fix": {
+    "changed_only_new_orchestrator": true,
+    "original_executed_runner_sha256": "4eecc54a8ef75166abb06d3bf19c7ce4485eb2d5c19aefeb2b23a5f8f9f60d72",
+    "corrected_runner_sha256": "4b2a9ef208ccaf98f5362d571badb09d8331129d37947889a29bc385f1e7d2f7",
+    "rerun": false
+  },
+  "validation": {
+    "ast_parse_scripts": 7,
+    "mock_guard_tests_passed": 2,
+    "mock_guard_tests_failed": 0,
+    "data_or_model_access_in_tests": false
+  },
+  "checked_at_utc": "2026-11-17T09:56:31.346096+00:00"
+}

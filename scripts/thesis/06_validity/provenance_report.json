@@ -1,0 +1,327 @@
+{
+  "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+  "created_at_utc": "2026-11-17T09:45:17.1700810Z",
+  "status": "INPUT_BINDING_CHECKS_PASS_REPLAY_REQUIRED",
+  "source_worktree": "D:\\workspace\\python\\mscad-thesis",
+  "source_branch": "thesis-clean",
+  "source_head": "7607b5fc44aaf72f2f5b6d4ab7ddd6e6ebb6fd2e",
+  "publication_worktree": "D:\\workspace\\python\\mscad-github",
+  "publication_head": "43270769ce2c9353b762ab79833ba01167beb570",
+  "source_history_note": "thesis-clean HEAD 7607b5f predates the untracked final runners. Publication initial snapshot commit 43270769 includes them. Content hashes, not a false source-HEAD claim, establish same runner version.",
+  "manifest_provenance_limit": "Formal SWaT/HAI manifests do not contain producing Git commit or runner hashes. They bind targets and data/protocol. Source snapshot equality plus S3 replay is required; historical run-to-commit equality cannot be independently proved from absent metadata.",
+  "sources": [
+    {
+      "path": "scripts/thesis/02_collaboration/run_swat2015_final_unified.py",
+      "sha256": "d9c1bb5d9fe2ac4abc0e15d73ac5374362bf669e79c12ec85151e0ac59a4e797",
+      "publication_sha256": "d9c1bb5d9fe2ac4abc0e15d73ac5374362bf669e79c12ec85151e0ac59a4e797",
+      "matches_publication": true
+    },
+    {
+      "path": "scripts/thesis/02_collaboration/run_hai21_final_unified.py",
+      "sha256": "90a22e79c9f408f8a8cc9b9353bf117c4346a1d577afd2a8919225173230fd9c",
+      "publication_sha256": "90a22e79c9f408f8a8cc9b9353bf117c4346a1d577afd2a8919225173230fd9c",
+      "matches_publication": true
+    },
+    {
+      "path": "scripts/thesis/02_collaboration/run_innovation2d1_swat_controlled.py",
+      "sha256": "9e559579e562f774c7271108170fbf0b4737dedacbb1b806f594153802e0d8a8",
+      "publication_sha256": "9e559579e562f774c7271108170fbf0b4737dedacbb1b806f594153802e0d8a8",
+      "matches_publication": true
+    },
+    {
+      "path": "scripts/thesis/02_collaboration/run_innovation2b_controlled.py",
+      "sha256": "d8ba45caa7e15a4f3813ee6d3aedf18d2b31e9aaf0ecba87e53b91a03c8141b3",
+      "publication_sha256": "d8ba45caa7e15a4f3813ee6d3aedf18d2b31e9aaf0ecba87e53b91a03c8141b3",
+      "matches_publication": true
+    },
+    {
+      "path": "scripts/thesis/02_collaboration/run_innovation2d0_dual_view_comut.py",
+      "sha256": "1fcdbc2fabe8548420a395ef3b7dc9b1bf891aa330118fd892e625de6f7953b8",
+      "publication_sha256": "1fcdbc2fabe8548420a395ef3b7dc9b1bf891aa330118fd892e625de6f7953b8",
+      "matches_publication": true
+    },
+    {
+      "path": "scripts/thesis/02_collaboration/run_innovation2a2_joint_lagged.py",
+      "sha256": "23e47baa52c98a5318ee5d0a40d8d52d4d66f3cd7e2e0f4c6ad0427549e526eb",
+      "publication_sha256": "23e47baa52c98a5318ee5d0a40d8d52d4d66f3cd7e2e0f4c6ad0427549e526eb",
+      "matches_publication": true
+    },
+    {
+      "path": "scripts/thesis/02_collaboration/run_hai21_b1_real.py",
+      "sha256": "33bbb9afb3073324d1dfe7cc5e3c4afe72ce8b1331d3f286b66b919232a2da41",
+      "publication_sha256": "33bbb9afb3073324d1dfe7cc5e3c4afe72ce8b1331d3f286b66b919232a2da41",
+      "matches_publication": true
+    },
+    {
+      "path": "scripts/thesis/02_collaboration/run_wadi_b1_external.py",
+      "sha256": "80b150b77400f8f12dcabbde60336d575c618104c97aedbc0b7cbe73e71d3d9d",
+      "publication_sha256": "80b150b77400f8f12dcabbde60336d575c618104c97aedbc0b7cbe73e71d3d9d",
+      "matches_publication": true
+    },
+    {
+      "path": "scripts/thesis/02_collaboration/run_swat2015_pcc1.py",
+      "sha256": "51ca7a59500e2f64a48ee63714ad6b5c900caf99ec4471ce750435ee6f5bdf2f",
+      "publication_sha256": "51ca7a59500e2f64a48ee63714ad6b5c900caf99ec4471ce750435ee6f5bdf2f",
+      "matches_publication": true
+    },
+    {
+      "path": "scripts/thesis/02_collaboration/run_innovation3b_tail_fusion_final.py",
+      "sha256": "74ad66081ee0f120c735034ec7ed132c18fb22566c91b33c265d243705446191",
+      "publication_sha256": "74ad66081ee0f120c735034ec7ed132c18fb22566c91b33c265d243705446191",
+      "matches_publication": true
+    },
+    {
+      "path": "scripts/thesis/00_audit/recover_e2_r1d_artifacts.py",
+      "sha256": "d06e98948250bed39a75c289d586cc539084f3d1932652fab545e9b5ca9f7904",
+      "publication_sha256": "d06e98948250bed39a75c289d586cc539084f3d1932652fab545e9b5ca9f7904",
+      "matches_publication": true
+    },
+    {
+      "path": "data/swat2015_official.py",
+      "sha256": "1aa999b48f776efd1793cec89c083b78cfbd8c569f07f7c60bdd4ed196745163",
+      "publication_sha256": "1aa999b48f776efd1793cec89c083b78cfbd8c569f07f7c60bdd4ed196745163",
+      "matches_publication": true
+    },
+    {
+      "path": "data/transforms.py",
+      "sha256": "853e5c9500ce980ed6f9f6886ab30f04406accfae657b63184db41c2e92eed61",
+      "publication_sha256": "853e5c9500ce980ed6f9f6886ab30f04406accfae657b63184db41c2e92eed61",
+      "matches_publication": true
+    },
+    {
+      "path": "configs/thesis/swat2015_midterm_seed1.yaml",
+      "sha256": "3cb2e38c5687ac6999b194a1e1a2e7fa3dd605e3b4649f2032ef31ec113f9a4d",
+      "publication_sha256": "3cb2e38c5687ac6999b194a1e1a2e7fa3dd605e3b4649f2032ef31ec113f9a4d",
+      "matches_publication": true
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "outputs/thesis_swat_final_unified/dual_targets_unified_frozen.csv",
+      "exists": true,
+      "sha256": "af9f9aac9cb8b369015a94d4b88a4729d817c219d305eb3276050c5d33ad31bf"
+    },
+    {
+      "path": "outputs/thesis_swat_final_unified/global_metrics.csv",
+      "exists": true,
+      "sha256": "89635bb5acf7ac04b9de7ab32efdc5e195187e84c24b22b51913a67a826949d8"
+    },
+    {
+      "path": "outputs/thesis_swat_final_unified/thresholds.json",
+      "exists": true,
+      "sha256": "e5d1b2325fe9c9961fe0de989be1409f4d9ea0a4f03e5ca8ea992c1b9952afd1"
+    },
+    {
+      "path": "outputs/thesis_swat_final_unified/manifest.json",
+      "exists": true,
+      "sha256": "579ce225118b7b98ddcfa27c17275157298e6795c08117782904538f6d88fc97"
+    },
+    {
+      "path": "outputs/thesis_hai21_final_unified/dual_targets_unified_frozen.csv",
+      "exists": true,
+      "sha256": "a78e820567eaa15dd5a0cd2a9f6491d04102c0a50732a4de7aa918f1b20be5bb"
+    },
+    {
+      "path": "outputs/thesis_hai21_final_unified/global_metrics.csv",
+      "exists": true,
+      "sha256": "013657fdd213bcc54b38c93f04f9cd8ee03fa540ad25f764e26264b221998bf6"
+    },
+    {
+      "path": "outputs/thesis_hai21_final_unified/thresholds.json",
+      "exists": true,
+      "sha256": "c32a27222b0a0a61bbd3cb027e7ad40daff834d0d69ec3a67a94b1c70a986a15"
+    },
+    {
+      "path": "outputs/thesis_hai21_final_unified/manifest.json",
+      "exists": true,
+      "sha256": "93003614031564dd3e76d470e6f8fb8437546c0c656e97ec93813af175905b30"
+    },
+    {
+      "path": "outputs/thesis_innovation2d1_swat_controlled/target_metrics.csv",
+      "exists": true,
+      "sha256": "3680290b4de2f278822f79220bfc7a2c3b0b8b13f47e2f397fa198adb47d8a52"
+    },
+    {
+      "path": "outputs/thesis_innovation2d1_swat_controlled/manifest.json",
+      "exists": true,
+      "sha256": "41b292f9cb566e860a9946ad0af2097138224a85dd8554c0c5658c8ecfe44a97"
+    },
+    {
+      "path": "outputs/thesis_innovation2b2_relation_breaking/donor_manifest.csv",
+      "exists": true,
+      "sha256": "61ff7dda11ede79d6ebaad7a05baeac397c159cf46bae4e5c428d8c258786d6e"
+    },
+    {
+      "path": "outputs/thesis_midterm_s1/cache/cache_manifest.json",
+      "exists": true,
+      "sha256": "aceb64295407ee51c91a99e55e6eb28c26a8bd354f5426bba44aac431fffe5ae"
+    },
+    {
+      "path": "outputs/thesis_midterm_s1/cache/normal_v1_features.npy",
+      "exists": true,
+      "sha256": "3bc91dc2d7b0dae7db585fe86c11dbaa1e33772c41d984777b1b7ece6841bbac"
+    },
+    {
+      "path": "outputs/thesis_efficiency_final/swat_dual_coefficients.npz",
+      "exists": true,
+      "sha256": "e98162c30d5a1bb80aaca1f12d9f8c3e21480b9f3324f3422f4a41877154159a"
+    },
+    {
+      "path": "outputs/thesis_efficiency_final/hai21_dual_coefficients.npz",
+      "exists": true,
+      "sha256": "dbb880c33bd42babf227a07a0728f2ec0a3453a89a1e430f881cd10e82833ce6"
+    },
+    {
+      "path": "outputs/thesis_evaluation/literature_compatible/raw_scores/swat/ours_dual/test_raw_scores.npz",
+      "exists": true,
+      "sha256": "f6a31375ce5df5684e6feaf5f4677cbb58311e6e1fee8bee5573ea76be6233dc"
+    },
+    {
+      "path": "outputs/thesis_evaluation/literature_compatible/raw_scores/hai/ours_dual/test_raw_scores.npz",
+      "exists": true,
+      "sha256": "35e88f8f01255213c9559ad25adce154b8e083e682a139045c12a7e390b826d4"
+    }
+  ],
+  "normal_data": [
+    {
+      "path": "dataset\\hai\\hai-21.03\\train1.csv.gz",
+      "sha256": "fdd0162315b32817ba665e2cc8990eb09c47c4edc29683a86b11dc9df062b3a9",
+      "expected_sha256": "fdd0162315b32817ba665e2cc8990eb09c47c4edc29683a86b11dc9df062b3a9",
+      "matches_manifest": true
+    },
+    {
+      "path": "dataset\\hai\\hai-21.03\\train2.csv.gz",
+      "sha256": "c330af06a24f5fe3df864dddc0e9cbbbfd27db2e005bd32dc8ab3eb2ab356337",
+      "expected_sha256": "c330af06a24f5fe3df864dddc0e9cbbbfd27db2e005bd32dc8ab3eb2ab356337",
+      "matches_manifest": true
+    },
+    {
+      "path": "dataset\\hai\\hai-21.03\\train3.csv.gz",
+      "sha256": "de09120c617bad5f4f3cab86705137fe7ced4b1123fb67ffdf67fd645f3d1b8f",
+      "expected_sha256": "de09120c617bad5f4f3cab86705137fe7ced4b1123fb67ffdf67fd645f3d1b8f",
+      "matches_manifest": true
+    },
+    {
+      "path": "dataset/Swat_2015/Physical/SWaT_Dataset_Normal_v1.xlsx",
+      "sha256": "fb7bb0a9c10f86ad29d8f2ae4fd09284e7db70c76350f5b2afcca58d9ace6c49",
+      "expected_sha256": "fb7bb0a9c10f86ad29d8f2ae4fd09284e7db70c76350f5b2afcca58d9ace6c49",
+      "matches_manifest": true
+    }
+  ],
+  "target_checks": [
+    {
+      "dataset": "swat",
+      "path": "outputs/thesis_swat_final_unified/dual_targets_unified_frozen.csv",
+      "sha256": "af9f9aac9cb8b369015a94d4b88a4729d817c219d305eb3276050c5d33ad31bf",
+      "expected_sha256": "af9f9aac9cb8b369015a94d4b88a4729d817c219d305eb3276050c5d33ad31bf",
+      "matches_manifest": true,
+      "target_count": 15
+    },
+    {
+      "dataset": "hai21",
+      "path": "outputs/thesis_hai21_final_unified/dual_targets_unified_frozen.csv",
+      "sha256": "a78e820567eaa15dd5a0cd2a9f6491d04102c0a50732a4de7aa918f1b20be5bb",
+      "expected_sha256": "a78e820567eaa15dd5a0cd2a9f6491d04102c0a50732a4de7aa918f1b20be5bb",
+      "matches_manifest": true,
+      "target_count": 54
+    }
+  ],
+  "archives": [
+    {
+      "dataset": "swat",
+      "path": "outputs/thesis_evaluation/literature_compatible/raw_scores/swat/ours_dual/test_raw_scores.npz",
+      "sha256": "f6a31375ce5df5684e6feaf5f4677cbb58311e6e1fee8bee5573ea76be6233dc",
+      "expected_sha256": "f6a31375ce5df5684e6feaf5f4677cbb58311e6e1fee8bee5573ea76be6233dc",
+      "matches_manifest": true,
+      "score_dtype": "float64",
+      "required_absolute_tolerance": 1E-09,
+      "count": 449793,
+      "first_local_index": 63,
+      "identity_fields": [
+        "label",
+        "segment_id",
+        "file_id",
+        "local_index",
+        "global_index",
+        "valid_endpoint"
+      ],
+      "timestamp": "int64 unix seconds",
+      "artifact_origin": "DETERMINISTIC_RECONSTRUCTION",
+      "pipeline_source": "scripts/thesis/02_collaboration/run_innovation3b_tail_fusion_final.py",
+      "ridge_refit": false
+    },
+    {
+      "dataset": "hai",
+      "path": "outputs/thesis_evaluation/literature_compatible/raw_scores/hai/ours_dual/test_raw_scores.npz",
+      "sha256": "35e88f8f01255213c9559ad25adce154b8e083e682a139045c12a7e390b826d4",
+      "expected_sha256": "35e88f8f01255213c9559ad25adce154b8e083e682a139045c12a7e390b826d4",
+      "matches_manifest": true,
+      "score_dtype": "float64",
+      "required_absolute_tolerance": 1E-09,
+      "count": 401690,
+      "first_local_index": 63,
+      "identity_fields": [
+        "label",
+        "segment_id",
+        "file_id",
+        "local_index",
+        "global_index",
+        "valid_endpoint"
+      ],
+      "timestamp": "not stored",
+      "artifact_origin": "DETERMINISTIC_RECONSTRUCTION",
+      "pipeline_source": "scripts/thesis/02_collaboration/run_innovation3b_tail_fusion_final.py",
+      "ridge_refit": false
+    }
+  ],
+  "attack_input_existence_only": [
+    {
+      "path": "outputs/thesis_midterm_s1/cache/attack_v0_features.npy",
+      "exists": true,
+      "content_not_read_in_this_report": true
+    },
+    {
+      "path": "outputs/thesis_midterm_s1/cache/attack_v0_labels.npy",
+      "exists": true,
+      "content_not_read_in_this_report": true
+    },
+    {
+      "path": "outputs/thesis_midterm_s1/cache/attack_v0_timestamps.npy",
+      "exists": true,
+      "content_not_read_in_this_report": true
+    },
+    {
+      "path": "dataset/hai/hai-21.03/test1.csv.gz",
+      "exists": true,
+      "content_not_read_in_this_report": true
+    },
+    {
+      "path": "dataset/hai/hai-21.03/test2.csv.gz",
+      "exists": true,
+      "content_not_read_in_this_report": true
+    },
+    {
+      "path": "dataset/hai/hai-21.03/test3.csv.gz",
+      "exists": true,
+      "content_not_read_in_this_report": true
+    },
+    {
+      "path": "dataset/hai/hai-21.03/test4.csv.gz",
+      "exists": true,
+      "content_not_read_in_this_report": true
+    },
+    {
+      "path": "dataset/hai/hai-21.03/test5.csv.gz",
+      "exists": true,
+      "content_not_read_in_this_report": true
+    }
+  ],
+  "source_mismatches": 0,
+  "missing_inputs": 0,
+  "caveats": [
+    "v4 claim no Ridge coefficients saved is stale: efficiency coefficient archives exist and E2-R1D used them. Authorized Normal-only formal-function refit remains required for this task.",
+    "E2 archives contain full formal endpoint masks, not common-mask subsets. common-mask SWaT 449791/HAI401685 must not replace full 449793/401690.",
+    "Both score archives are float64: do not apply float32 1e-5 tolerance.",
+    "Archive identity arrays were read during provenance inspection; no new scores or metrics calculated. Attack raw feature/label files were not read."
+  ]
+}

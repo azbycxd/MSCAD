@@ -1,0 +1,7 @@
+audit_label,dataset,score,status,auroc,aupr,precision,recall,f1,fpr,threshold,event_hit_count,reason
+RETROSPECTIVE_VALIDITY_AUDIT,swat,S1,SKIPPED_STOP_B,,,,,,,,,No new comparison after S3 gate failure
+RETROSPECTIVE_VALIDITY_AUDIT,swat,S2,SKIPPED_STOP_B,,,,,,,,,No new comparison after S3 gate failure
+RETROSPECTIVE_VALIDITY_AUDIT,swat,S3,REPLAY_ONLY_POINTWISE_GATE_FAILED,0.6756309010005985,0.16751025188900392,0.08716617210682492,0.008604749089178155,0.015663272957525867,0.012455335904365693,226462.91950212093,2,Only existing formal S3 reproduction metrics; not a completed S1/S2/S3 comparison
+RETROSPECTIVE_VALIDITY_AUDIT,hai,S1,SKIPPED_STOP_B,,,,,,,,,No new comparison after S3 gate failure
+RETROSPECTIVE_VALIDITY_AUDIT,hai,S2,SKIPPED_STOP_B,,,,,,,,,No new comparison after S3 gate failure
+RETROSPECTIVE_VALIDITY_AUDIT,hai,S3,INTERRUPTED_STOP_B,,,,,,,,,All 5 Test files loaded; test1 scoring completed; no final HAI S3 metrics

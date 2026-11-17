@@ -1,0 +1,461 @@
+{
+  "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+  "swat": {
+    "status": "FAIL",
+    "target_order": {
+      "status": "PASS",
+      "expected": [
+        "FIT101",
+        "LIT101",
+        "AIT202",
+        "FIT201",
+        "DPIT301",
+        "LIT301",
+        "AIT402",
+        "FIT401",
+        "AIT502",
+        "AIT504",
+        "FIT501",
+        "FIT502",
+        "FIT503",
+        "FIT504",
+        "FIT601"
+      ],
+      "replayed": [
+        "FIT101",
+        "LIT101",
+        "AIT202",
+        "FIT201",
+        "DPIT301",
+        "LIT301",
+        "AIT402",
+        "FIT401",
+        "AIT502",
+        "AIT504",
+        "FIT501",
+        "FIT502",
+        "FIT503",
+        "FIT504",
+        "FIT601"
+      ],
+      "order_equal": true
+    },
+    "threshold": {
+      "status": "PASS",
+      "replayed": 226462.91950212093,
+      "frozen": 226462.91950212093,
+      "max_abs_diff": 0.0,
+      "tolerance": 1e-09
+    },
+    "scores": {
+      "status": "FAIL",
+      "max_abs_diff": 0.8635878833010793,
+      "difference_count": 449635,
+      "first_difference": 0,
+      "dtype": "float64",
+      "tolerance": 1e-09,
+      "archive": "D:\\workspace\\python\\mscad-thesis\\outputs\\thesis_evaluation\\literature_compatible\\raw_scores\\swat\\ours_dual\\test_raw_scores.npz"
+    },
+    "endpoints": {
+      "file_id": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null
+      },
+      "local_index": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null
+      },
+      "global_index": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null
+      },
+      "label": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null
+      },
+      "valid_endpoint": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null
+      },
+      "timestamp": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "difference_count": 0,
+        "first_difference": null
+      }
+    },
+    "metrics": {
+      "auroc": {
+        "actual": 0.6756309010005985,
+        "expected": 0.6756309010005985,
+        "pass": true
+      },
+      "aupr": {
+        "actual": 0.16751025188900392,
+        "expected": 0.1675102518890039,
+        "pass": true
+      },
+      "precision": {
+        "actual": 0.08716617210682492,
+        "expected": 0.0871661721068249,
+        "pass": true
+      },
+      "recall": {
+        "actual": 0.008604749089178155,
+        "expected": 0.0086047490891781,
+        "pass": true
+      },
+      "f1": {
+        "actual": 0.015663272957525867,
+        "expected": 0.0156632729575258,
+        "pass": true
+      },
+      "fpr": {
+        "actual": 0.012455335904365693,
+        "expected": 0.0124553359043656,
+        "pass": true
+      }
+    },
+    "events": {
+      "hit_count": 2,
+      "expected_hit_count": 2,
+      "event_count": 36,
+      "expected_event_count": 36,
+      "high_median_hit": null,
+      "expected_high_median_hit": null,
+      "status": "PASS"
+    }
+  },
+  "hai": {
+    "target_order": {
+      "status": "PASS",
+      "expected": [
+        "P1_B2004",
+        "P1_B2016",
+        "P1_B3004",
+        "P1_B3005",
+        "P1_B4002",
+        "P1_B4005",
+        "P1_B400B",
+        "P1_B4022",
+        "P1_FCV01D",
+        "P1_FCV01Z",
+        "P1_FCV02D",
+        "P1_FCV02Z",
+        "P1_FCV03D",
+        "P1_FCV03Z",
+        "P1_FT01",
+        "P1_FT01Z",
+        "P1_FT02",
+        "P1_FT02Z",
+        "P1_FT03",
+        "P1_FT03Z",
+        "P1_LCV01D",
+        "P1_LCV01Z",
+        "P1_LIT01",
+        "P1_PCV01D",
+        "P1_PCV01Z",
+        "P1_PIT01",
+        "P1_PIT02",
+        "P1_TIT01",
+        "P1_TIT02",
+        "P2_24Vdc",
+        "P2_CO_rpm",
+        "P2_HILout",
+        "P2_SIT01",
+        "P2_SIT02",
+        "P2_VT01",
+        "P2_VXT02",
+        "P2_VXT03",
+        "P2_VYT02",
+        "P2_VYT03",
+        "P3_FIT01",
+        "P3_LCP01D",
+        "P3_LCV01D",
+        "P3_LIT01",
+        "P3_PIT01",
+        "P4_HT_FD",
+        "P4_HT_LD",
+        "P4_HT_PO",
+        "P4_LD",
+        "P4_ST_FD",
+        "P4_ST_GOV",
+        "P4_ST_LD",
+        "P4_ST_PO",
+        "P4_ST_PT01",
+        "P4_ST_TT01"
+      ],
+      "replayed": [
+        "P1_B2004",
+        "P1_B2016",
+        "P1_B3004",
+        "P1_B3005",
+        "P1_B4002",
+        "P1_B4005",
+        "P1_B400B",
+        "P1_B4022",
+        "P1_FCV01D",
+        "P1_FCV01Z",
+        "P1_FCV02D",
+        "P1_FCV02Z",
+        "P1_FCV03D",
+        "P1_FCV03Z",
+        "P1_FT01",
+        "P1_FT01Z",
+        "P1_FT02",
+        "P1_FT02Z",
+        "P1_FT03",
+        "P1_FT03Z",
+        "P1_LCV01D",
+        "P1_LCV01Z",
+        "P1_LIT01",
+        "P1_PCV01D",
+        "P1_PCV01Z",
+        "P1_PIT01",
+        "P1_PIT02",
+        "P1_TIT01",
+        "P1_TIT02",
+        "P2_24Vdc",
+        "P2_CO_rpm",
+        "P2_HILout",
+        "P2_SIT01",
+        "P2_SIT02",
+        "P2_VT01",
+        "P2_VXT02",
+        "P2_VXT03",
+        "P2_VYT02",
+        "P2_VYT03",
+        "P3_FIT01",
+        "P3_LCP01D",
+        "P3_LCV01D",
+        "P3_LIT01",
+        "P3_PIT01",
+        "P4_HT_FD",
+        "P4_HT_LD",
+        "P4_HT_PO",
+        "P4_LD",
+        "P4_ST_FD",
+        "P4_ST_GOV",
+        "P4_ST_LD",
+        "P4_ST_PO",
+        "P4_ST_PT01",
+        "P4_ST_TT01"
+      ],
+      "order_equal": true
+    },
+    "threshold": {
+      "status": "PASS",
+      "replayed": 40.21198385444111,
+      "frozen": 40.21198385444111,
+      "max_abs_diff": 0.0,
+      "tolerance": 1e-09
+    },
+    "status": "NORMAL_PASS_PENDING_S3"
+  },
+  "controlled": {
+    "audit_label": "RETROSPECTIVE_VALIDITY_AUDIT",
+    "passed": true,
+    "metric_decimals": 6,
+    "controlled_threshold_difference_diagnostic_only": true,
+    "cases": [
+      {
+        "target": "AIT202",
+        "passed": true,
+        "observed": {
+          "dual_auroc": 0.7107565,
+          "dual_aupr": 0.7094333574351639,
+          "corruption_recall": 0.214,
+          "clean_fpr": 0.0105,
+          "calibration_q99_threshold": 5.647260798542557
+        },
+        "expected": {
+          "dual_auroc": 0.7107565,
+          "dual_aupr": 0.7094333574351639,
+          "corruption_recall": 0.214,
+          "clean_fpr": 0.0105,
+          "calibration_q99_threshold": 5.647260798542557
+        },
+        "differences": {
+          "dual_auroc": 0.0,
+          "dual_aupr": 0.0,
+          "corruption_recall": 0.0,
+          "clean_fpr": 0.0,
+          "calibration_q99_threshold": 0.0
+        },
+        "checks": {
+          "dual_auroc": true,
+          "dual_aupr": true,
+          "corruption_recall": true,
+          "clean_fpr": true
+        }
+      },
+      {
+        "target": "FIT201",
+        "passed": true,
+        "observed": {
+          "dual_auroc": 0.99988725,
+          "dual_aupr": 0.9998912127408848,
+          "corruption_recall": 0.9975,
+          "clean_fpr": 0.011,
+          "calibration_q99_threshold": 18.423656964515583
+        },
+        "expected": {
+          "dual_auroc": 0.99988725,
+          "dual_aupr": 0.9998912127408848,
+          "corruption_recall": 0.9975,
+          "clean_fpr": 0.011,
+          "calibration_q99_threshold": 18.423656964515583
+        },
+        "differences": {
+          "dual_auroc": 0.0,
+          "dual_aupr": 0.0,
+          "corruption_recall": 0.0,
+          "clean_fpr": 0.0,
+          "calibration_q99_threshold": 0.0
+        },
+        "checks": {
+          "dual_auroc": true,
+          "dual_aupr": true,
+          "corruption_recall": true,
+          "clean_fpr": true
+        }
+      },
+      {
+        "target": "DPIT301",
+        "passed": true,
+        "observed": {
+          "dual_auroc": 0.9980182499999999,
+          "dual_aupr": 0.9979090770866338,
+          "corruption_recall": 0.8875,
+          "clean_fpr": 0.0105,
+          "calibration_q99_threshold": 14.03809177655575
+        },
+        "expected": {
+          "dual_auroc": 0.99801825,
+          "dual_aupr": 0.9979090770866338,
+          "corruption_recall": 0.8875,
+          "clean_fpr": 0.0105,
+          "calibration_q99_threshold": 14.03809177655575
+        },
+        "differences": {
+          "dual_auroc": -1.1102230246251565e-16,
+          "dual_aupr": 0.0,
+          "corruption_recall": 0.0,
+          "clean_fpr": 0.0,
+          "calibration_q99_threshold": 0.0
+        },
+        "checks": {
+          "dual_auroc": true,
+          "dual_aupr": true,
+          "corruption_recall": true,
+          "clean_fpr": true
+        }
+      },
+      {
+        "target": "FIT301",
+        "passed": true,
+        "observed": {
+          "dual_auroc": 0.9958072499999999,
+          "dual_aupr": 0.9959521067077778,
+          "corruption_recall": 0.858,
+          "clean_fpr": 0.0085,
+          "calibration_q99_threshold": 16.700355369868152
+        },
+        "expected": {
+          "dual_auroc": 0.99580725,
+          "dual_aupr": 0.9959521067077778,
+          "corruption_recall": 0.858,
+          "clean_fpr": 0.0085,
+          "calibration_q99_threshold": 16.700355369868152
+        },
+        "differences": {
+          "dual_auroc": -1.1102230246251565e-16,
+          "dual_aupr": 0.0,
+          "corruption_recall": 0.0,
+          "clean_fpr": 0.0,
+          "calibration_q99_threshold": 0.0
+        },
+        "checks": {
+          "dual_auroc": true,
+          "dual_aupr": true,
+          "corruption_recall": true,
+          "clean_fpr": true
+        }
+      },
+      {
+        "target": "FIT401",
+        "passed": true,
+        "observed": {
+          "dual_auroc": 0.5129025,
+          "dual_aupr": 0.5195113282145856,
+          "corruption_recall": 0.0,
+          "clean_fpr": 0.0,
+          "calibration_q99_threshold": 1.256714818258181
+        },
+        "expected": {
+          "dual_auroc": 0.5129025,
+          "dual_aupr": 0.5195113282145856,
+          "corruption_recall": 0.0,
+          "clean_fpr": 0.0,
+          "calibration_q99_threshold": 1.256714818258181
+        },
+        "differences": {
+          "dual_auroc": 0.0,
+          "dual_aupr": 0.0,
+          "corruption_recall": 0.0,
+          "clean_fpr": 0.0,
+          "calibration_q99_threshold": 0.0
+        },
+        "checks": {
+          "dual_auroc": true,
+          "dual_aupr": true,
+          "corruption_recall": true,
+          "clean_fpr": true
+        }
+      },
+      {
+        "target": "FIT601",
+        "passed": true,
+        "observed": {
+          "dual_auroc": 0.99999925,
+          "dual_aupr": 0.9999992511233148,
+          "corruption_recall": 1.0,
+          "clean_fpr": 0.007,
+          "calibration_q99_threshold": 236954.84330603105
+        },
+        "expected": {
+          "dual_auroc": 0.99999925,
+          "dual_aupr": 0.9999992511233148,
+          "corruption_recall": 1.0,
+          "clean_fpr": 0.007,
+          "calibration_q99_threshold": 236954.84330603105
+        },
+        "differences": {
+          "dual_auroc": 0.0,
+          "dual_aupr": 0.0,
+          "corruption_recall": 0.0,
+          "clean_fpr": 0.0,
+          "calibration_q99_threshold": 0.0
+        },
+        "checks": {
+          "dual_auroc": true,
+          "dual_aupr": true,
+          "corruption_recall": true,
+          "clean_fpr": true
+        }
+      }
+    ],
+    "median_auroc": 0.9969127499999999,
+    "median_aupr": 0.9969305918972058
+  }
+}

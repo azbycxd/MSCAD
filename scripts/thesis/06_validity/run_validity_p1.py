@@ -1,0 +1,178 @@
+"""RETROSPECTIVE_VALIDITY_AUDIT. v4 gates; never calls a formal runner main."""
+from __future__ import annotations
+import hashlib, json, os, sys, traceback, platform
+from pathlib import Path
+from datetime import datetime, timezone
+import numpy as np
+import pandas as pd
+
+ROOT=Path(r'D:\workspace\python\mscad-thesis')
+OUT=ROOT/'outputs/thesis_validity/p1_residual_controls_v3'
+TAG='RETROSPECTIVE_VALIDITY_AUDIT'
+DEADLINE=datetime.fromisoformat(os.environ.get('VALIDITY_DEADLINE','2026-11-17T10:12:47+00:00'))
+START='2026-11-17T09:42:47+00:00'
+manifest={'audit_label':TAG,'task':'Thesis-VALIDITY-P1 v4','started_at_utc':START,'deadline_utc':DEADLINE.isoformat(),'steps':{},'inputs':[], 'no_neural_training':True,'no_primary_overwrite':True,'no_test_tuning':True}
+replays={}; skipped=[]; prepared={}; tests={}; controlled_rows=[]; main_rows=[]; decision={}; math_result={}; status='VALIDITY_P1_INCOMPLETE'
+output_created=False
+
+class ReplayGateStop(RuntimeError):
+    """A failed formal gate ends this audit; never continue the next Test."""
+
+def now(): return datetime.now(timezone.utc).isoformat()
+def sha(path):
+    h=hashlib.sha256()
+    with Path(path).open('rb') as f:
+        for block in iter(lambda:f.read(8*1024*1024),b''): h.update(block)
+    return h.hexdigest()
+def js(path,obj):
+    def cast(v):
+        if isinstance(v,np.generic): return v.item()
+        if isinstance(v,np.ndarray): return v.tolist()
+        return str(v)
+    if isinstance(obj,dict): obj={'audit_label':TAG,**obj}
+    path=OUT/path
+    path.write_text(json.dumps(obj,ensure_ascii=False,indent=2,allow_nan=False,default=cast)+'\n',encoding='utf-8')
+def log(message):
+    line=f'{now()} {message}'
+    print(line,flush=True)
+    with (OUT/'run_log.txt').open('a',encoding='utf-8') as f:f.write(line+'\n')
+def step(name):
+    if datetime.now(timezone.utc)>=DEADLINE: raise TimeoutError('30-minute hard deadline reached')
+    manifest['steps'][name]=now();log(name);js('manifest.json',manifest)
+def csv(name,rows,columns=None):
+    frame=rows.copy() if isinstance(rows,pd.DataFrame) else pd.DataFrame(rows,columns=columns)
+    if 'audit_label' not in frame:frame.insert(0,'audit_label',TAG)
+    frame.to_csv(OUT/name,index=False)
+    return frame
+
+def finalize():
+    global decision
+    manifest['finished_at_utc']=now();manifest['status']=status
+    for dataset,state in prepared.items():
+        for path in state.get('inputs',[]):
+            p=Path(path)
+            if p.is_file() and str(p) not in {x['path'] for x in manifest['inputs']}:
+                manifest['inputs'].append({'path':str(p),'sha256':sha(p)})
+    js('manifest.json',manifest);js('replay_check.json',replays)
+    js('math_checks.json',math_result or {'status':'SKIPPED','reason':'No complete Normal preparation'})
+    if not (OUT/'metrics_main.csv').exists():csv('metrics_main.csv',[{'status':'NOT_EVALUATED','reason':'S3 gate not passed or incomplete'}])
+    if not (OUT/'controlled_swat.csv').exists():csv('controlled_swat.csv',[{'status':'NOT_EVALUATED','reason':'Controlled S3 gate not passed or incomplete'}])
+    if not (OUT/'normal_stats.csv').exists():csv('normal_stats.csv',[{'status':'NOT_COMPLETED'}])
+    decision={'audit_label':TAG,'status':status,'descriptive_label':decision.get('descriptive_label','NOT_AVAILABLE'),**decision,'failed_or_skipped_checks':skipped}
+    js('decision.json',decision)
+    sections=[
+        '# Thesis-VALIDITY-P1 v4',TAG,
+        '本实验是回顾性研究阶段中预先固定的分析方案；不是预注册确认性实验，也不是未见 Test 的独立验证。',
+        f'最终状态：**{status}**。开始 {START}；完成 {manifest["finished_at_utc"]}。',
+        '## 版本与来源',
+        '正式源码工作树 thesis-clean@7607b5f 中的正式 runner 原为未跟踪文件；与 GitHub 发布快照 43270769 逐文件 SHA256 一致。正式 manifest 未记录生产 commit/source hash，因此不能独立证明历史 run-to-commit。输入绑定详见 provenance_report.json。',
+        'v4 背景中“没有 Ridge 系数文件”已过时：效率目录存有 swat_dual_coefficients.npz / hai21_dual_coefficients.npz。E2-R1D 使用这些保存的系数。本轮依照授权，使用正式 Normal 数据和正式函数确定性重新拟合；没有改用存档系数以追平结果。',
+        '## S3 复现门禁', '```json\n'+json.dumps(replays,ensure_ascii=False,indent=2,default=str)+'\n```',
+        '## 正常期冻结与检查顺序',
+        '所有数据集的 Ridge 拟合只访问 Normal，先于任何 Attack 特征读取。仅技能列表先冻结，再写正常统计及 SHA256；新的 S1/S2 Test 指标只允许在哈希冻结且对应 S3 门禁通过后计算。步骤时间戳详见 manifest.json。',
+        '目标集合由正式双视角门控选出。8 个正技能条件对 Self 与 Cross 是对称的；但分歧稳定性比值筛选只针对 S3，可能使集合偏向 S3。因此本实验的结论仅限于"相同预测器与相同目标条件下"的比较，不代表 S2 在为其单独优化的目标集上的最佳表现。',
+        '正常统计采用总体二阶矩 ddof=0；q99/median 在 median=0 时留空，不做无意义除法。',
+        '## 受控 SWaT',
+        '6 个冻结目标各 2000 对样本；Self 和目标观测取 clean 时刻，仅 Cross 输入取冻结 donor。无跨目标聚合。S1 配对相同的 AUROC=0.5 只是实现一致性检查，不是有信息量的阴性对照。S2 与 S3 带符号量变化都等于 cross(clean)-cross(donor)，区别来自正常基线位置和宽度。',
+        '## 描述标签与数学检查',
+        '```json\n'+json.dumps(decision,ensure_ascii=False,indent=2,default=str)+'\n```',
+        'H-κ 仅描述正常期二阶统计和表现之间的关联，不代表因果关系，也不保证 AUROC/AUPR。数学检查见 math_checks.json；逐目标当前值不敏感与全局系统响应分开报告。',
+        '## 历史披露',
+        'docs/thesis/v3r_selective_cross_only.md 记录：S2 类 V3R selective cross-only 残差采用目标排除、Cross lags [1,5,10,20,30]（不含 lag 0）、Top5 predictor；23 个目标、46 个受控 cell 的 median AUROC 为 0.523134，状态 SELECTIVE_CROSS_ONLY_NOT_SUPPORTED。双预测分歧是在这之后设计的。',
+        '上述历史结果与本轮 S2 的设置不同（predictor 集合、是否含 lag 0、受控扰动方式都不同），二者不可直接比较；本轮 S2 与 S3 使用同一组预测器，目的正是把“评分公式的作用”和“预测器设置变化的作用”分开。',
+        '## 未通过或跳过',*['- '+str(item) for item in skipped],
+        '没有修改论文章节、创新点或正式主表；没有神经网络训练、Test tuning、PA、POT、方法升级或结果替换。发布仅包含本轮小型报告与脚本；不发布数据、逐点分数或模型资产。'
+    ]
+    (OUT/'REPORT.md').write_text('\n\n'.join(sections)+'\n',encoding='utf-8')
+
+def main():
+    global status,controlled_rows,main_rows,decision,math_result,output_created
+    if OUT.exists():raise RuntimeError('Refusing to overwrite existing audit output directory')
+    OUT.mkdir(parents=True)
+    output_created=True
+    step('STARTED')
+    import scipy, sklearn
+    manifest['environment']={'python':sys.version,'numpy':np.__version__,'pandas':pd.__version__,'scipy':scipy.__version__,'sklearn':sklearn.__version__,'platform':platform.platform()}
+    import real_helper as real,controlled_helper as ctrl,comut_helper as comut
+    provenance=json.loads((Path(__file__).parent/'provenance_report.json').read_text(encoding='utf-8-sig'))
+    js('provenance_report.json',provenance)
+    if provenance.get('source_mismatches',0) or provenance.get('missing_inputs',0):raise RuntimeError('STOP_A: source provenance mismatch or missing input')
+    for dataset in ('swat','hai'):
+        step('NORMAL_PREPARE_'+dataset.upper())
+        prepared[dataset]=real.prepare(dataset,log)
+        replays[dataset]={'target_order':prepared[dataset]['target_check'],'threshold':prepared[dataset]['threshold_check'],'status':'NORMAL_PASS_PENDING_S3' if prepared[dataset]['gate_pass'] else 'FAIL_BEFORE_TEST'}
+        js('replay_check.json',replays)
+        if not prepared[dataset]['gate_pass']:
+            raise ReplayGateStop('STOP_B: '+dataset+' Normal target/threshold reproduction failed; no Test access')
+    step('CONTROLLED_NORMAL_PREPARE');controlled=ctrl.prepare(ROOT)
+    js('donor_manifest_audit.json',controlled['donor_audit'])
+    step('COMUT_NORMAL_PREPARE');cm=comut.prepare(ROOT)
+    manifest['all_normal_fits_completed_at_utc']=now()
+    for p in controlled['input_paths']+cm.get('input_paths',[]):
+        if Path(p).is_file():manifest['inputs'].append({'path':p,'sha256':sha(p)})
+    step('S3_REPLAY_CONTROLLED');replays['controlled']=ctrl.replay_s3(controlled);js('replay_check.json',replays)
+    if all(s['gate_pass'] for s in prepared.values()):
+        for dataset,state in prepared.items():
+            step('S3_REPLAY_'+dataset.upper());tests[dataset]=real.replay_test(state,log);replays[dataset]=tests[dataset]['gates'];js('replay_check.json',replays)
+            if not tests[dataset]['passed']:
+                raise ReplayGateStop('STOP_B: '+dataset+' S3 reproduction failed; no further Test or controls')
+    else:skipped.append('STOP_B: at least one real-data Normal target/threshold gate failed; no real Attack files read')
+    real_pass=len(tests)==2 and all(t['passed'] for t in tests.values())
+    if not real_pass:skipped.append('STOP_B: real S1/S2 metrics, per-target Test comparisons, skill-only Test sensitivity and real score export prohibited because formal S3 reproduction failed')
+    if not replays['controlled']['passed']:skipped.append('STOP_B: controlled S3 mismatch; controlled S1/S2 evaluation stopped')
+    step('NORMAL_STATISTICS_AND_MATH')
+    import audit_stats
+    normal_rows=[];stats_states={};skill=[]
+    for dataset,state in prepared.items():
+        stats_states[dataset]=audit_stats.normal_statistics(state)
+        normal_rows.extend(stats_states[dataset]['rows'])
+        math_result[dataset]=audit_stats.math_checks(state)
+        for target in state['skill_targets']:skill.append({'dataset':dataset,'target':target,'scope':'SUPPLEMENTARY_SKILL_ONLY','primary_frozen':target in state['targets']})
+    js('math_checks.json',math_result)
+    csv('skill_only_targets.csv',skill);skill_sha=sha(OUT/'skill_only_targets.csv')
+    (OUT/'skill_only_targets.sha256').write_text(TAG+'\n'+skill_sha+'  skill_only_targets.csv\n',encoding='utf-8')
+    manifest['skill_only_frozen_at_utc']=now();manifest['skill_only_sha256']=skill_sha
+    normal_rows+=controlled['normal_stats']+cm.get('normal_stats',[])
+    csv('normal_stats.csv',normal_rows);normal_sha=sha(OUT/'normal_stats.csv')
+    (OUT/'normal_stats.sha256').write_text(TAG+'\n'+normal_sha+'  normal_stats.csv\n',encoding='utf-8')
+    manifest['normal_stats_frozen_at_utc']=now();manifest['normal_stats_sha256']=normal_sha
+    for dataset,ns in stats_states.items():
+        if 'reference_rows' in ns:csv('normal_reference_'+dataset+'.csv',ns['reference_rows'])
+    step('NORMAL_STATS_HASH_FROZEN')
+    if replays['controlled']['passed']:
+        step('CONTROLLED_S1_S2_EVALUATION');controlled_rows,checks=ctrl.evaluate_controls(controlled,normal_sha)
+        csv('controlled_swat.csv',controlled_rows);js('controlled_consistency.json',checks)
+    if real_pass:
+        import real_evaluation
+        analyses={}
+        for dataset,state in prepared.items():
+            step('REAL_CONTROLS_'+dataset.upper())
+            analyses[dataset]=real_evaluation.evaluate(state,tests[dataset],normal_sha,OUT,stats_states[dataset])
+            main_rows.extend(analyses[dataset]['metrics'])
+        csv('metrics_main.csv',main_rows)
+        decision['real_analysis']=analyses
+    step('COMUT_CONDITIONAL_EVALUATION')
+    cm_result=comut.replay_and_evaluate(cm,normal_sha)
+    js('comut_replay.json',{k:v for k,v in cm_result.items() if k not in ('rows','score_frames','per_target_frames')})
+    if cm_result['status']=='COMPLETED':
+        csv('comut.csv',cm_result['rows'])
+        for key,name in [('score_frames','comut_scores.csv.gz'),('per_target_frames','comut_per_target_scores.csv.gz')]:
+            pd.concat(cm_result[key],ignore_index=True).to_csv(OUT/name,index=False,compression='gzip')
+    else:skipped.append('Historical CoMuT: '+cm_result['status']+' '+cm_result.get('reason',''))
+    if real_pass and controlled_rows:
+        metrics=pd.DataFrame(main_rows);cr=pd.DataFrame(controlled_rows)
+        hai=metrics[metrics.dataset=='hai'].set_index('score')
+        dh=float(hai.loc['S3','aupr']-hai.loc['S2','aupr'])
+        dc=float(cr[cr.score=='S3'].auroc.median()-cr[cr.score=='S2'].auroc.median())
+        decision.update(delta_HAI=dh,delta_CTRL=dc,descriptive_label='R-UP' if dh>=.02 and dc>=.02 else 'R-DOWN' if dh<=-.02 and dc<=-.02 else 'R-EQ')
+    status='VALIDITY_P1_COMPLETED' if real_pass and controlled_rows and cm_result['status'] in ('COMPLETED','SKIPPED') else 'VALIDITY_P1_STOPPED_REPRODUCTION_GATE'
+    step('AUDIT_FINISHED')
+
+if __name__=='__main__':
+    try:main()
+    except Exception as e:
+        if not output_created:raise
+        skipped.append(type(e).__name__+': '+str(e));manifest['exception_traceback']=traceback.format_exc();log(traceback.format_exc())
+        status='VALIDITY_P1_INCOMPLETE'
+    finally:
+        if output_created:finalize()
